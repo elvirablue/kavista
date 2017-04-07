@@ -1,0 +1,128 @@
+.corner {
+	position: relative;
+	z-index: 9;	
+	overflow: hidden;
+	width: 20rem;
+	height: auto;
+	img {
+		border: 5px solid #85254c;
+	}
+}
+
+.top-right, .top-left, .bottom-right, .bottom-left {
+	content: "";
+	position: absolute;
+	z-index: 10;
+	background: url("../img/corner1.png") 0 0 no-repeat;
+	background-size: 100%;
+	width: 16px;
+	height: 16px;
+}
+	
+.top-right {
+	top: 0;
+	right: 0;
+	transform: rotate(180deg);
+}
+.top-left {
+	top: 0;
+	left: 0;
+	transform: rotate(90deg);
+}
+.bottom-right {
+	bottom: 0;
+	right: 0;
+	transform: rotate(-90deg);
+}
+.bottom-left {
+	bottom: 0;
+	left: 0;
+}
+
+
+.qq {
+	display: block;
+	width: 20rem;
+	height: auto;
+	margin: 0 auto;
+}
+
+.frame {
+	.frame-beige(11px);
+}
+
+.frame:hover, .frame:active, .frame.active {
+	box-shadow: 0px 0px 10px 0px rgba(133, 37, 76, 0.25);
+}
+
+
+
+
+.frame-beige(@size) {
+	display: block;
+	position: relative;
+	z-index: 9;
+
+	&__top, &__bottom {
+		display: block;
+		font-size: 0;
+		width: auto;
+		margin: 0 @size;
+		height: @size;		
+		background-color: #ffffff;
+
+		&:after, &:before {
+			content: "";
+			position: absolute;
+			z-index: 10;			
+			background: url("../img/corner-beige.svg") 0 0 no-repeat;
+			background-size: contain;
+			height: @size;
+			width: @size;
+		}
+	}
+
+	&__top {
+		border-top: 2px solid #f7e5d6;
+
+		&:after {
+			top: 0;
+			left: 0;
+			transform: rotate(90deg);
+		}
+
+		&:before {
+			top: 0;
+			right: 0;
+			transform: rotate(180deg);
+		}
+	}
+
+	&__bottom {
+		border-bottom: 2px solid #f7e5d6;
+
+		&:after {
+			bottom: 0;
+			left: 0;			
+		}
+
+		&:before {
+			bottom: 0;
+			right: 0;
+			transform: rotate(-90deg);
+		}
+	}
+
+	&__bottom {
+		border-bottom: 2px solid #f7e5d6;
+	}
+
+
+	&__content {
+		border-left: 2px solid #f7e5d6;
+		border-right: 2px solid #f7e5d6;
+		background-color: #ffffff;
+		min-height: 20rem;
+	}
+	
+}

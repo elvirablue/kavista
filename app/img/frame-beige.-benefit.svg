@@ -1,0 +1,14 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1112" height="167" viewBox="0 0 1112 167">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: #ffffff;
+        stroke: #f7e5d6;
+        stroke-linejoin: round;
+        stroke-width: 2px;
+        fill-rule: evenodd;
+      }
+    </style>
+  </defs>
+  <path id="Ellipse_6_copy_2" data-name="Ellipse 6 copy 2" class="cls-1" d="M1505,1075H415a10,10,0,0,0-10-10V920a10,10,0,0,0,10-10H1505a10,10,0,0,0,10,10v145A10,10,0,0,0,1505,1075Z" transform="translate(-404 -909)"/>
+</svg>
