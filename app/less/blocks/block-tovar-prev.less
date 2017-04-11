@@ -1,0 +1,97 @@
+.block-tovar-prev {
+	display: flex;
+	flex-flow: column nowrap;
+	justify-content: space-between;
+
+	margin: 0 auto;
+	width: 17rem;
+	height: 37rem;
+	padding: 1.5rem;
+	background: url("../img/frame-beige-tovar.svg") 0 0 no-repeat;
+	background-size: auto;
+	
+
+	h4 {
+		span {
+			display: block;
+		}
+	}
+
+	&__code {
+		display: block;
+		padding-top: 0.5rem;
+	}
+
+	&__img {
+		display: block;
+		height: auto;
+		max-height: 19.5rem;
+		text-align: center;
+		margin: 1.3rem auto;
+		img {
+			height: 100%;
+			width: auto;
+		}
+	}
+
+	&__description {
+		display: block;
+		height: auto;
+
+	}
+}
+
+.description-wine {
+	display: inline-block;
+	vertical-align: top;
+	width: 6.6rem;	
+	.open-sans(0.875rem);
+	margin-bottom: 1rem;
+}
+
+.wine-color:before,
+.wine-sugar:before,
+.wine-land:before {
+	content: "";
+	display: inline-block;
+	vertical-align: top;
+	width: 1rem;
+	height: 1rem;
+	margin-right: 0.2rem;
+	border-radius: 50%;	
+
+}
+
+.wine-color.red:before {
+	background-color: @color-darkwhine;
+}
+
+.white {
+	background-color: @color-beige;
+}
+
+.rose {
+	background-color: #b8608b;
+}
+
+.wine-price {
+	.agora(1rem);
+	color: @color-orange;
+	font-weight: bold;
+	padding-left: 0;
+}
+
+.wine-sugar:before {
+	background: url("../img/sugar.png") 0 0 no-repeat;
+	background-size: cover;
+}
+
+.wine-land.italy:before {
+	background: url("../img/f-italia.png") 0 0 no-repeat;
+	background-size: cover;
+}
+
+.block-tovar-prev:hover {
+	background-image: url("../img/frame-beige-tovar-hover.svg");
+	cursor: pointer;
+}

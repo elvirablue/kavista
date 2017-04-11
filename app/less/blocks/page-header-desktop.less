@@ -1,0 +1,143 @@
+.page-header-desktop {
+	.container-fluid();
+	.clearfix();
+	padding-top: 2rem;
+	padding-bottom: 2rem;
+	text-align: center;
+}
+
+.header-contact {
+	display: inline-block;
+	float: left;
+	width: 33%;
+	text-align: left;
+
+	&__phone {		
+		.agora(1.375rem);
+		.ico(0, -60px);
+		font-weight: bold;
+		line-height: 2rem;
+		color: @color-brown;
+		margin-top: 1rem;
+		margin-bottom: 1rem;		
+	}
+
+	&__address{
+		.open-sans(0.875rem);
+		.ico(0, 0);		
+
+		p {
+			color: @color-lightgray;
+			display: inline-block;
+			width: 80%;
+		}
+	}
+
+	&__link {		
+		text-decoration: underline;
+		.open-sans(0.875rem);		
+		color: @color-lightgray;
+	}
+}
+
+.header-logo {
+	display: inline-block;
+	width: 33%;
+}
+
+.header-user {
+	.clearfix();
+	display: inline-block;
+	float: right;
+	width: 33%;
+	text-align: right;
+
+	&__club {
+		.ico(0, -120px);
+		.open-sans(1rem);
+		display: block;
+		margin-top: 1rem;
+		font-weight: bold;
+		text-decoration: underline;
+		line-height: 2rem;
+		color: @color-brown;
+	}
+
+	&__basket {
+		float: right;		
+		min-width: 10rem;
+		width: auto;
+		margin-top: 1rem;		
+
+		.frame__content {
+			min-height: 3.5rem;
+		}
+	}
+
+	&__basket-title {
+		.ico(0, -180px);
+		.open-sans(0.9rem);
+		display: block;
+		width: 100%;
+		padding: 0 0.3rem;
+		text-align: center;
+		line-height: 2rem;
+		font-weight: bold;
+		color: @color-gray;
+
+		span {
+			.open-sans(1rem);
+			color: @color-brown;
+			font-weight: bold;
+		}
+	}
+
+	&__basket-sum {
+		.agora(1.25rem);
+		display: block;
+		width: 100%;
+		padding: 0 0.3rem;
+		text-align: center;
+		color: @color-orange;
+		font-weight: bold;
+	}
+}
+
+@media @tablet-widths {
+	.header-logo {
+		width: 20%;
+	}
+	.header-user {
+		width: 25%;
+		margin-right: 8rem;
+	}
+}
+	
+@media @mobil-widths {
+	.header-contact,
+	.header-logo,
+	.header-user {
+		display: block;
+		float: none;
+		width: 100%;
+		margin-bottom: 2rem;
+	}
+
+	.header-contact {
+		&__phone {		
+			.agora(1.125rem);
+		}
+	}
+
+	.header-user {
+		text-align: center;		
+
+		&__basket {
+			display: block;
+			margin: 1rem auto 0;
+			max-width: 12rem;
+			float: none;
+		}
+
+	}
+}

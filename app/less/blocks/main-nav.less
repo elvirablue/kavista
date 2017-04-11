@@ -1,0 +1,211 @@
+.main-nav-scroll {
+  display: none;
+}
+ 
+.main-nav {
+	width: 100%;
+	position: relative;
+	min-height: 3.8rem;
+
+	&__wrapper {
+		.container-fluid();		
+		min-height: 3.8rem;
+		padding: 0 2.6rem;
+
+
+		ul {
+			list-style: none;
+			display: flex;
+			flex-flow: row no-wrap;
+			align-items: stretch;
+			justify-content: space-between;
+			height: 3.8rem;
+			position: relative;
+
+			li {
+				flex-basis: 100%;
+				display: inline-block;
+				height: 3.8rem;
+				text-align: center;				
+				position: relative;
+				background-color: @color-whine;
+				cursor: pointer;
+				transition: ease 0.5s;
+				
+				a {
+					display: inline-block;
+					width: 100%;
+					height: 3.8rem;
+					padding: 0px 0.5rem;
+					.agora(0.875rem);
+					line-height: 3.8rem;
+					color: #ffffff;
+					text-decoration: none;
+					text-transform: uppercase;
+					white-space: nowrap;
+				}
+			}
+
+			li:first-child:before, 
+			li:last-child:after {
+				content: "";
+				position: absolute;
+				top: 0;				
+				width: 0.68rem;
+				height: 3.8rem;
+				background: url("../img/main-nav-bg-frame.svg") 0 0 no-repeat;
+				background-size: contain;
+				transition: background-color ease 0.5s;
+			}
+
+			li:first-child:before {
+				left: -0.6rem;
+			}
+
+			li:last-child:after {
+				right: -0.6rem;
+				transform: rotate(180deg);
+			}
+
+			li:hover, li.active, li:active {				
+				background-color: @color-darkwhine;
+			}
+
+			li:last-child.active:after, 
+			li:last-child:active:after, 
+			li:first-child.active:before, 
+			li:first-child:active:before {
+				background-image: url("../img/main-nav-bg-frame-hover.svg");
+			}
+		}
+
+	}
+
+
+	&__toggle {
+		display: none;
+	}
+}
+
+
+
+@media @tablet-widths {	
+
+	.main-nav-block {
+		display: block;
+		position: relative;
+	}
+	.main-nav__wrapper {
+		background-image: none;
+		ul {	  
+	  		width: auto;
+	  		text-align: center;
+	  		min-width: 70vw;	  
+	  		flex-direction: column;	  
+	  		li{
+	  			flex-basis: 100%;
+	  		}
+	  		a {
+	  			display: block;
+  				width: 100%;
+	  		}
+	  	}
+	}
+
+	.main-nav--closed .main-nav {
+    	display: none;
+  	}
+
+	.main-nav__toggle {
+	  position: fixed;
+	  top: 2rem;
+	  right: 2rem;
+	  z-index: 5001;
+	  display: block;
+	  width: 70px;
+	  height: 3.5rem;
+	  font-size: 0;
+	  background-color: #ffffff;
+	  cursor: pointer;
+	  border: none;
+	  outline: none;
+	  transition: background-color ease 0.5s;
+	}
+	.main-nav__toggle:hover,
+	.main-nav__toggle:active,
+	.main-nav__toggle.active {
+	  background-color:  @color-orange;
+	}
+	.main-nav--closed .main-nav__toggle::before {
+	  content: "";
+	  position: absolute;
+	  top: 15px;
+	  left: 15px;
+	  width: 40px;
+	  height: 2.5px;
+	  background-color: @color-white;  
+	  box-shadow: 0 12px 0 0 @color-white, 0 24px 0 0 @color-white;
+	}
+	.main-nav--closed .main-nav__toggle:active::before {
+	  background-color: rgba(255, 255, 255, 0.3);
+	  -webkit-box-shadow: 0 12px 0 0 rgba(255, 255, 255, 0.3), 0 24px 0 0 rgba(255, 255, 255, 0.3);
+	          box-shadow: 0 12px 0 0 rgba(255, 255, 255, 0.3), 0 24px 0 0 rgba(255, 255, 255, 0.3);
+	}
+	.main-nav--opened .main-nav__toggle {
+	  top: -3.5rem;
+	  right: 0;
+	  left: auto;
+	}
+	.main-nav--opened .main-nav__toggle::before,
+	.main-nav--opened .main-nav__toggle::after {
+	  content: "";
+	  position: absolute;
+	  top: 25px;
+	  left: 20px;
+	  width: 35px;
+	  height: 2.5px;
+	  background-color: @color-white;
+	}
+	.main-nav--opened .main-nav__toggle::before {
+	  
+	          transform: rotate(45deg);
+	  
+	          box-shadow: none;
+	}
+	.main-nav--opened .main-nav__toggle:after {
+	  -webkit-transform: rotate(-45deg);
+	      -ms-transform: rotate(-45deg);
+	          transform: rotate(-45deg);
+	}
+	.main-nav--opened .main-nav__toggle:active::before,
+	.main-nav--opened .main-nav__toggle:active::after {
+	  background-color: rgba(255, 255, 255, 0.3);
+	}
+
+	.main-nav--opened .main-nav {
+		display: block;
+		position: absolute;
+		width: 91.75vw;
+		height: 18.7rem;
+		background-color: @color-orange;
+		opacity: 0.9;
+		border-bottom-left-radius: 3px;
+		border-bottom-right-radius: 3px;
+		background-image: none;
+		z-index: 5001;
+		right: 1.25rem;
+		top: 0;
+
+		&__wrapper {
+			min-width: 70vw;
+		}
+	}
+}
+
+@media @mobil-widths {
+	.main-nav__toggle {
+	  position: fixed;
+	  top: 2rem;
+	  right: 1rem;
+	 }
+}

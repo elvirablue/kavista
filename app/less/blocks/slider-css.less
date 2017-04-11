@@ -1,0 +1,86 @@
+
+.slider_wrapper {
+	position: relative;
+	width: 100%;
+	max-height: 31.25rem;
+	height: 70vw;
+	min-height: 14rem;
+	margin: 2rem auto;
+	background-color: #fff;
+	background-image: url(../img/slider/slider1.jpg);
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-position: 50% 0;
+	transition: background-image 1s  linear,
+				background-color 0.7s linear;
+
+	
+}
+
+.slider_wrapper:hover {
+	animation-play-state: paused;
+}
+
+.slider {
+	position: absolute;
+	bottom: 0;
+	right: 0;
+	width: 100%;
+	height: 100%;
+	overflow: visible;
+	
+	
+}
+
+.slide {
+	display: none;
+	text-decoration: none;
+	width: 100%;
+	height: 100%;	
+}
+
+.slider_controls {
+	position: absolute;
+	bottom: -3rem;
+	left: 50%;
+	width: 15rem;
+	height: auto;
+	margin-left: -7.5rem;
+	z-index: 200;
+	font-size: 0;
+	text-align: center;
+
+	label {
+		display: inline-block;
+		width: 1.25rem;
+		height: 1.25rem;
+		margin: 0.5rem;
+		
+		vertical-align: top;
+		background-color: transparent;
+		border: 2px solid #d46000;
+		border-radius: 50%;
+		cursor: pointer;
+	}
+}
+
+
+
+#btn-1:checked ~ .slider_wrapper #slide1,
+#btn-2:checked ~ .slider_wrapper #slide2,
+#btn-3:checked ~ .slider_wrapper #slide3 {
+	display: block;
+}
+
+#btn-1:checked ~ .slider_wrapper label[for="btn-1"],
+#btn-2:checked ~ .slider_wrapper label[for="btn-2"],
+#btn-3:checked ~ .slider_wrapper label[for="btn-3"] {
+	background-color: #d46000;
+}
+
+#btn-1:checked ~ .slider_wrapper {background-image: url(../img/slider/slider1.jpg);}
+#btn-2:checked ~ .slider_wrapper {background-image: url(../img/slider/slider2.jpg);}
+#btn-3:checked ~ .slider_wrapper {background-image: url(../img/slider/slider3.jpg); 
+	/*background-size: 100%;*/
+	
+}

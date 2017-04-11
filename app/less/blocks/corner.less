@@ -4,7 +4,8 @@
 	overflow: hidden;
 	width: 20rem;
 	height: auto;
-	img {
+	img,
+	a {
 		border: 5px solid #85254c;
 	}
 }
@@ -47,23 +48,16 @@
 	margin: 0 auto;
 }
 
-.frame {
-	.frame-beige(11px);
+.frame.frame--beige {
+	.frame-color(11px, #f7e5d6);
 }
 
-.frame:hover, .frame:active, .frame.active {
-	box-shadow: 0px 0px 10px 0px rgba(133, 37, 76, 0.25);
-}
-
-
-
-
-.frame-beige(@size) {
+.frame-color(@size, @color) {
 	display: block;
 	position: relative;
 	z-index: 9;
 
-	&__top, &__bottom {
+	.frame__top, .frame__bottom {
 		display: block;
 		font-size: 0;
 		width: auto;
@@ -82,8 +76,8 @@
 		}
 	}
 
-	&__top {
-		border-top: 2px solid #f7e5d6;
+	.frame__top {
+		border-top: 2px solid @color;
 
 		&:after {
 			top: 0;
@@ -98,8 +92,8 @@
 		}
 	}
 
-	&__bottom {
-		border-bottom: 2px solid #f7e5d6;
+	.frame__bottom {
+		border-bottom: 2px solid @color;
 
 		&:after {
 			bottom: 0;
@@ -113,16 +107,14 @@
 		}
 	}
 
-	&__bottom {
-		border-bottom: 2px solid #f7e5d6;
-	}
-
-
-	&__content {
-		border-left: 2px solid #f7e5d6;
-		border-right: 2px solid #f7e5d6;
+	
+	.frame__content {
+		border-left: 2px solid @color;
+		border-right: 2px solid @color;
 		background-color: #ffffff;
-		min-height: 20rem;
+		min-height: 3.5rem;
+		width: 100%;
+		padding: 0 1rem;
 	}
 	
 }

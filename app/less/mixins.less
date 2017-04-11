@@ -1,15 +1,25 @@
 @import "variables.less";
 @import "scaffolding.less";
 @import "blocks/corner.less";
-/*@import "outlines.less";
+@import "blocks/block-tovar-prev.less";
+@import "blocks/check-box.less";
 @import "blocks/btn.less";
+/*@import "outlines.less";
+
 @import "blocks/input.less";
-@import "blocks/checkbox.less";
+
 @import "blocks/page-header-desktop.less";
 @import "blocks/page-header-mobil.less";
 @import "blocks/main-nav.less";
 @import "blocks/breadcpamps.less";*/
-
+@import "blocks/page-header-desktop.less";
+@import "blocks/page-header-mobil.less";
+@import "blocks/main-nav.less";
+@import "blocks/main-slider.less";
+@import "blocks/slider-css.less";
+@import "blocks/benefit.less";
+@import "blocks/block-tovars.less";
+@import "blocks/toggle-type-wine.less";
 
 .hidden {
 	display: none;
@@ -42,11 +52,12 @@
 
 .container-fluid() {
 	width: 100%;
-	max-width: 960px;
+	max-width: 1170px;
+	padding: 0 1.8rem;
 	margin: 0 auto;
 
 	@media @tablet-widths {
-		width: 90%;
+		width: 100%;
 	}
 
 	@media @mobil-widths {

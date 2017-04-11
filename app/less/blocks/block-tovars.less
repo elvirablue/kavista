@@ -1,0 +1,63 @@
+.block-tovars {
+	.container-fluid();
+
+	&__title {
+		padding-left: 3rem;
+		line-height: 1.5;
+	}
+
+	&__arrow {
+		display: block;
+		position: relative;
+		
+		width: 100%;
+
+		.arrow {
+			top: 18rem;
+			background-image: url("../img/arr-orange.svg")
+		}
+
+		.arrow.prev {
+			left: -2.2rem;
+		}
+
+		.arrow.next {
+			right: -1.5rem;
+		}
+	}
+
+	&__wrapper {
+		display: block;
+		position: relative;
+		width: 102%;
+		height: auto;
+		max-height: 37rem;
+		overflow: hidden;
+		margin-left: -0.5rem;
+		margin-top: 2rem;
+
+		
+	}
+
+	&__list {
+		display: block;
+		list-style: none;
+		width: 100rem;
+		text-align: left;
+	}	
+
+	&__item {
+		display: inline-block;
+		vertical-align: top;
+		
+		margin-right: 0.35rem;
+	}
+
+}
+
+.hit {
+	background: url("../img/star.png") 0 0 no-repeat;
+}
+.new {
+	background: url("../img/new.png") 0 0 no-repeat;
+}

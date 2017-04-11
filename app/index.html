@@ -2,14 +2,13 @@
 <html lang="ru">
 <head>
 	<meta charset="UTF-8">
-	<title>Новосибирская строительная компания</title>
+	<title>Кависта. Маркет-бар</title>
 	<meta name=viewport content="width=device-width, initial-scale=1">
 	<link rel="icon" href="img/favicon.ico" type="image/x-icon">
 	<link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon">
 	<link rel="stylesheet" href="css/venders/normalize.css">
 	<link rel="stylesheet" href="css/stylename.css">
 	<link rel="stylesheet" href="css/style.css">
-
 	
 	<link rel="stylesheet" href="css/venders/animate.css">
 	<link rel="stylesheet" href="css/simple.css">
@@ -18,27 +17,46 @@
 	<script src="js/venders/jquery-1.12.4.js"></script>
 	<script src="js/venders/jquery.maskedinput.js"></script>
 
-	<link rel="stylesheet" href="css/vender/jquery.arcticmodal-0.3.css">	
+	<link rel="stylesheet" href="css/venders/jquery.arcticmodal-0.3.css">	
 	<script src="js/venders/jquery.arcticmodal-0.3.min.js"></script>
-	
-
-	<!-- Start WOWSlider.com HEAD section -->
-	<link rel="stylesheet" type="text/css" href="engine1/style.css" />
-	<!--<script type="text/javascript" src="engine1/jquery.js"></script>
-	 End WOWSlider.com HEAD section -->
+	<!--[if lte IE 9]>
+	    <script src="oldies/oldies.js" charset="utf-8"></script>
+	    <style>
+	       .wrapper-x {display: none;}	       
+	    </style>
+	 <![endif]-->
 </head>
 <body>
 
 <div class="wrapper-x">
 <div class="wrapper-y">
 	<header class="page-header-desktop">
+		<div class="header-contact">
+			<p class="header-contact__phone">+7 (913) 000 00 00</p>
+			<div class="header-contact__address">
+				<p> г.Новосибирск, ул. Петухова 17, оф. 202<br>
+					<a href="#" class="header-contact__link">Посмотреть на карте</a>
+				</p>
+			</div>
+		</div>
+		<div class="header-logo">
+			<a href="#"><img src="img/logo.png" alt=""></a>
+		</div>
+		<div class="header-user">
+			<a href="#" class="header-user__club">Клубная карта</a>
+			<div class="header-user__basket frame frame--beige">
+				<div class="frame__content">
+					<p class="header-user__basket-title">
+					Корзина <span>(0)</span>
+				</p>
+				<p class="header-user__basket-sum">0 <span>руб.</span></p>
+				</div>
+			</div>
+		</div>
 
 	</header>
 	<header class="page-header-mobil">
-		<p class="page-header-mobil__phone">
-				+7 (383) <span> 274-23-43</span>				
-		</p>
-		<a href="index.html" class="page-header-mobil__logo"></a>
+		
 		
 	</header>
 
@@ -49,17 +67,402 @@
 			<div class="main-nav__wrapper">
 				<ul>
 					<li class="active"><a href="">Главная</a></li>
-					<li><a href="apartments.html">Квартиры</a></li>
-					<li><a href="mortgage.html">Ипотека</a></li>
-					<li><a href="#">Новости</a></li>
-					<li><a href="about.html">Документы</a></li>
-					<li><a href="#">Контакты</a></li>
+					<li><a href="wine.html">Вино</a></li>
+					<li><a href="sparkling-wine.html">Игристое вино</a></li>
+					<li><a href="strong-alcohol.html">Крепкий алкоголь</a></li>
+					<li><a href="liquor.html">Ликер</a></li>
+					<li><a href="sets.html">Наборы и подарки</a></li>
+					<li><a href="delicacies.html">Деликатесы</a></li>
+					<li><a href="sale.html">Акции</a></li>
+					<li><a href="about.html">О нас</a></li>
+					<li ><a href="contacts.html">Контакты</a></li>
 				</ul>
 			</div>
 		</nav>
 	</div>
-<!-- *********************** БЛОК БАННЕР - 1 ЭКРАН ********************************- -->
-	<div class="main-banner">
+<!-- *********************** БЛОК СЛАЙДЕР - 1 ЭКРАН ********************************- -->
+	<div class="main-slider">
+	<!--Заготовка слайдера без JavaScript, только CSS!-->
+	    <input class="hidden" type="radio" id="btn-1" name="toggle" checked>
+	    <input class="hidden" type="radio" id="btn-2" name="toggle">
+	    <input class="hidden" type="radio" id="btn-3" name="toggle">
+	    <div class="slider_wrapper">
+	      <div class="slider corner">
+	      	<div class="arrow prev"></div>
+	      	<div class="arrow next"></div>
+	      	<div class="top-right"></div><div class="top-left"></div>
+			<div class="bottom-right"></div><div class="bottom-left"></div>
+	        <a href="#" class="slide" id="slide3"></a>
+	        <a href="#" class="slide" id="slide1"></a>
+	        <a href="#" class="slide" id="slide2"></a>
+	        <div class="slider_controls">
+	          <label for="btn-1"></label>
+	          <label for="btn-2"></label>
+	          <label for="btn-3"></label>
+	        </div>
+	      </div>
+	    </div> 
+	<!-- Конец слайдера CSS--> 
+	</div>
+<!-- *********************** БЛОК Преимущества ********************************- -->
+	<div class="benefit">
+		<div class="frame frame--beige">
+			<div class="frame__content">
+				<div class="benefit__item">
+					<p class="benefit__img"><img src="img/ico-benefit-1.png" alt=""></p>
+					<p class="benefit__title">
+						Профессиональный кавист поможет в выборе вина
+						<a href="#">Читать подробнее</a>
+					</p>					
+				</div>
+				<div class="benefit__item">
+					<p class="benefit__img"><img src="img/ico-benefit-2.png" alt=""></p>
+					<p class="benefit__title">
+						Регулярные дегустации ­попробуйте вино перед покупкой
+						<a href="#">Читать подробнее</a>
+					</p>					
+				</div>
+				<div class="benefit__item">
+					<p class="benefit__img"><img src="img/ico-benefit-3.png" alt=""></p>
+					<p class="benefit__title">
+						Винный бар с огромным ассортиментом
+						<a href="#">Читать подробнее</a>
+					</p>					
+				</div>
+			</div>
+		</div>				
+	</div>
+<!-- *********************** БЛОК ПРЕДПРОСМОТРА ТОВАРОВ ********************************- -->
+	<div class="separator"></div>
+	<div class="block-tovars">
+		<h3 class="block-tovars__title hit">Хиты продаж</h3>
+		<div class="toggle-type-wine">
+			<ul>
+				<li class="active"><a href="#">Вино</a></li>
+				<li><a href="#">Игристое вино</a></li>
+				<li><a href="#">Крепкие напитки</a></li>
+				<li><a href="#">Ликер</a></li>
+			</ul>
+		</div>
+		<div class="block-tovars__arrow">
+			<div class="arrow prev"></div>
+			<div class="arrow next"></div>
+		</div>
+		<div class="block-tovars__wrapper">			
+			<ul class="block-tovars__list">
+				<li class="block-tovars__item">
+				<!-- begin BLOCK-TOVAR -->
+					<div class="block-tovar-prev">
+						<h4>Chianti Castiglioni, <span>0.75 л., 2015 г.</span></h4>
+						<p class="block-tovar-prev__code">Артикул: 103328</p>
+						<div class="block-tovar-prev__img">
+							<img src="img/tovar/tovar1.png" alt="">
+						</div>
+						<div class="block-tovar-prev__description">
+							<span class="description-wine wine-color red"> 
+							<!--red/white/rose -->
+								Красное
+							</span>
+							<span class="description-wine wine-sugar">							
+								Сухое
+							</span>
+							<span class="description-wine wine-land italy">
+								Италия
+							</span>
+							<span class="description-wine wine-price">
+								3 000 руб.
+							</span>							
+						</div>
+						<div class="block-tovar-prev__basket">
+							<div class="check-box-tovar checkbox">
+								<div class="ch_wrapper">
+									<input id="check" type="checkbox" name="check[]" value="1" disabled checked>
+									<label for="check">В наличии</label>
+								</div>
+							</div>
+							<a href="#" class="btn btn--in-basket">В корзину</a>
+						</div>
+					</div>
+				<!-- end BLOCK-TOVAR -->					
+				</li>
+				<li class="block-tovars__item">
+				<!-- begin BLOCK-TOVAR -->
+					<div class="block-tovar-prev">
+						<h4>Chianti Castiglioni, <span>0.75 л., 2015 г.</span></h4>
+						<p class="block-tovar-prev__code">Артикул: 103328</p>
+						<div class="block-tovar-prev__img">
+							<img src="img/tovar/tovar1.png" alt="">
+						</div>
+						<div class="block-tovar-prev__description">
+							<span class="description-wine wine-color red"> 
+							<!--red/white/rose -->
+								Красное
+							</span>
+							<span class="description-wine wine-sugar">							
+								Сухое
+							</span>
+							<span class="description-wine wine-land italy">
+								Италия
+							</span>
+							<span class="description-wine wine-price">
+								3 000 руб.
+							</span>							
+						</div>
+						<div class="block-tovar-prev__basket">
+							<div class="check-box-tovar checkbox">
+								<div class="ch_wrapper">
+									<input id="check" type="checkbox" name="check[]" value="1" disabled checked>
+									<label for="check">В наличии</label>
+								</div>
+							</div>
+							<a href="#" class="btn btn--in-basket">В корзину</a>
+						</div>
+					</div>
+				<!-- end BLOCK-TOVAR -->					
+				</li>
+				<li class="block-tovars__item">
+				<!-- begin BLOCK-TOVAR -->
+					<div class="block-tovar-prev">
+						<h4>Chianti Castiglioni, <span>0.75 л., 2015 г.</span></h4>
+						<p class="block-tovar-prev__code">Артикул: 103328</p>
+						<div class="block-tovar-prev__img">
+							<img src="img/tovar/tovar1.png" alt="">
+						</div>
+						<div class="block-tovar-prev__description">
+							<span class="description-wine wine-color red"> 
+							<!--red/white/rose -->
+								Красное
+							</span>
+							<span class="description-wine wine-sugar">							
+								Сухое
+							</span>
+							<span class="description-wine wine-land italy">
+								Италия
+							</span>
+							<span class="description-wine wine-price">
+								3 000 руб.
+							</span>							
+						</div>
+						<div class="block-tovar-prev__basket">
+							<div class="check-box-tovar checkbox">
+								<div class="ch_wrapper">
+									<input id="check" type="checkbox" name="check[]" value="1" disabled checked>
+									<label for="check">В наличии</label>
+								</div>
+							</div>
+							<a href="#" class="btn btn--in-basket">В корзину</a>
+						</div>
+					</div>
+				<!-- end BLOCK-TOVAR -->					
+				</li>
+				<li class="block-tovars__item">
+				<!-- begin BLOCK-TOVAR -->
+					<div class="block-tovar-prev">
+						<h4>Chianti Castiglioni, <span>0.75 л., 2015 г.</span></h4>
+						<p class="block-tovar-prev__code">Артикул: 103328</p>
+						<div class="block-tovar-prev__img">
+							<img src="img/tovar/tovar1.png" alt="">
+						</div>
+						<div class="block-tovar-prev__description">
+							<span class="description-wine wine-color red"> 
+							<!--red/white/rose -->
+								Красное
+							</span>
+							<span class="description-wine wine-sugar">							
+								Сухое
+							</span>
+							<span class="description-wine wine-land italy">
+								Италия
+							</span>
+							<span class="description-wine wine-price">
+								3 000 руб.
+							</span>							
+						</div>
+						<div class="block-tovar-prev__basket">
+							<div class="check-box-tovar checkbox">
+								<div class="ch_wrapper">
+									<input id="check" type="checkbox" name="check[]" value="1" disabled checked>
+									<label for="check">В наличии</label>
+								</div>
+							</div>
+							<a href="#" class="btn btn--in-basket">В корзину</a>
+						</div>
+					</div>
+				<!-- end BLOCK-TOVAR -->					
+				</li>
+			</ul>		
+		</div>	
+	</div>
+
+<!-- *********************** БЛОК ПРЕДПРОСМОТРА ТОВАРОВ ********************************- -->
+	<div class="separator"></div>
+	<div class="block-tovars">
+		<h3 class="block-tovars__title new">Новинки</h3>
+		<div class="toggle-type-wine">
+			<ul>
+				<li class="active"><a href="#">Вино</a></li>
+				<li><a href="#">Игристое вино</a></li>
+				<li><a href="#">Крепкие напитки</a></li>
+				<li><a href="#">Ликер</a></li>
+			</ul>
+		</div>
+		<div class="block-tovars__arrow">
+			<div class="arrow prev"></div>
+			<div class="arrow next"></div>
+		</div>
+		<div class="block-tovars__wrapper">			
+			<ul class="block-tovars__list">
+				<li class="block-tovars__item">
+				<!-- begin BLOCK-TOVAR -->
+					<div class="block-tovar-prev">
+						<h4>Chianti Castiglioni, <span>0.75 л., 2015 г.</span></h4>
+						<p class="block-tovar-prev__code">Артикул: 103328</p>
+						<div class="block-tovar-prev__img">
+							<img src="img/tovar/tovar1.png" alt="">
+						</div>
+						<div class="block-tovar-prev__description">
+							<span class="description-wine wine-color red"> 
+							<!--red/white/rose -->
+								Красное
+							</span>
+							<span class="description-wine wine-sugar">							
+								Сухое
+							</span>
+							<span class="description-wine wine-land italy">
+								Италия
+							</span>
+							<span class="description-wine wine-price">
+								3 000 руб.
+							</span>							
+						</div>
+						<div class="block-tovar-prev__basket">
+							<div class="check-box-tovar checkbox">
+								<div class="ch_wrapper">
+									<input id="check" type="checkbox" name="check[]" value="1" disabled checked>
+									<label for="check">В наличии</label>
+								</div>
+							</div>
+							<a href="#" class="btn btn--in-basket">В корзину</a>
+						</div>
+					</div>
+				<!-- end BLOCK-TOVAR -->					
+				</li>
+				<li class="block-tovars__item">
+				<!-- begin BLOCK-TOVAR -->
+					<div class="block-tovar-prev">
+						<h4>Chianti Castiglioni, <span>0.75 л., 2015 г.</span></h4>
+						<p class="block-tovar-prev__code">Артикул: 103328</p>
+						<div class="block-tovar-prev__img">
+							<img src="img/tovar/tovar1.png" alt="">
+						</div>
+						<div class="block-tovar-prev__description">
+							<span class="description-wine wine-color red"> 
+							<!--red/white/rose -->
+								Красное
+							</span>
+							<span class="description-wine wine-sugar">							
+								Сухое
+							</span>
+							<span class="description-wine wine-land italy">
+								Италия
+							</span>
+							<span class="description-wine wine-price">
+								3 000 руб.
+							</span>							
+						</div>
+						<div class="block-tovar-prev__basket">
+							<div class="check-box-tovar checkbox">
+								<div class="ch_wrapper">
+									<input id="check" type="checkbox" name="check[]" value="1" disabled checked>
+									<label for="check">В наличии</label>
+								</div>
+							</div>
+							<a href="#" class="btn btn--in-basket">В корзину</a>
+						</div>
+					</div>
+				<!-- end BLOCK-TOVAR -->					
+				</li>
+				<li class="block-tovars__item">
+				<!-- begin BLOCK-TOVAR -->
+					<div class="block-tovar-prev">
+						<h4>Chianti Castiglioni, <span>0.75 л., 2015 г.</span></h4>
+						<p class="block-tovar-prev__code">Артикул: 103328</p>
+						<div class="block-tovar-prev__img">
+							<img src="img/tovar/tovar1.png" alt="">
+						</div>
+						<div class="block-tovar-prev__description">
+							<span class="description-wine wine-color red"> 
+							<!--red/white/rose -->
+								Красное
+							</span>
+							<span class="description-wine wine-sugar">							
+								Сухое
+							</span>
+							<span class="description-wine wine-land italy">
+								Италия
+							</span>
+							<span class="description-wine wine-price">
+								3 000 руб.
+							</span>							
+						</div>
+						<div class="block-tovar-prev__basket">
+							<div class="check-box-tovar checkbox">
+								<div class="ch_wrapper">
+									<input id="check" type="checkbox" name="check[]" value="1" disabled checked>
+									<label for="check">В наличии</label>
+								</div>
+							</div>
+							<a href="#" class="btn btn--in-basket">В корзину</a>
+						</div>
+					</div>
+				<!-- end BLOCK-TOVAR -->					
+				</li>
+				<li class="block-tovars__item">
+				<!-- begin BLOCK-TOVAR -->
+					<div class="block-tovar-prev">
+						<h4>Chianti Castiglioni, <span>0.75 л., 2015 г.</span></h4>
+						<p class="block-tovar-prev__code">Артикул: 103328</p>
+						<div class="block-tovar-prev__img">
+							<img src="img/tovar/tovar1.png" alt="">
+						</div>
+						<div class="block-tovar-prev__description">
+							<span class="description-wine wine-color red"> 
+							<!--red/white/rose -->
+								Красное
+							</span>
+							<span class="description-wine wine-sugar">							
+								Сухое
+							</span>
+							<span class="description-wine wine-land italy">
+								Италия
+							</span>
+							<span class="description-wine wine-price">
+								3 000 руб.
+							</span>							
+						</div>
+						<div class="block-tovar-prev__basket">
+							<div class="check-box-tovar checkbox">
+								<div class="ch_wrapper">
+									<input id="check" type="checkbox" name="check[]" value="1" disabled checked>
+									<label for="check">В наличии</label>
+								</div>
+							</div>
+							<a href="#" class="btn btn--in-basket">В корзину</a>
+						</div>
+					</div>
+				<!-- end BLOCK-TOVAR -->					
+				</li>
+			</ul>
+			
+			
+		</div>
+
+		
+	</div>
+
+<!-- *********************** БЛОК ЧЕРНОВИК!!!!!!!!! ********************************- -->
+	<div style="display: none;">	
+	
 	<p class="agora">Регулярные дегустации ­попробуйте вино перед покупкой</p>
 	<p class="agora"><b>Регулярные дегустации ­попробуйте вино перед покупкой</b></p>
 	<p class="agora"><i>Регулярные дегустации ­попробуйте вино перед покупкой</i></p>	
@@ -71,11 +474,14 @@
 		<img  src="img/banner-1.jpg" alt="">	
 </div>
 
-<div class="frame qq">
-	<div class="frame__top"></div>
-	<div class="frame__content"></div>
-	<div class="frame__bottom"></div>	
+<div class="frame frame--beige qq">	
+	<div class="frame__content"></div>	
+	
 </div>
+
+<div class="block-tovar-prev">
+	
+</div >
 
 	<p class="linux">Регулярные дегустации ­попробуйте вино перед покупкой</p>
 	<p class="linux"><b>Регулярные дегустации ­попробуйте вино перед покупкой</b></p>
@@ -87,8 +493,9 @@
 <br>
 	<p class="open-sans">Регулярные дегустации ­попробуйте вино перед покупкой</p>
 	<p class="open-sans"><b>Регулярные дегустации ­попробуйте вино перед покупкой</b></p>
-	<p class="open-sans"><i>Регулярные дегустации ­попробуйте вино перед покупкой</i></p>	
-	</div>
+	<p class="open-sans"><i>Регулярные дегустации ­попробуйте вино перед покупкой</i></p>
+	</div>	
+<!-- ***********************Конец БЛОК ЧЕРНОВИК!!!!!!!!! ********************************- -->	
 
 <!-- *************************** БЛОК ПОДВАЛ***************************************- -->	
 </div> <!-- end wrapper-y -->	
@@ -141,7 +548,8 @@
 <script src="js/modal.js"> </script>
 <script src="js/post.js"> </script>
 -->
-<script src="js/qq.js"> </script>
+<script src="js/frame.js"> </script>
+
 
 </body>
 </html>

@@ -70,9 +70,9 @@
     font-family: "Linux";
     src: url("../fonts/Linux/linlibertine_r-webfont.eot");
     src: url("../fonts/Linux/linlibertine_r-webfont.eot?#iefix")format("embedded-opentype"),
-    url("../fonts/Linux/AgoraSansProItalic.woff") format("woff"),
+    url("../fonts/Linux/linlibertine_r-webfont.woff") format("woff"),
     url('../fonts/Linuxlinlibertine_r-webfont.svg#linux_libertineregular') format('svg'),
-    url("../fonts/Linux/AgoraSansProItalic.ttf") format("truetype");
+    url("../fonts/Linux/linlibertine_r-webfont.ttf") format("truetype");
     font-style: normal;
     font-weight: normal;
 }

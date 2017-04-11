@@ -1,0 +1,21 @@
+.toggle-type-wine {
+	ul {
+		list-style: none;
+		li {
+			display: inline-block;
+
+			a {
+				display: inline-block;
+				padding-right: 1rem;
+				.open-sans(0.85rem);
+				text-decoration: underline;
+				color: @color-lightgray;
+			}
+		}
+
+		li.active a, li:hover a, li:active a {
+			color: @color-gray;
+			font-weight: bold;
+		}
+	}
+}

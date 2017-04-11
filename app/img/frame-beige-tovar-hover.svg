@@ -13,7 +13,7 @@
     <filter id="filter" x="679" y="2033" width="274" height="599" filterUnits="userSpaceOnUse">
       <feOffset result="offset" in="SourceAlpha"/>
       <feGaussianBlur result="blur" stdDeviation="3.162"/>
-      <feFlood result="flood" flood-color="#85254c" flood-opacity="0.0"/>
+      <feFlood result="flood" flood-color="#85254c" flood-opacity="0.25"/>
       <feComposite result="composite" operator="in" in2="blur"/>
       <feBlend result="blend" in="SourceGraphic"/>
     </filter>
