@@ -18,6 +18,21 @@
 		
 }
 
+.btn--mainform,
+.btn--main-event,
+.btn--main-service {
+	padding: 0 2rem;
+	.agora(0.875rem);
+	line-height: 2.8rem;
+	height: 2.8rem;
+}
+
+.btn--mainform {
+	margin-top: 3rem;
+	margin-right: 1rem;
+}
+
+
 .btn--in-basket {
 	width: 6.6rem;
 	margin-left: 0.5rem;
@@ -28,6 +43,13 @@
 .btn--in-basket:hover, .btn--in-basket:active {
 	background-image: url("../img/ico-sprite.png"), linear-gradient(to top, rgb(59,7,26) 20%, rgb(145,42,100) 60%);
 		
+}
+
+@media @mobil-widths {
+	.btn--mainform {
+		margin-top: 1rem;
+		margin-right: 0;
+	}
 }
 
 

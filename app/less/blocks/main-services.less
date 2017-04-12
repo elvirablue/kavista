@@ -1,0 +1,49 @@
+.main-services {	
+	.container-fluid();
+
+	&__title {
+		padding-bottom: 2rem;
+	}
+
+	&__service-anchored:nth-child(even) {
+		margin-right: 3%;
+	}
+
+	&__service-anchored {
+		display: inline-block;
+		vertical-align: top;
+		width: 48%;
+		margin-bottom: 2rem;
+
+		img{
+			width: 100%;
+		}
+
+		.corner {
+			height: 20rem;			
+
+			a {
+				border: none;
+			}
+		}
+	}
+}
+
+@media @tablet-widths {
+	.main-services {
+		&__service-anchored {
+			.corner {
+				height: 14rem;
+			}
+		}
+	}
+}
+
+@media @mobil-widths {
+	.main-services {
+		&__service-anchored {
+			display: block;
+			width: 100%;
+		}
+	}
+}
