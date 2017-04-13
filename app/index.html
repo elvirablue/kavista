@@ -27,15 +27,39 @@
 	 <![endif]-->
 </head>
 <body>
-
+<div id="fb-root"></div>
+<script>(function(d, s, id) {
+  var js, fjs = d.getElementsByTagName(s)[0];
+  if (d.getElementById(id)) return;
+  js = d.createElement(s); js.id = id;
+  js.src = "//connect.facebook.net/ru_RU/sdk.js#xfbml=1&version=v2.8";
+  fjs.parentNode.insertBefore(js, fjs);
+}(document, 'script', 'facebook-jssdk'));
+</script>
+<script>
+!function (d, id, did, st) {
+  var js = d.createElement("script");
+  js.src = "https://connect.ok.ru/connect.js";
+  js.onload = js.onreadystatechange = function () {
+  if (!this.readyState || this.readyState == "loaded" || this.readyState == "complete") {
+    if (!this.executed) {
+      this.executed = true;
+      setTimeout(function () {
+        OK.CONNECT.insertGroupWidget(id,did,st);
+      }, 0);
+    }
+  }}
+  d.documentElement.appendChild(js);
+}(document,"ok_group_widget","50582132228315",'{"width":280,"height":455}');
+</script>
 <div class="wrapper-x">
 <div class="wrapper-y">
 	<header class="page-header-desktop">
-		<div class="header-contact">
-			<p class="header-contact__phone">+7 (913) 000 00 00</p>
-			<div class="header-contact__address">
+		<div class="header-contact main-contact">
+			<p class="main-contact__phone">+7 (913) 000 00 00</p>
+			<div class="main-contact__address">
 				<p> г.Новосибирск, ул. Петухова 17, оф. 202<br>
-					<a href="#" class="header-contact__link">Посмотреть на карте</a>
+					<a href="#" class="main-contact__link">Посмотреть на карте</a>
 				</p>
 			</div>
 		</div>
@@ -643,54 +667,70 @@
 		</div>
 	</div>
 
+<!-- **************************** БЛОК СОЦСЕТЕЙ ***********************************- -->
+	<div class="separator"></div>
+	<div class="separator"></div>
+	<div class="main-social">
+		<div class="frame frame--beige">
+			<div class="frame__content">
+				<h2 class="main-social__title">ПРИСОЕДИНЯЙТЕСЬ</h2>
+				<div class="social-networks">
+					
+					<div class="social-networks__vk ">
+						<script type="text/javascript" src="//vk.com/js/api/openapi.js?139"></script>						
+						<div id="vk_groups"></div>
+						<script type="text/javascript">
+							VK.Widgets.Group("vk_groups", {mode: 4, width: "280", height: "450"}, 20003922);
+						</script>
+					</div>
 
-<!-- *********************** БЛОК ЧЕРНОВИК!!!!!!!!! ********************************- -->
-	<div style="display: none;">	
+					<div class="social-networks__ok " id="ok_group_widget"></div>
+					
+
+					<div class="social-networks__fb ">
+						<div class="fb-page" data-href="https://www.facebook.com/facebook" data-tabs="timeline" data-width="280" data-height="450" 	data-small-header="false" data-adapt-container-width="true" data-hide-cover="false" data-show-facepile="true">
+							<blockquote cite="https://www.facebook.com/facebook" class="fb-xfbml-parse-ignore">
+								<a href="https://www.facebook.com/facebook">Facebook</a> 
+							</blockquote> 
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+
+
+	<div class="separator"></div>
 	
-	<p class="agora">Регулярные дегустации ­попробуйте вино перед покупкой</p>
-	<p class="agora"><b>Регулярные дегустации ­попробуйте вино перед покупкой</b></p>
-	<p class="agora"><i>Регулярные дегустации ­попробуйте вино перед покупкой</i></p>	
-<br>
-
-<div class="corner">
-	<div class="top-right"></div><div class="top-left"></div>
-	<div class="bottom-right"></div><div class="bottom-left"></div>	
-	<div class="wrapper-border">
-		<img  src="img/banner-1.jpg" alt="">
-	</div>			
-</div>
-
-<div class="frame frame--beige qq">	
-	<div class="frame__content"></div>	
-	
-</div>
-
-<div class="block-tovar-prev">
-	
-</div >
-
-	<p class="linux">Регулярные дегустации ­попробуйте вино перед покупкой</p>
-	<p class="linux"><b>Регулярные дегустации ­попробуйте вино перед покупкой</b></p>
-	<p class="linux"><i>Регулярные дегустации ­попробуйте вино перед покупкой</i></p>	
-<br>
-	<p class="roboto">Регулярные дегустации ­попробуйте вино перед покупкой</p>
-	<p class="roboto"><b>Регулярные дегустации ­попробуйте вино перед покупкой</b></p>
-	<p class="roboto"><i>Регулярные дегустации ­попробуйте вино перед покупкой</i></p>	
-<br>
-	<p class="open-sans">Регулярные дегустации ­попробуйте вино перед покупкой</p>
-	<p class="open-sans"><b>Регулярные дегустации ­попробуйте вино перед покупкой</b></p>
-	<p class="open-sans"><i>Регулярные дегустации ­попробуйте вино перед покупкой</i></p>
-	</div>	
-<!-- ***********************Конец БЛОК ЧЕРНОВИК!!!!!!!!! ********************************- -->	
 
 <!-- *************************** БЛОК ПОДВАЛ***************************************- -->	
 </div> <!-- end wrapper-y -->	
 
 	<footer  class="page-footer-bg">
 		<div class="page-footer">
-
-		</div>
-		
+			<div class="page-footer__logo">
+				<img src="img/logo-white.png" alt="">
+			</div>
+			<div class="page-footer__block-middle">
+				<nav>
+					
+				</nav>
+				<a href="#" class="page-footer__club">Клубная карта</a>
+			</div>
+			<div class="page-footer__block-right">
+				<p class="main-contact__phone">+7 (913) 000 00 00</p>
+				<div class="main-contact__address">
+					<p> г.Новосибирск, ул. Петухова 17, оф. 202<br>
+						<a href="#" class="main__link">Посмотреть на карте</a>
+					</p>
+				</div>
+				<form action="">
+					
+				</form>
+			</div>
+				
+			
+		</div>		
 	</footer>
 <!-- ************** БЛОК ПРИЛИПАЮЩАЯ НАВИГАЦИЯ ПРИ СКРОЛЛЕ ******************- -->
 	<div class="main-nav-scroll">

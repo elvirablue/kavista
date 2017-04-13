@@ -1,0 +1,34 @@
+.social-networks-wrapper {
+	.container-fluid();
+	text-align: left;
+}
+
+.social-networks {	
+	display: flex;
+	flex-flow: row wrap;
+	justify-content: center;
+	align-items: flex-start;
+	padding: 2rem 0 3rem;
+
+	&__vk,
+	&__fb,
+	&__ok {		
+		padding: 10px;
+		display: inline-block;		
+		width: 320px;
+		height: 475px;
+		margin: 0 10px 30px;
+	}
+}
+
+@media @desktop-widths-only {
+	.social-networks {
+		justify-content: space-around;
+
+		&__vk,
+		&__fb,
+		&__ok {
+			margin: 0;
+		}
+	} 
+}
