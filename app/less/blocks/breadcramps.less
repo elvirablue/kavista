@@ -1,0 +1,36 @@
+.breadcramps {
+	margin: 1rem 0;
+	ul {
+		list-style: none;
+
+		li {
+			display: inline-block;
+
+			a {
+				color: @color-lightgray;
+				line-height: 1.5rem;
+				font-weight: bold;
+				cursor: pointer;
+			}			
+		}
+
+		li.active a {
+			font-weight: normal;
+			cursor: default;
+		}
+
+		li:after {
+			content: "\00BB";
+			color: @color-lightgray;
+			font-size: 1.5rem;
+			line-height: 1rem;
+			font-weight: normal;
+			padding: 0 0.75rem;
+		}
+
+		li:last-child:after {
+			content: "";
+		}
+
+	}
+}

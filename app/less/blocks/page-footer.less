@@ -1,10 +1,119 @@
 .page-footer-bg {
 	background-color: #44212f;
-	min-height: 17rem;
-	margin-top: -17rem;
+	min-height: @height-footer;
+	margin-top: -@height-footer;
+	padding-top: 2rem;
 }
 
 .page-footer {
 	.container-fluid();
+	.clearfix();
 	padding-top: 2rem;
+	text-align: center;
+	/*background: url("../img/footer.png") 0 0 no-repeat;
+	height: 286px;*/
+
+	&__logo {
+		display: inline-block;
+		vertical-align: top;
+		width: 18%;
+	}
+
+	&__block-middle {
+		display: inline-block;
+		vertical-align: top;
+		width: 42%;
+	}
+
+	&__block-right {
+		display: inline-block;
+		vertical-align: top;
+		width: 37%;
+		float: right;
+		text-align: left;
+		
+		.main-contact__phone {
+			color: #ffffff;
+			font-weight: normal;
+			.ico(0, -90px);
+			margin-top: 0;
+		}
+
+		.main-contact__address {			
+			.ico(0, -30px);
+			p {
+				color: #ffffff;
+				font-weight: normal;
+			}			
+		}
+
+		.main-contact__link {
+			color: #ffffff;
+			font-weight: normal;
+		}			
+	}
+
+	&__club {
+		.ico(0, -150px);
+		.open-sans(1rem);
+		display: inline-block;		
+		margin-top: 2.5rem;
+		padding-bottom: 2rem;
+		font-weight: normal;
+		text-decoration: underline;
+		line-height: 2rem;
+		color: #ffffff;
+	}
+}
+
+.footer-form {
+	margin-top: 2rem;
+	text-align: center;
+	p {
+		text-align: left;
+		padding: 1.5rem;
+	} 
+}
+
+@media @tablet-widths {
+	.page-footer {
+		padding-top: 0rem;
+
+		&__logo {
+			width: 15%;
+			min-width: 6rem;
+		}
+
+		&__block-middle {
+			width: 40%;
+		}
+
+		&__block-right {
+			
+			float: none;
+		}
+	}
+}
+
+@media @mobil-widths {
+	.page-footer {
+		&__logo {
+			width: 50%;
+			min-width: 10rem;
+		}
+
+		&__block-middle {
+			display: block;
+			margin: 0 auto;
+			width: 100%;
+		}
+		&__block-right {
+			display: none;
+		}
+
+
+		&__club {
+			
+		}
+	}
 }

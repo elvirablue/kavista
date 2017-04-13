@@ -1,0 +1,36 @@
+.footer-nav {
+	text-align: center;
+		
+	ul {
+		display: inline-block;
+		vertical-align: top;
+		margin: 0 1rem;
+		list-style: none;
+
+		li {
+			display: block;
+			text-align: left;
+			width: 10rem;
+
+			a {
+				.open-sans(0.875rem);
+				line-height: 2.2rem;
+				height: 2.2rem;
+				color: #ffffff;
+				text-decoration: underline;
+				transition: font-size ease 0.3s;
+			}
+		}
+
+		li:hover a, li:active a, li.active a {
+			font-size: 1.1rem;
+		}
+	}
+	
+}
+
+@media @mobil-widths {
+	.footer-nav {
+		display: none;
+	}
+}

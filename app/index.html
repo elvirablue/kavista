@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 <html lang="ru">
-<head> 
+<head>  
 	<meta charset="UTF-8">
 	<title>Кависта. Маркет-бар</title>
 	<meta name=viewport content="width=device-width, initial-scale=1">
@@ -129,6 +129,7 @@
 	<!-- Конец слайдера CSS--> 
 	</div>
 <!-- *********************** БЛОК Преимущества ********************************- -->
+	<div class="separator"></div>
 	<div class="benefit">
 		<div class="frame frame--beige">
 			<div class="frame__content">
@@ -712,20 +713,36 @@
 				<img src="img/logo-white.png" alt="">
 			</div>
 			<div class="page-footer__block-middle">
-				<nav>
-					
+				<nav class="footer-nav">
+					<ul class="footer-nav__col">
+						<li class="active"><a href="">Главная</a></li>					
+						<li><a href="vacancy.html">Вакансии</a></li>
+						<li><a href="tasting.html">Дегустации</a></li>
+						<li><a href="news.html">События и статьи</a></li>
+						<li><a href="services.html">Услугии</a></li>					
+					</ul>
+					<ul class="footer-nav__col">
+						<li><a href="about.html">О компании</a></li>
+						<li><a href="contacts.html">Контакты</a></li>												
+					</ul>					
 				</nav>
 				<a href="#" class="page-footer__club">Клубная карта</a>
 			</div>
-			<div class="page-footer__block-right">
+			<div class="page-footer__block-right main-contact">
 				<p class="main-contact__phone">+7 (913) 000 00 00</p>
 				<div class="main-contact__address">
 					<p> г.Новосибирск, ул. Петухова 17, оф. 202<br>
-						<a href="#" class="main__link">Посмотреть на карте</a>
+						<a href="#" class="main-contact__link">Посмотреть на карте</a>
 					</p>
 				</div>
-				<form action="">
-					
+				<form action="" class="footer-form frame frame--beige">
+					<div class="frame__content">
+						<p>
+							Получайте полезные статьи и новости от Маркет-бара "Кависта"
+						</p>
+						<input class="user-input user-input--footer-form" type="email" name="user-mail" placeholder="Ваш E-mail" required>
+						<button class="btn btn--footer-form" type="submit">Подписаться</button>
+					</div>					
 				</form>
 			</div>
 				
