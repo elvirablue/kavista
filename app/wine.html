@@ -27,6 +27,34 @@
 	 <![endif]-->
 </head>
 <body>
+
+<div id="fb-root"></div>
+<script>(function(d, s, id) {
+  var js, fjs = d.getElementsByTagName(s)[0];
+  if (d.getElementById(id)) return;
+  js = d.createElement(s); js.id = id;
+  js.src = "//connect.facebook.net/ru_RU/sdk.js#xfbml=1&version=v2.8";
+  fjs.parentNode.insertBefore(js, fjs);
+}(document, 'script', 'facebook-jssdk'));
+</script>
+<script>
+!function (d, id, did, st) {
+  var js = d.createElement("script");
+  js.src = "https://connect.ok.ru/connect.js";
+  js.onload = js.onreadystatechange = function () {
+  if (!this.readyState || this.readyState == "loaded" || this.readyState == "complete") {
+    if (!this.executed) {
+      this.executed = true;
+      setTimeout(function () {
+        OK.CONNECT.insertGroupWidget(id,did,st);
+      }, 0);
+    }
+  }}
+  d.documentElement.appendChild(js);
+}(document,"ok_group_widget","50582132228315",'{"width":280,"height":455}');
+</script>
+
+
 <div class="wrapper-x">
 <div class="wrapper-y">
 	<header class="page-header-desktop">
@@ -111,7 +139,10 @@
 	<div class="separator"></div>
 <!-- *********************** БЛОК ТОВАРОВ********************************- -->
 	<div class="catalog">
-		<h3 class="catalog__title wine">Вино</h3>
+		<h3 class="catalog__title wine">
+			Вино
+		<button class="catalog__toggle-filter" type="button">Открыть фильтр</button>	
+		</h3>
 		<div class="breadcramps">
 			<ul>
 				<li><a href="index.html">Главная</a></li>
@@ -120,7 +151,7 @@
 		</div>
 
 		<div class="catalog__wrap">		
-	
+			<div class="catalog__bg-wrapper">  </div>
 			<aside class="catalog__filters">
 			<!--начало фильтра ЦВЕТ -->
 				<div class="catalog__filter frame frame--beige" id="filter-color">
@@ -355,7 +386,7 @@
 									<label for="check">В наличии</label>
 								</div>
 							</div>
-							<a href="#" class="btn btn--in-basket">В корзину</a>
+							<a href="tovar.html" class="btn btn--in-basket">В корзину</a>
 						</div>
 					</div>
 				<!-- end BLOCK-TOVAR -->					
@@ -535,6 +566,19 @@
 					</div>
 				<!-- end BLOCK-TOVAR -->					
 				</div>
+<!-- ********************* БЛОК БАННЕР с АКЦИЕЙ ************************************-->
+				<div class="stock corner">
+					<div class="top-right"></div><div class="top-left"></div>
+					<div class="bottom-right"></div><div class="bottom-left"></div>	
+					<div class="wrapper-border">
+						<img  src="img/stock1.jpg" alt="">
+					</div>
+					<div class="stock__title">
+						Заголовок баннера с акцией или распродажей
+					</div>
+				</div>
+
+
 				<div class="block-tovars__item">
 				<!-- begin BLOCK-TOVAR -->
 					<div class="block-tovar-prev">
@@ -576,10 +620,61 @@
 		
 	</div>
 
-
-
+<!-- **************************** БЛОК ФОРМЫ "ОСТАЛИСЬ ВОПРОСЫ?" ***********************************- -->
 	<div class="separator"></div>
+	<div class="main-form">
+		<div class="frame frame--beige">
+			<div class="frame__content">
+				<h2 class="main-form__title">ОСТАЛИСЬ ВОПРОСЫ?</h2>
+				<p class="main-form__subtitle">Задайте их консультанту Маркет­бара "Кависта"</p>
+				<div class="main-form__img">
+					<img src="img/manager.jpg" alt="">					
+				</div>
+				<div class="main-form__text-btn">
+					<p class="main-form__name">Антонина</p>
+					<p class="main-form__position">Консультант Маркет-бара "Кависта"</p>
+					<button class="btn btn--brown btn--mainform">Написать</button>
+					<button class="btn btn--mainform">Заказать звонок</button>
+				</div>
+			</div>
+		</div>
+	</div>
+
+<!-- **************************** БЛОК СОЦСЕТЕЙ ***********************************- -->
 	
+	<div class="separator"></div>
+	<div class="main-social">
+		<div class="frame frame--beige">
+			<div class="frame__content">
+				<h2 class="main-social__title">ПРИСОЕДИНЯЙТЕСЬ</h2>
+				<div class="social-networks">
+					
+					<div class="social-networks__vk ">
+						<script type="text/javascript" src="//vk.com/js/api/openapi.js?139"></script>						
+						<div id="vk_groups"></div>
+						<script type="text/javascript">
+							VK.Widgets.Group("vk_groups", {mode: 4, width: "280", height: "450"}, 20003922);
+						</script>
+					</div>
+
+					<div class="social-networks__ok " id="ok_group_widget"></div>
+					
+
+					<div class="social-networks__fb ">
+						<div class="fb-page" data-href="https://www.facebook.com/facebook" data-tabs="timeline" data-width="280" data-height="450" 	data-small-header="false" data-adapt-container-width="true" data-hide-cover="false" data-show-facepile="true">
+							<blockquote cite="https://www.facebook.com/facebook" class="fb-xfbml-parse-ignore">
+								<a href="https://www.facebook.com/facebook">Facebook</a> 
+							</blockquote> 
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+
+
+	<div class="separator"></div>	
+
 
 <!-- *************************** БЛОК ПОДВАЛ***************************************- -->	
 </div> <!-- end wrapper-y -->	
@@ -626,6 +721,11 @@
 			
 		</div>		
 	</footer>
+
+<!-- ************** БЛОК ФИЛЬТР ДЛЯ МОБИЛЬНОЙ ВЕРСИИ ******************- -->
+
+
+
 <!-- ************** БЛОК ПРИЛИПАЮЩАЯ НАВИГАЦИЯ ПРИ СКРОЛЛЕ ******************- -->
 	<div class="main-nav-scroll">
 

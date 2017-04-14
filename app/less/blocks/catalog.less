@@ -36,5 +36,114 @@
 		padding-bottom: 1rem;
 	}
 
+	&__toggle-filter {
+		display: none;
+	}
 
+	&__bg-wrapper {
+		display: none;
+	}
+
+	&__tovar-card-wrapper {
+		width: ~"calc(100% - 17rem)";
+		min-width: 17rem;
+		display: block;	
+		float: left;
+		padding-right: 1rem;	
+		margin-top: 0.75rem;
+	}
+
+	&__aside-tovar {
+		display: block;		
+		float: right;
+		width: 17rem;
+		min-height: 100vh;
+		margin-top: 0.75rem;
+	}
+
+	&__subtitlle {
+		text-align: center;
+		margin-top: 3rem;
+		margin-bottom: 1rem;
+	}
+}
+
+@media @mobil-widths {
+	.catalog {
+		position: relative;
+
+		&__bg-wrapper {
+			display: none;
+			width: 100vw;
+			height: 100vh;
+			position: fixed;
+			z-index: 6000;
+			top: 0;
+			left: 0;
+			right: 0;
+			background-color: rgba(0, 0, 0, 0.5) 
+
+		}
+
+		&__filters {
+			display: none;
+			float: none;
+			margin: 0 auto;
+			position: absolute;
+			top: 5rem;
+			left: 0;
+			right: 0;
+			z-index: 6001;
+		}
+
+		&__title {
+			position: relative;
+			text-align: left;
+		}
+
+		&__toggle-filter {
+			display: inline-block;
+			width: 2rem;
+			height: 2rem;
+			font-size: 0;
+			position: absolute;
+			top: 0;
+			right: 0;
+			background: url("../img/filter-mobil.png") 0 0 no-repeat;
+			background-size: cover;
+			border: none;
+			cursor: pointer;
+			outline: none;
+		}
+
+		&__tovars {
+			width: 100%;
+			padding-left: 0;
+			.block-tovars__item {
+				display: block;
+				margin: 0 auto;
+				text-align: left;
+			}
+		}
+
+		&__tovar-card-wrapper {
+			display: block;
+			float: none;
+			width: 100%;
+			padding-right: 0;
+		}
+
+		&__aside-tovar {
+			display: block;	
+				
+			float: none;
+			text-align: center;
+			margin: 2rem auto 0;
+		}
+
+		&__basket {
+			 
+			width: 100%;
+		}
+	}
 }
