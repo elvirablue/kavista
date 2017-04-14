@@ -24,7 +24,7 @@
 }
 .checkbox .ch_wrapper label:after {
   content: "";
-  border: 2px solid @color-orange;  
+  border: 2px solid @color-beige;  
   border-radius: 2px;
   font-size: 0.7rem;
   line-height: 1.3rem;  
@@ -36,14 +36,21 @@
   
   position: absolute;
   left: 0;
-  bottom: 1px;
+  bottom: 4px;
   background-color: #ffffff;
 }
 .checkbox .ch_wrapper input[type=checkbox]:checked + label:after {
   content: "\2713";
+  border: 2px solid @color-orange;
   font-size: 1.1rem;
   color: @color-orange;
   text-align: center;
   line-height: 0.2rem;
   font-weight: bold;
+}
+
+
+.checkbox--filter {
+  display: block;
+  padding: 0.25rem;
 }
