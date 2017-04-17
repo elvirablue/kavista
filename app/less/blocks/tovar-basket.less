@@ -1,0 +1,45 @@
+.tovar-basket {
+	display: block;
+	width: 100%;
+	padding-top: 2rem;
+	padding-bottom: 2rem;
+
+
+	&__img {
+		display: inline-block;
+		vertical-align: top;
+		height: auto;
+		max-height: 13rem;
+		width: 5rem;
+		max-width: 5rem;
+		text-align: center;
+		margin: 0 auto;
+		img {
+			height: 13rem;
+			width: auto;
+		}
+	}
+
+	&__description {
+		display: inline-block;
+		vertical-align: top;
+		width: ~"calc(100% - 5.5rem)";
+		padding-left: 1.5rem;
+	}
+
+}
+
+@media @mobil-widths {
+	.tovar-basket {
+		&__img {
+			display: block;	
+			margin-bottom: 1rem;	
+		}
+
+		&__description {
+			display: block;
+			width: 100%;
+			padding-left: 0;
+		}
+	}
+}

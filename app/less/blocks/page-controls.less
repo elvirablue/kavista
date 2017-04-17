@@ -1,0 +1,53 @@
+.page-controls {
+	display: inline-block;
+	width: auto;
+	position: relative;
+
+	&__link {
+		display: inline-block;
+		vertical-align: middle;
+		font-weight: bold;
+		color: @color-lightgray;
+		cursor: pointer;
+		transition: color ease 0.3s;
+	}
+
+	&__link:hover {
+		color: @color-darkwhine;
+		text-decoration: underline;
+	}
+
+	&__controls {
+		display: inline-block;
+		vertical-align: middle;
+		padding: 0 2rem;
+
+		i {
+			display: inline-block;
+			vertical-align: middle;
+			font-style: normal;
+			
+			width: 2rem;
+			height: 2rem;
+			margin: 0 0.3rem;
+			line-height: 2rem;
+			border-radius: 3px;
+			border: 1px solid @color-beige;
+			background-color: #ffffff;
+			cursor: pointer;
+			transition: border-color ease 0.3s;
+		}
+
+		i:hover, i:active, i.active {
+			border-color: @color-whine;
+		}
+	}
+
+	.arrow {
+		width: 1.5rem;
+		height: 1.5rem;
+		position: relative;
+		display: inline-block;
+		vertical-align: middle;
+	}
+}

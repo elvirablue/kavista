@@ -44,13 +44,15 @@
 		display: none;
 	}
 
-	&__tovar-card-wrapper {
+	&__tovar-card-wrapper,
+	&__ordering-wrapper {
 		
 		padding-right: 1rem;	
 		
 	}
 
-	&__tovar-card {
+	&__tovar-card,
+	&__ordering {
 		width: ~"calc(100% - 18rem)";
 		min-width: 18rem;
 		display: block;	
@@ -58,14 +60,23 @@
 		margin-top: 0.75rem;
 	}
 
-	&__aside-tovar {
+	&__ordering {
+		width: ~"calc(100% - 25rem)";
+		min-width: 25rem;
+	}
+
+	&__aside-tovar,
+	&__aside-ordering {
 		display: block;		
 		float: right;
 		width: 17rem;
 		min-height: 100vh;
 		margin-top: 0.75rem;
 		margin-left: 1rem;
+	}
 
+	&__aside-ordering {
+		width: 25rem;
 	}
 
 	&__subtitlle {
@@ -81,8 +92,11 @@
 		}
 		span {
 			color: @color-orange;
+			font-weight: normal;
 		}
 	}
+
+
 
 	&__basket-price {
 		.agora(1.5rem);
@@ -95,12 +109,24 @@
 		display: flex;
 		flex-flow: row nowrap;
 		justify-content: space-between;
-		padding: 2rem 0 1.5rem;
+		padding: 2rem 0 1.5rem;		
+	}
 
-		
+	&__basket-sum {
+		display: block;
+		text-align: center;
+		.agora(1.5rem);
+		font-weight: bold;
+		padding: 1rem 0;
+		color: @color-orange;
+
 	}
 	.basket {
 		padding: 1rem 0.725rem;
+	}
+
+	.basket--center {
+		text-align: center;
 	}
 
 	&__in-favorites {

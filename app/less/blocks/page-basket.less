@@ -1,0 +1,126 @@
+.page-basket {
+	display: block;
+	padding: 2rem 1rem 0;
+
+	&__table {
+		width: 100%;	
+
+		tr {
+			border-bottom: 1px solid #e7e7e7;
+
+		}
+
+		
+		tr:last-child {
+			border-bottom: none;
+		}	
+		
+	}
+
+	&__table-title {
+		.agora(1.125rem);
+		color: @color-brown;
+		font-weight: bold;
+		display: inline-block;
+		padding-top: 1rem;
+	}
+
+	&__table-tovar {
+		width: 50%;
+		vertical-align: top;
+	}
+
+	&__table-item {
+		width: 16%;
+		vertical-align: top;
+	}
+
+	&__table-item-count {
+		width: 20%;
+		vertical-align: top;
+	}
+
+	&__table-price,
+	&__table-sum {
+		display: block;
+		color: @color-orange;
+		font-weight: bold;
+		.agora(1rem);
+		padding: 2rem 0.5rem 1rem 0;
+	}
+
+	&__table-sum {
+		color: @color-lightgray;
+	}
+
+	&__count {
+		text-align: left;
+		padding: 3.5rem 0 0;
+	}
+}
+
+@media @tablet-widths {
+	.page-basket {
+		padding: 2rem 0;
+		&__table-tovar {
+			width: 68%;
+			display: inline-block;
+			vertical-align: top;
+		}	
+
+		&__table-item-count {
+			width: 30%;
+			display: inline-block;
+			vertical-align: top;
+			margin-top: 3.5rem;
+		}
+
+		&__table-item {
+			display: inline-block;
+			vertical-align: top;
+			width: 45%;
+			text-align: center;
+		}
+
+		&__table-price,
+		&__table-sum {
+			padding-top: 1rem;
+			padding-right: 0;
+		}
+
+		&__count {
+			text-align: center;
+			padding: 1rem 0;
+		}
+	}
+}
+
+
+@media @mobil-widths {
+	.page-basket {
+		padding: 2rem 0;
+		&__table-tovar,
+		&__table-item-count {
+			width: 100%;
+			display: block;
+		}
+
+		&__table-item {
+			display: inline-block;
+			vertical-align: top;
+			width: 45%;
+			text-align: center;
+		}
+
+		&__table-price,
+		&__table-sum {
+			padding-top: 1rem;
+			padding-right: 0;
+		}
+
+		&__count {
+			text-align: center;
+			padding: 1rem 0;
+		}
+	}
+}

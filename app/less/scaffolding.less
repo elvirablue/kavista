@@ -120,7 +120,9 @@ a {
 .wine,
 .sparkling-wine,
 .strong-alcohol,
-.liquor {
+.liquor,
+.bask,
+.order {
 	background: url("../img/ico-wine-sprite.png") 0 -1px no-repeat;
 	padding-left: 2.5rem;
 	height: 1.8rem;
@@ -138,11 +140,19 @@ a {
 	background-position: 0 -91px;
 }
 
+.order {
+	background-position: 0 -151px;
+}
+
 .main-block-btn {
 	display: block;
 	width: 100%;
 	padding: 2rem 0;
 	text-align: center;
+}
+
+.bask {
+	background-position: 0 -121px;	
 }
 
 .ico(@x, @y) {
@@ -225,6 +235,14 @@ a {
 
 .arrow:hover {
 	background-image: url("../img/arr-hover.svg");
+}
+
+.arrow--orange {
+	background-image: url("../img/arr-orange.svg");
+}
+
+.arrow--wine, .arrow--wine:hover {
+	background-image: url("../img/arr-wine.svg");
 }
 
 	.arrow.prev {

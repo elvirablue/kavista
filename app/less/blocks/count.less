@@ -15,6 +15,31 @@
 		outline: none;
 		color: @color-darkwhine;
 		font-size: 2rem;
+		font-weight: normal;
+	}
+
+	&--less {		
+		font-size: 1rem;
+		font-weight: bold;
+	}
+
+	&--less-min, &--more-min {
+		background-color: transparent;
+		cursor: pointer;
+		outline: none;
+		color: @color-lightgray;
+		font-size: 2rem;
+		font-weight: normal;
+		border: none;
+		width: 2rem;
+		padding: 0 0.3rem;
+		min-width: 2rem;		
+		line-height: 2rem;
+		height: 2.5rem;
+	}
+
+	&--less-min {
+		font-size: 1rem;
 		font-weight: bold;
 	}
 
@@ -22,5 +47,15 @@
 		font-size: 1.375rem;
 		text-align: center;
 		background-color: #ffffff;
+	}
+
+	&--current-min {
+		font-size: 1rem;
+		text-align: center;
+		background-color: #ffffff;
+		min-width: 2.5rem;
+		line-height: 2.5rem;
+		height: 2.5rem;
+		padding: 0 0.5rem;
 	}
 }
