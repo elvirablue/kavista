@@ -1,0 +1,143 @@
+.description-wine {
+	display: inline-block;
+	vertical-align: top;
+	width: 6.6rem;	
+	.open-sans(0.875rem);
+	margin-bottom: 1rem;
+}
+
+.description-code {
+	display: block;
+	padding-top: 0.5rem;
+	color: @color-lightgray;
+}
+
+.description-stars {
+	display: block;
+	padding: 1rem 0 2rem;
+}
+
+.star:before {
+	display: inline-block;
+	vertical-align: top;
+	width: 1.5rem;
+	height: 1.5rem;
+	line-height: 1.5rem;
+	content: "☆";
+	font-size: 1.5rem;
+	font-weight: bold;
+	color: @color-darkwhine;
+}
+
+.star.active:before {
+	content: "★";	
+}
+
+.description-type {
+	display: block;
+	padding: 1rem 0 2rem;
+
+	.description-wine {
+		display: block;
+	}
+}
+
+.description-social {
+	color:  @color-darkwhine;
+	.agora(1rem);
+	font-weight: bold;
+	line-height: 2rem;
+}
+
+.social {
+	width: 2rem;
+	height: 2rem;
+	display: inline-block;
+	vertical-align: top;
+	margin: 0 0.3rem;
+	border-radius: 50%;
+	border: 1px solid #aaaaaa;
+	cursor: pointer;
+	background: url("../img/ico-social-sprite.png") 0 0 no-repeat;
+	background: auto;
+	transition: ease 0.3s;
+
+	&--vk {
+		background-position: 0 0;
+	}
+
+	&--fb {
+		background-position: -30px 0;
+	}
+
+	&--ok {
+		background-position: -60px 0;
+	}
+
+	&--twitter {
+		background-position: -90px 0;
+	}
+}
+
+.social:hover {
+	border-color: @color-darkwhine;
+	background-image: url("../img/ico-social-sprite-hover.png");
+}
+
+
+
+.wine-color:before,
+.wine-sugar:before,
+.wine-land:before {
+	content: "";
+	display: inline-block;
+	vertical-align: top;
+	width: 1rem;
+	height: 1rem;
+	margin-right: 0.2rem;
+	border-radius: 50%;	
+
+}
+
+.wine-color.red:before {
+	background-color: @color-darkwhine;
+}
+
+.white {
+	background-color: @color-beige;
+}
+
+.rose {
+	background-color: #b8608b;
+}
+
+.wine-price {
+	.agora(1rem);
+	color: @color-orange;
+	font-weight: bold;
+	padding-left: 0;
+}
+
+.wine-sugar:before {
+	background: url("../img/sugar.png") 0 0 no-repeat;
+	background-size: cover;
+}
+
+.wine-land.italy:before {
+	background: url("../img/f-italia.png") 0 0 no-repeat;
+	background-size: cover;
+}
+
+@media @mobil-widths {
+	.description-type {	
+
+		.description-wine {
+			display: inline-block;
+		}
+	}
+
+	.description-social__title {
+		display: block;
+		padding-bottom: 1rem;
+	}
+}

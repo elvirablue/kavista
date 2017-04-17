@@ -1,0 +1,82 @@
+.tovar-card {
+	display: block;
+	padding: 2rem 1rem 0;
+
+	&__toggle {
+		display: block;
+		width: 100%;
+		padding-top: 3.5rem;
+
+		ul {
+			list-style: none;
+			li {
+				display: inline-block;
+				width: 30%;
+				text-align: left;
+				.agora(1.125rem);
+				color: @color-lightgray;
+				font-weight: bold;
+				transition: color ease 0.3s;
+				cursor: pointer;
+			}
+
+			li:hover, li.active, li:active {
+				color: @color-darkwhine;
+				text-decoration: underline;
+			}
+
+			 li.active {
+			 	cursor: default;
+			 }
+		}
+	}
+
+	&__characteristics {
+		width: 100%;
+		padding-top: 2rem;	
+	}
+
+	&__table {
+		margin-bottom: 2rem;
+		table {
+			width: 100%;
+
+			td {
+				line-height: 1.3rem;
+				padding: 0.6rem 0;
+				vertical-align: top;
+			}
+
+			td:first-child {
+				color: @color-gray;
+				font-weight: bold;
+				width: 40%;
+			}
+		}
+	}
+
+	&__block-info {
+		display: block;
+		padding: 2rem 0;
+		border-top: 1px solid #e7e7e7;
+	}
+
+	&__block-info-title {
+		margin-bottom: 1rem;
+	}
+}
+
+@media @mobil-widths {
+	.tovar-card {
+		&__toggle {
+			ul {
+				li {
+					display: block;
+					width: 100%;
+					padding: 1rem;
+					text-align: center;
+				}
+			}
+		}
+	}
+}

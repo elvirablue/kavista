@@ -1,0 +1,47 @@
+.block-main {
+	&__img {
+		display: inline-block;
+		vertical-align: top;
+		width: 12rem;
+		height: auto;
+		max-height: 24rem;
+		text-align: center;
+
+		img {
+			height: 100%;
+			width: auto;
+		}
+	}
+
+	&__description {
+		display: inline-block;
+		vertical-align: top;
+		width: ~"calc(100% - 15rem)";
+		margin-left: 2rem;
+
+		h4 {
+			.agora(1.75rem);
+
+			span {
+				display: block;
+				.agora(1.75rem);	
+			}
+		}
+	}
+}
+
+@media @mobil-widths {
+	.block-main {
+		text-align: center;
+		&__img {
+			display: block;
+			margin: 0 auto 2rem;
+		}
+
+		&__description {
+			display: block;
+			margin-left: 0;
+			width: 100%;
+		}
+	}
+}

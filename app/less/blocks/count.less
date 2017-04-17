@@ -1,0 +1,26 @@
+.count {
+	display: inline-block;
+	vertical-align: top;
+	min-width: 3.125rem;
+	width: 25%;
+	line-height: 3.125rem;
+	height: 3.125rem;
+	padding: 0 0.75rem;
+	border-radius: 3px;
+	border: 1px solid @color-beige;
+
+	&--less, &--more {
+		background-color: #eeeeee;
+		cursor: pointer;
+		outline: none;
+		color: @color-darkwhine;
+		font-size: 2rem;
+		font-weight: bold;
+	}
+
+	&--current {
+		font-size: 1.375rem;
+		text-align: center;
+		background-color: #ffffff;
+	}
+}

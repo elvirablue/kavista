@@ -45,11 +45,16 @@
 	}
 
 	&__tovar-card-wrapper {
-		width: ~"calc(100% - 17rem)";
-		min-width: 17rem;
+		
+		padding-right: 1rem;	
+		
+	}
+
+	&__tovar-card {
+		width: ~"calc(100% - 18rem)";
+		min-width: 18rem;
 		display: block;	
 		float: left;
-		padding-right: 1rem;	
 		margin-top: 0.75rem;
 	}
 
@@ -59,6 +64,8 @@
 		width: 17rem;
 		min-height: 100vh;
 		margin-top: 0.75rem;
+		margin-left: 1rem;
+
 	}
 
 	&__subtitlle {
@@ -66,7 +73,66 @@
 		margin-top: 3rem;
 		margin-bottom: 1rem;
 	}
+
+	&__basket  {
+		margin: 0 0.5rem;
+		p {
+			padding-top: 0.5rem;
+		}
+		span {
+			color: @color-orange;
+		}
+	}
+
+	&__basket-price {
+		.agora(1.5rem);
+		font-weight: bold;
+		padding-left: 0.5rem;
+		color: @color-orange;
+	}
+
+	&__basket-count {
+		display: flex;
+		flex-flow: row nowrap;
+		justify-content: space-between;
+		padding: 2rem 0 1.5rem;
+
+		
+	}
+	.basket {
+		padding: 1rem 0.725rem;
+	}
+
+	&__in-favorites {
+		display: block;
+		.open-sans(1.25rem);
+		color: @color-lightgray;
+		text-align: center;
+		padding-top: 1rem;
+		transition: ease 1s;		
+	}
+
+	&__in-favorites:before {
+		content: "♡";
+		display: inline-block;
+		vertical-align: bottom;
+		padding-right: 0.75rem;
+		font-size: 1.5rem;
+		line-height: 1.5rem;
+	}
+
+	&__in-favorites:hover {
+		color: @color-darkwhine;
+		text-decoration: underline;
+	}
+
+	&__in-favorites:hover:before {
+		content:"❤";
+		font-size: 1.1rem;
+	}
 }
+
+
 
 @media @mobil-widths {
 	.catalog {
@@ -126,11 +192,18 @@
 			}
 		}
 
-		&__tovar-card-wrapper {
+		
+	}
+}
+
+@media @desktop-widths-card {
+	.catalog {
+		&__tovar-card {
 			display: block;
 			float: none;
 			width: 100%;
 			padding-right: 0;
+			text-align: left;
 		}
 
 		&__aside-tovar {
