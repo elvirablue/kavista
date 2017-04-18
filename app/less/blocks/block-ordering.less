@@ -1,6 +1,7 @@
 .block-ordering {
 	display: block;
-	padding: 2rem 2rem 0;
+	padding: 2rem 2rem 1rem;
+	text-align: left;
 
 	&__input-wrapper {
 		display: inline-block;
@@ -16,5 +17,44 @@
 
 	&__input-wrapper:nth-child(even) {
 		padding-right: 1rem;
+	}
+
+	&__table {
+		width: 100%;
+		margin: 2rem 0;
+		border-bottom: 1px solid #e7e7e7;
+
+		td {
+			padding: 0.75rem 0;
+		}
+
+		td:last-child {
+			min-width: 7rem;
+			width: 40%;
+			text-align: right;
+			font-weight: bold;
+			color: @color-gray;
+		}
+
+		td.to-pay {
+			color: @color-orange;
+			.agora(1.4rem);
+		}
+	}
+
+	
+
+	&__table:last-child {
+		border-bottom: none;
+		margin-bottom: 0;
+	}
+}
+
+@media @tablet-widths {
+	.block-ordering {
+		padding: 2rem 0rem 1rem;
+		&__input-wrapper {
+			width: 100%;
+		}
 	}
 }

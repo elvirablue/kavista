@@ -3,7 +3,7 @@ $(document).on('ready', function(){
 	var navToggle = document.querySelectorAll('.main-nav__toggle');
 	var start_pos = navMain[0].offsetTop + 100; 
   var FLAG_visible_scroll_menu = false; 
-  var activ =  $('nav.main-nav a');
+  
 
 	navMain[1].classList.remove('main-nav--nojs');
   navMain[0].classList.remove('main-nav--nojs');
@@ -52,18 +52,7 @@ $(document).on('ready', function(){
 
   });      
 
-      //зафиксировать выбранный пункт меню
-      $('.main-nav__wrapper > ul > li').click(function() {                  
-        if (this.classList.contains('active')) return; 
-        $('.main-nav__wrapper > ul > li.active').removeClass('active'); 
-        $('.main-nav__wrapper > ul > li > ul > li.active').removeClass('active');          
-        $(this).addClass('active');             
-  
-      });
       
-
-       
-
 
 
 });

@@ -1,26 +1,60 @@
-.ch_wrapper {
+.ch_wrapper,
+.radio-wrapper {
   display: inline-block;  
   .open-sans(1rem);
   color: @color-lightgray;  
   font-weight: normal;
-  
- 
+}
+
+.radio-wrapper {
+  display: block;
+  padding-top: 1rem;
+  padding-left: 0;
 }
 .checkbox {
   display: inline-block;
   height: auto;
 }
-.checkbox .ch_wrapper input[type=checkbox] {
-  display: none;
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
+
+.checkbox .ch_wrapper input[type=checkbox],
+.radiobox .radio-wrapper input[type=radio] {
+  display: none; 
   padding: 0;
 }
-.checkbox .ch_wrapper label {
+
+
+.checkbox .ch_wrapper label,
+.radiobox .radio-wrapper label {
   display: inline-block;
+  vertical-align: middle;
   cursor: pointer;
   position: relative;
   padding-left: 1.3rem;
+}
+.radiobox .radio-wrapper label {
+  padding-left: 2rem;
+  transition: color ease 0.3rem;
+}
+
+
+.radiobox .radio-wrapper label:after {
+  content: "";
+  border: 3.5px solid #ffffff;
+  background-color: #ffffff;  
+  box-shadow: 0 0 0 2px @color-gray;
+  border-radius: 50%;
+  font-size: 0;   
+  outline: none;  
+  display: inline-block;
+  vertical-align: middle;
+  width: 0.7rem;
+  height: 0.7rem;
+  padding: 0;
+  
+  position: absolute;
+  left: 0;
+  bottom: 2px;
+  
 }
 .checkbox .ch_wrapper label:after {
   content: "";
@@ -38,6 +72,17 @@
   left: 0;
   bottom: 4px;
   background-color: #ffffff;
+}
+
+.radiobox .radio-wrapper input[type=radio]:checked + label {
+  color: @color-orange;
+  font-weight: bold;
+}
+
+.radiobox .radio-wrapper input[type=radio]:checked + label:after {
+   content: "";
+   background-color: @color-orange;
+   box-shadow: 0 0 0 2px @color-orange;
 }
 .checkbox .ch_wrapper input[type=checkbox]:checked + label:after {
   content: "\2713";

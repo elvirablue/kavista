@@ -117,15 +117,15 @@
   	}
 
 	.main-nav__toggle {
-	  position: fixed;
-	  top: 2rem;
+	  position: absolute;
+	  top: -11rem;
 	  right: 2rem;
-	  z-index: 5001;
+	  z-index: 5002;
 	  display: block;
-	  width: 70px;
-	  height: 3.5rem;
+	  width: 55px;
+	  height: 2.5rem;
 	  font-size: 0;
-	  background-color: #ffffff;
+	  background-color: transparent;
 	  cursor: pointer;
 	  border: none;
 	  outline: none;
@@ -134,25 +134,26 @@
 	.main-nav__toggle:hover,
 	.main-nav__toggle:active,
 	.main-nav__toggle.active {
-	  background-color:  @color-orange;
+	  background-color:  transparent;
 	}
 	.main-nav--closed .main-nav__toggle::before {
 	  content: "";
 	  position: absolute;
-	  top: 15px;
-	  left: 15px;
+	  top: 8px;
+	  left: 7px;
 	  width: 40px;
-	  height: 2.5px;
-	  background-color: @color-white;  
-	  box-shadow: 0 12px 0 0 @color-white, 0 24px 0 0 @color-white;
+	  height: 4px;
+	  border-radius: 2px;
+	  background-color: @color-orange;  
+	  box-shadow: 0 10px 0 0 @color-orange, 0 20px 0 0 @color-orange;
 	}
 	.main-nav--closed .main-nav__toggle:active::before {
 	  background-color: rgba(255, 255, 255, 0.3);
-	  -webkit-box-shadow: 0 12px 0 0 rgba(255, 255, 255, 0.3), 0 24px 0 0 rgba(255, 255, 255, 0.3);
-	          box-shadow: 0 12px 0 0 rgba(255, 255, 255, 0.3), 0 24px 0 0 rgba(255, 255, 255, 0.3);
+	  -webkit-box-shadow: 0 10px 0 0 rgba(255, 255, 255, 0.3), 0 20px 0 0 rgba(255, 255, 255, 0.3);
+	          box-shadow: 0 10px 0 0 rgba(255, 255, 255, 0.3), 0 20px 0 0 rgba(255, 255, 255, 0.3);
 	}
 	.main-nav--opened .main-nav__toggle {
-	  top: -3.5rem;
+	  top: -31rem;
 	  right: 0;
 	  left: auto;
 	}
@@ -160,10 +161,11 @@
 	.main-nav--opened .main-nav__toggle::after {
 	  content: "";
 	  position: absolute;
-	  top: 25px;
-	  left: 20px;
-	  width: 35px;
-	  height: 2.5px;
+	  top: 18px;
+	  left: 12px;
+	  width: 30px;
+	  height: 4px;
+	  border-radius: 2px;
 	  background-color: @color-white;
 	}
 	.main-nav--opened .main-nav__toggle::before {
@@ -185,16 +187,16 @@
 	.main-nav--opened .main-nav {
 		display: block;
 		position: absolute;
-		width: 91.75vw;
-		height: 18.7rem;
-		background-color: @color-orange;
+		width: 120vw;
+		height: 38rem;
+		
 		opacity: 0.9;
 		border-bottom-left-radius: 3px;
 		border-bottom-right-radius: 3px;
 		background-image: none;
 		z-index: 5001;
-		right: 1.25rem;
-		top: 0;
+		right: -2rem;
+		top: -31rem;
 
 		&__wrapper {
 			min-width: 70vw;
@@ -203,9 +205,8 @@
 }
 
 @media @mobil-widths {
-	.main-nav__toggle {
-	  position: fixed;
-	  top: 2rem;
+	.main-nav__toggle {	  
+	  top: -31rem;
 	  right: 1rem;
 	 }
 }

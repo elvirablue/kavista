@@ -154,29 +154,42 @@
 								<h4 class="block-ordering__title">Личные данные</h4>
 								<div class="block-ordering__input-wrapper">
 									<label>Имя</label>
-									<input class="user-input user-input--orange user-input--ordering" type="text" name="user-name" required>
+									<input class="user-input user-input--beige user-input--ordering" type="text" name="user-name" required>
 								</div>
 								<div class="block-ordering__input-wrapper">
 									<label>Фамилия</label>
-									<input class="user-input user-input--orange user-input--ordering" type="text" name="user-lastname" required>
+									<input class="user-input user-input--beige user-input--ordering" type="text" name="user-lastname" required>
 								</div>
 								<div class="block-ordering__input-wrapper">
 									<label>Телефон</label>
-									<input class="user-input user-input--orange user-input--ordering" type="text" name="user-phone" required>
+									<input class="user-input user-input--beige user-input--ordering" type="text" name="user-phone" required>
 								</div>
 								<div class="block-ordering__input-wrapper">
 									<label>E-mail</label>
-									<input class="user-input user-input--orange user-input--ordering" type="text" name="user-mail" required>
+									<input class="user-input user-input--beige user-input--ordering" type="text" name="user-mail" required>
 								</div>
 								
 							</div>
 							<div class="block-ordering">
 								<h4 class="block-ordering__title">Способ оплаты</h4>
-								
+								<div class="radiobox">
+									<div class="radio-wrapper">
+										<input id="radio1" type="radio" name="user-payment" checked>
+										<label for="radio1">Наличными при получении</label>
+									</div>
+									<div class="radio-wrapper">
+										<input id="radio2" type="radio" name="user-payment">
+										<label for="radio2">Картой при получении</label>
+									</div>
+									<div class="radio-wrapper">
+										<input id="radio3" type="radio" name="user-payment">
+										<label for="radio3">Мили Аэрофлота</label>
+									</div>
+								</div>
 							</div>
 							<div class="block-ordering">
 								<h4 class="block-ordering__title">Комментарий к заказу</h4>
-								
+								<textarea class="user-input user-input--beige user-input--area"  name="user-text" rows="5"></textarea>
 							</div>
 							<button class="btn btn--ordering" type="submit">Оформить заказ</button>
 						</form>
@@ -190,7 +203,34 @@
 					<div class="frame__content ">
 						<div class="block-ordering">
 							<h4 class="block-ordering__title">Вы заказали:</h4>
-							
+							<table class="block-ordering__table">
+								<tr>
+									<td>Chianti Castiglioni х 1</td>
+									<td>3 000 руб.</td>
+								</tr>
+								<tr>
+									<td>Chianti Castiglioni х 1</td>
+									<td>3 000 руб.</td>
+								</tr>								
+							</table>
+
+							<table class="block-ordering__table">
+								<tr>
+									<td>Сумма</td>
+									<td>6 000 руб.</td>
+								</tr>
+								<tr>
+									<td>Самовывоз</td>
+									<td>Бесплатно</td>
+								</tr>								
+							</table>
+
+							<table class="block-ordering__table">
+								<tr>
+									<td>К оплате</td>
+									<td class="to-pay">6 000 <span>руб.</span></td>
+								</tr>
+							</table>
 						</div>
 					</div>
 				</div>

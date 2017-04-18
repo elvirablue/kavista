@@ -9,14 +9,14 @@
 	<link rel="stylesheet" href="css/venders/normalize.css">
 	<link rel="stylesheet" href="css/stylename.css">
 	<link rel="stylesheet" href="css/style.css">
-	
+	<link rel="stylesheet" href="css/venders/jquery-ui.css">
 	<link rel="stylesheet" href="css/venders/animate.css">
 	<link rel="stylesheet" href="css/simple.css">
 
 	<!-- jQuery -->
 	<script src="js/venders/jquery-1.12.4.js"></script>
 	<script src="js/venders/jquery.maskedinput.js"></script>
-
+	
 	<link rel="stylesheet" href="css/venders/jquery.arcticmodal-0.3.css">	
 	<script src="js/venders/jquery.arcticmodal-0.3.min.js"></script>
 	<!--[if lte IE 9]>
@@ -265,8 +265,27 @@
 				<div class="catalog__filter frame frame--beige" id="filter-price"><!---toddler-->
 					<div class="frame__content">
 						<p class="catalog__filter-title">
-							Цена
+							Цена <span>(руб.)</span>
 						</p>
+						<div class="selector">
+							<div class="selector__input-wrapper">
+								<label>От</label>
+								<input type="text" class="user-input user-input--beige user-input--selector">
+							</div>
+							<div class="selector__input-wrapper">
+								<label>До</label>
+								<input type="text" class="user-input user-input--beige user-input--selector">
+							</div>
+						</div>
+						<div class="selector">
+							<div class="selector__ui-filter" id="selector-price">
+								<div class="ui-slider ui-slider-horizontal ui-filter">
+									<div class="ui-slider-range ui-slider-range-min"></div>
+									<div class="ui-slider-range ui-slider-range-max"></div>
+									<span class="ui-slider-handler handler"></span>
+								</div>
+							</div>					
+						</div>
 					</div>
 				</div>
 			<!--конец фильтра ЦЕНА -->
@@ -277,6 +296,25 @@
 						<p class="catalog__filter-title">
 							Год
 						</p>
+						<div class="selector">
+							<div class="selector__input-wrapper">
+								<label>От</label>
+								<input type="text" class="user-input user-input--beige user-input--selector">
+							</div>
+							<div class="selector__input-wrapper">
+								<label>До</label>
+								<input type="text" class="user-input user-input--beige user-input--selector">
+							</div>
+						</div>
+						<div class="selector">
+							<div class="selector__ui-filter" id="selector-year">
+								<div class="ui-slider ui-slider-horizontal ui-filter">
+									<div class="ui-slider-range ui-slider-range-min"></div>
+									<div class="ui-slider-range ui-slider-range-max"></div>
+									<span class="ui-slider-handler handler"></span>
+								</div>
+							</div>					
+						</div>
 					</div>
 				</div>
 			<!--конец фильтра ГОД -->
@@ -327,6 +365,25 @@
 						<p class="catalog__filter-title">
 							Крепость
 						</p>
+						<div class="selector">
+							<div class="selector__input-wrapper">
+								<label>От</label>
+								<input type="text" class="user-input user-input--beige user-input--selector">
+							</div>
+							<div class="selector__input-wrapper">
+								<label>До</label>
+								<input type="text" class="user-input user-input--beige user-input--selector">
+							</div>
+						</div>
+						<div class="selector">
+							<div class="selector__ui-filter" id="selector-fortress">
+								<div class="ui-slider ui-slider-horizontal ui-filter">
+									<div class="ui-slider-range ui-slider-range-min"></div>
+									<div class="ui-slider-range ui-slider-range-max"></div>
+									<span class="ui-slider-handler handler"></span>
+								</div>
+							</div>					
+						</div>
 					</div>
 				</div>
 			<!--конец фильтра КРЕПОСТЬ -->
@@ -748,7 +805,26 @@
 
 <!-- ************** БЛОК ПРИЛИПАЮЩАЯ НАВИГАЦИЯ ПРИ СКРОЛЛЕ ******************- -->
 	<div class="main-nav-scroll">
-
+		<div class="main-nav-block main-nav--closed">
+			<button class="main-nav__toggle" type="button">Открыть меню</button>
+		
+			<nav class="main-nav">			
+				<div class="main-nav__wrapper">
+					<ul>
+						<li><a href="index.html">Главная</a></li>
+						<li class="active"><a href="">Вино</a></li>
+						<li><a href="sparkling-wine.html">Игристое вино</a></li>
+						<li><a href="strong-alcohol.html">Крепкий алкоголь</a></li>
+						<li><a href="liquor.html">Ликер</a></li>
+						<li><a href="sets.html">Наборы и подарки</a></li>
+						<li><a href="delicacies.html">Деликатесы</a></li>
+						<li><a href="sale.html">Акции</a></li>
+						<li><a href="about.html">О нас</a></li>
+						<li ><a href="contacts.html">Контакты</a></li>
+					</ul>
+				</div>
+			</nav>
+		</div>
 	</div>
 
 <!-- ************** БЛОК МОДАЛЬНЫЕ ОКНА ******************- -->
@@ -782,14 +858,27 @@
 	</div>
 <!-- ********************************- -->
 </div> <!-- end wrapper-x -->
-<!--
+
 <script src="js/menu.js"> </script>	
-<script src="js/main-modal.js"> </script>	
+<!--<script src="js/main-modal.js"> </script>	
 <script src="js/modal.js"> </script>
 <script src="js/post.js"> </script>
 -->
 <script src="js/frame.js"> </script>
-
-
+<script src="js/venders/jquery-ui.js"></script>
+<script>
+	$( "#selector-price" ).slider({
+		range: true,
+		values: [ 17, 67 ]
+	});
+	$( "#selector-year" ).slider({
+		range: true,
+		values: [ 10, 50 ]
+	});
+	$( "#selector-fortress" ).slider({
+		range: true,
+		values: [ 20, 30 ]
+	});
+</script>
 </body>
 </html>
