@@ -1,6 +1,4 @@
-.main-nav-scroll {
-  display: none;
-}
+
  
 .main-nav {
 	width: 100%;
@@ -87,7 +85,24 @@
 	}
 }
 
+.main-nav-scroll {
+  display: none;
+  background-color: @color-whine;
+  box-shadow: 1px 0 10px 2px rgba(0, 0, 0, 0.5);
+  .main-nav {
+  	&__wrapper {
+  		ul {
+  			li:first-child:before, 
+			li:last-child:after {
+				content: "";
+				background-image: none;
+			}
+  		}
+  	}
 
+  }	
+  
+}
 
 @media @tablet-widths {	
 
@@ -100,7 +115,7 @@
 		ul {	  
 	  		width: auto;
 	  		text-align: center;
-	  		min-width: 70vw;	  
+	  		min-width: 17rem;	  
 	  		flex-direction: column;	  
 	  		li{
 	  			flex-basis: 100%;
@@ -153,8 +168,8 @@
 	          box-shadow: 0 10px 0 0 rgba(255, 255, 255, 0.3), 0 20px 0 0 rgba(255, 255, 255, 0.3);
 	}
 	.main-nav--opened .main-nav__toggle {
-	  top: -31rem;
-	  right: 0;
+	  top: -12.5rem;
+	  right: 0rem;
 	  left: auto;
 	}
 	.main-nav--opened .main-nav__toggle::before,
@@ -187,7 +202,7 @@
 	.main-nav--opened .main-nav {
 		display: block;
 		position: absolute;
-		width: 120vw;
+		width: 20rem;
 		height: 38rem;
 		
 		opacity: 0.9;
@@ -196,17 +211,63 @@
 		background-image: none;
 		z-index: 5001;
 		right: -2rem;
-		top: -31rem;
+		top: -13rem;		
+	}
+}
 
-		&__wrapper {
-			min-width: 70vw;
-		}
+@media @tablet-widths {
+
+	.main-nav__toggle {	  
+	  top: -11rem;
+	  right: 2rem;
+	}
+
+	.main-nav-scroll .main-nav--opened .main-nav {
+		right: -2rem;
+		top: 0rem;
+	}
+
+	.main-nav-scroll .main-nav__toggle,
+	.main-nav-scroll .main-nav--opened .main-nav__toggle {
+		right: 0.5rem;
+		top: 0.5rem;
 	}
 }
 
 @media @mobil-widths {
+	.main-nav--opened .main-nav {
+		width: 120vw;
+		height: 38rem;
+		right: -2rem;
+		top: -32rem;
+
+		&__wrapper {
+			ul {
+				min-width: 70vw;
+			}
+		}
+	}
+
+	.main-nav-scroll .main-nav--opened .main-nav {
+		right: -2rem;
+		top: 0rem;
+	}
+
+	.main-nav-scroll .main-nav__toggle,
+	.main-nav-scroll .main-nav--opened .main-nav__toggle {
+		right: 0.5rem;
+		top: 0.5rem;
+	}
+
 	.main-nav__toggle {	  
 	  top: -31rem;
 	  right: 1rem;
 	 }
+
+	.main-nav--opened .main-nav__toggle {	  
+	  top: -31.25rem;
+	  right: 0rem;
+	 }
 }
+
+

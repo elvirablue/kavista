@@ -2,11 +2,9 @@ $(document).on('ready', function(){
 	var navMain = document.querySelectorAll('.main-nav-block');
 	var navToggle = document.querySelectorAll('.main-nav__toggle');
 	var start_pos = navMain[0].offsetTop + 100; 
-  var FLAG_visible_scroll_menu = false; 
-  
+  var FLAG_visible_scroll_menu = false;   
 
-	navMain[1].classList.remove('main-nav--nojs');
-  navMain[0].classList.remove('main-nav--nojs');
+	
 
 	navToggle[0].addEventListener('click', function() {
 		if (navMain[0].classList.contains('main-nav--closed')) {
