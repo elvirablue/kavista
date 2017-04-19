@@ -1,0 +1,49 @@
+.turn-pages-wrapper {
+	.clearfix();
+	display: block;
+	width: 100%;
+}
+
+.turn-pages {	
+	display: inline-block;
+	width: 20rem;	
+
+	p {
+		color: @color-lightgray;
+		padding-top: 1.5rem;
+		padding-bottom: 0.5rem;
+	}
+	
+}
+
+.turn-pages--prev {
+	position: relative;
+	text-align: left;
+	float: left;
+	padding-left: 4rem;
+}
+
+.turn-pages--next {
+	position: relative;
+	text-align: right;
+	float: right;
+	padding-right: 4rem;
+}
+
+.turn-pages:hover {
+	p {
+		color: @color-gray;
+		font-weight: bold;
+		text-decoration: underline;
+	}
+} 
+
+@media @mobil-widths {
+	.turn-pages {
+		width: 16rem;
+		margin-bottom: 1rem;
+		h4 {
+			font-size: 1.1rem;
+		}
+	}
+}

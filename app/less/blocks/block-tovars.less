@@ -29,16 +29,15 @@
 	&__wrapper {
 		display: block;
 		position: relative;
-		width: 102%;
+		width: 70.8rem;
 		height: auto;
 		max-height: 37rem;
 		overflow: hidden;
 		margin-left: -0.5rem;
-		margin-top: 2rem;
+		margin-top: 2rem;		
 
 		
 	}
-
 	&__list {
 		display: block;
 		list-style: none;
@@ -50,7 +49,7 @@
 		display: inline-block;
 		vertical-align: top;
 		
-		margin-right: 0.35rem;
+		margin-right: 0.2rem;
 	}
 
 	&__controls {
@@ -63,3 +62,39 @@
 
 }
 
+@media @desktop-widths-only-item3 {
+	.block-tovars--white {
+		width: 55rem;
+		.block-tovars__wrapper {
+			width: 51rem;
+		}
+	}
+			
+}
+
+@media @desktop-widths-only-item2 {
+	.block-tovars--white {
+		width: 37rem;
+		.block-tovars__wrapper {
+			width: 34rem;
+		}
+		.block-tovars__arrow {
+			.arrow.prev {left: -2.2rem;};
+			.arrow.next {right: -2.2rem;}
+		}
+	}
+}
+
+@media @desktop-widths-only-item1 {
+	.block-tovars--white {
+		width: 18.5rem;
+		min-width: 18.5rem;
+		.block-tovars__wrapper {
+			width: 17rem;
+		}
+		.block-tovars__arrow {
+			.arrow.prev {left: -1.8rem;};
+			.arrow.next {right: -1.8rem;}
+		}
+	}
+}

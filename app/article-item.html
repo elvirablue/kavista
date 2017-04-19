@@ -1,0 +1,322 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>  
+	<meta charset="UTF-8">
+	<title>Кависта. Маркет-бар</title>
+	<meta name=viewport content="width=device-width, initial-scale=1">
+	<link rel="icon" href="img/favicon.ico" type="image/x-icon">
+	<link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon">
+	<link rel="stylesheet" href="css/venders/normalize.css">
+	<link rel="stylesheet" href="css/stylename.css">
+	<link rel="stylesheet" href="css/style.css">
+	
+	<link rel="stylesheet" href="css/venders/animate.css">
+	<link rel="stylesheet" href="css/simple.css">
+
+	<!-- jQuery -->
+	<script src="js/venders/jquery-1.12.4.js"></script>
+	<script src="js/venders/jquery.maskedinput.js"></script>
+
+	<link rel="stylesheet" href="css/venders/jquery.arcticmodal-0.3.css">	
+	<script src="js/venders/jquery.arcticmodal-0.3.min.js"></script>
+	<!--[if lte IE 9]>
+	    <script src="oldies/oldies.js" charset="utf-8"></script>
+	    <style>
+	       .wrapper-x {display: none;}	       
+	    </style>
+	 <![endif]-->
+</head>
+<body>
+
+<div id="fb-root"></div>
+<script>(function(d, s, id) {
+  var js, fjs = d.getElementsByTagName(s)[0];
+  if (d.getElementById(id)) return;
+  js = d.createElement(s); js.id = id;
+  js.src = "//connect.facebook.net/ru_RU/sdk.js#xfbml=1&version=v2.8";
+  fjs.parentNode.insertBefore(js, fjs);
+}(document, 'script', 'facebook-jssdk'));
+</script>
+<script>
+!function (d, id, did, st) {
+  var js = d.createElement("script");
+  js.src = "https://connect.ok.ru/connect.js";
+  js.onload = js.onreadystatechange = function () {
+  if (!this.readyState || this.readyState == "loaded" || this.readyState == "complete") {
+    if (!this.executed) {
+      this.executed = true;
+      setTimeout(function () {
+        OK.CONNECT.insertGroupWidget(id,did,st);
+      }, 0);
+    }
+  }}
+  d.documentElement.appendChild(js);
+}(document,"ok_group_widget","50582132228315",'{"width":280,"height":455}');
+</script>
+
+
+<div class="wrapper-x">
+<div class="wrapper-y">
+	<header class="page-header-desktop">
+		<div class="header-contact main-contact">
+			<p class="main-contact__phone">+7 (913) 000 00 00</p>
+			<div class="main-contact__address">
+				<p> г.Новосибирск, ул. Петухова 17, оф. 202<br>
+					<a href="#" class="main-contact__link">Посмотреть на карте</a>
+				</p>
+			</div>
+		</div>
+		<div class="header-logo">
+			<a href="#"><img src="img/logo.png" alt=""></a>
+		</div>
+		<div class="header-user">
+			<a href="#" class="header-user__club">Клубная карта</a>
+			<div class="header-user__basket frame frame--beige">
+				<div class="frame__content">
+					<p class="header-user__basket-title">
+					Корзина <span>(0)</span>
+				</p>
+				<p class="header-user__basket-sum">0 <span>руб.</span></p>
+				</div>
+			</div>
+		</div>
+
+	</header>
+	<header class="page-header-mobil">
+		
+		
+	</header>
+
+	<div class="main-nav-block main-nav--closed">
+		<button class="main-nav__toggle" type="button">Открыть меню</button>
+	
+		<nav class="main-nav">			
+			<div class="main-nav__wrapper">
+				<ul>
+					<li><a href="index.html">Главная</a></li>
+					<li><a href="wine.html">Вино</a></li>
+					<li><a href="sparkling-wine.html">Игристое вино</a></li>
+					<li><a href="strong-alcohol.html">Крепкий алкоголь</a></li>
+					<li><a href="liquor.html">Ликер</a></li>
+					<li><a href="sets.html">Наборы и подарки</a></li>
+					<li><a href="delicacies.html">Деликатесы</a></li>
+					<li><a href="sale.html">Акции</a></li>
+					<li><a href="about.html">О нас</a></li>
+					<li ><a href="contacts.html">Контакты</a></li>
+				</ul>
+			</div>
+		</nav>
+	</div>
+<!-- *********************** БЛОК Преимущества ********************************- -->
+	<div class="separator"></div>
+	<div class="benefit">
+		<div class="frame frame--beige">
+			<div class="frame__content">
+				<div class="benefit__item">
+					<p class="benefit__img"><img src="img/ico-benefit-1.png" alt=""></p>
+					<p class="benefit__title">
+						Профессиональный кавист поможет в выборе вина
+						<a href="#">Читать подробнее</a>
+					</p>					
+				</div>
+				<div class="benefit__item">
+					<p class="benefit__img"><img src="img/ico-benefit-2.png" alt=""></p>
+					<p class="benefit__title">
+						Регулярные дегустации ­попробуйте вино перед покупкой
+						<a href="#">Читать подробнее</a>
+					</p>					
+				</div>
+				<div class="benefit__item">
+					<p class="benefit__img"><img src="img/ico-benefit-3.png" alt=""></p>
+					<p class="benefit__title">
+						Винный бар с огромным ассортиментом
+						<a href="#">Читать подробнее</a>
+					</p>					
+				</div>
+			</div>
+		</div>				
+	</div>
+	<div class="separator"></div>
+<!-- *********************** БЛОК ТОВАРОВ********************************- -->
+	<div class="main-events">
+		<h3 class="main-events__title event">Заголовок новости, которую читает посетитель</h3>
+		<div class="breadcramps">
+			<ul>
+				<li><a href="index.html">Главная</a></li>				
+				<li><a href="articles.html">Статьи и события</a></li>
+				<li class="active"><a href="">Заголовок новости, которую читает посетитель</a></li>
+			</ul>			
+		</div>
+		<div class="separator"></div>
+		<div class="text-content-inner">
+			<img src="img/events/ev1.jpg" alt="">
+			<p>This is Photoshop's version  of Lorem Ipsum. Proin gravida nibh vel velit auctor aliquet. Aenean sollicitudin, lorem quis bibendum auctor, nisi elit consequat ipsum, nec sagittis sem nibh id elit. Duis sed odio sit amet nibh vulputate cursus a sit amet mauris. Morbi accumsan ipsum velit. Nam nec tellus a odio tincidunt auctor a ornare odio. Sed non  mauris vitae erat consequat auctor eu in elit. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Mauris in erat justo. Nullam ac urna eu felis dapibus condimentum sit amet a augue. Sed non neque elit. Sed ut imperdiet nisi. Proin condimentum fermentum nunc. Etiam pharetra, erat sed fermentum feugiat, velit mauris egestas quam, ut aliquam massa nisl quis neque. Suspendisse in orci enim.</p>
+			<p>This is Photoshop's version  of Lorem Ipsum. Proin gravida nibh vel velit auctor aliquet. Aenean sollicitudin, lorem quis bibendum auctor, nisi elit consequat ipsum, nec sagittis sem nibh id elit. Duis sed odio sit amet nibh vulputate cursus a sit amet mauris. Morbi accumsan ipsum velit. Nam nec tellus a odio tincidunt auctor a ornare odio. Sed non  mauris vitae erat consequat auctor eu in elit. </p>
+			<p>Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Mauris in erat justo. Nullam ac urna eu felis dapibus condimentum sit amet a augue. Sed non neque elit. Sed ut imperdiet nisi. Proin condimentum fermentum nunc. Etiam pharetra, erat sed fermentum feugiat, velit mauris egestas quam, ut aliquam massa nisl quis neque. Suspendisse in orci enim.</p>			
+		</div>
+
+		<div class="turn-pages-wrapper">
+			<a href="#" class="turn-pages turn-pages--prev">
+				<p class="arrow prev arrow--wine"></p>
+				<p>Предыдущая новость</p>
+				<h4>Заголовок предыдущей новости</h4>
+			</a>
+			<a href="#" class="turn-pages turn-pages--next">
+				<p>Следующая новость</p>
+				<h4>Заголовок следущей новости</h4>				
+				<p class="arrow next arrow--wine"></p>
+			</a>
+		</div>
+		
+	</div>
+
+
+
+<!-- **************************** БЛОК СОЦСЕТЕЙ ***********************************- -->
+	
+	<div class="separator"></div>
+	<div class="main-social">
+		<div class="frame frame--beige">
+			<div class="frame__content">
+				<h2 class="main-social__title">ПРИСОЕДИНЯЙТЕСЬ</h2>
+				<div class="social-networks">
+					
+					<div class="social-networks__vk ">
+						<script type="text/javascript" src="//vk.com/js/api/openapi.js?139"></script>						
+						<div id="vk_groups"></div>
+						<script type="text/javascript">
+							VK.Widgets.Group("vk_groups", {mode: 4, width: "280", height: "450"}, 20003922);
+						</script>
+					</div>
+
+					<div class="social-networks__ok " id="ok_group_widget"></div>
+					
+
+					<div class="social-networks__fb ">
+						<div class="fb-page" data-href="https://www.facebook.com/facebook" data-tabs="timeline" data-width="280" data-height="450" 	data-small-header="false" data-adapt-container-width="true" data-hide-cover="false" data-show-facepile="true">
+							<blockquote cite="https://www.facebook.com/facebook" class="fb-xfbml-parse-ignore">
+								<a href="https://www.facebook.com/facebook">Facebook</a> 
+							</blockquote> 
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+
+
+	<div class="separator"></div>	
+
+
+<!-- *************************** БЛОК ПОДВАЛ***************************************- -->	
+</div> <!-- end wrapper-y -->	
+
+	<footer  class="page-footer-bg">
+		<div class="page-footer">
+			<div class="page-footer__logo">
+				<img src="img/logo-white.png" alt="">
+			</div>
+			<div class="page-footer__block-middle">
+				<nav class="footer-nav">
+					<ul class="footer-nav__col">
+						<li class="index.html"><a href="">Главная</a></li>					
+						<li><a href="vacancy.html">Вакансии</a></li>
+						<li><a href="tasting.html">Дегустации</a></li>
+						<li><a href="news.html">События и статьи</a></li>
+						<li><a href="services.html">Услугии</a></li>					
+					</ul>
+					<ul class="footer-nav__col">
+						<li><a href="about.html">О компании</a></li>
+						<li><a href="contacts.html">Контакты</a></li>												
+					</ul>					
+				</nav>
+				<a href="#" class="page-footer__club">Клубная карта</a>
+			</div>
+			<div class="page-footer__block-right main-contact">
+				<p class="main-contact__phone">+7 (913) 000 00 00</p>
+				<div class="main-contact__address">
+					<p> г.Новосибирск, ул. Петухова 17, оф. 202<br>
+						<a href="#" class="main-contact__link">Посмотреть на карте</a>
+					</p>
+				</div>
+				<form action="" class="footer-form frame frame--beige">
+					<div class="frame__content">
+						<p>
+							Получайте полезные статьи и новости от Маркет-бара "Кависта"
+						</p>
+						<input class="user-input user-input--footer-form" type="email" name="user-mail" placeholder="Ваш E-mail" required>
+						<button class="btn btn--footer-form" type="submit">Подписаться</button>
+					</div>					
+				</form>
+			</div>
+				
+			
+		</div>		
+	</footer>
+
+<!-- ************** БЛОК ПРИЛИПАЮЩАЯ НАВИГАЦИЯ ПРИ СКРОЛЛЕ ******************- -->
+	<div class="main-nav-scroll">
+		<div class="main-nav-block main-nav--closed">
+			<button class="main-nav__toggle" type="button">Открыть меню</button>
+		
+			<nav class="main-nav">			
+				<div class="main-nav__wrapper">
+					<ul>
+						<li class="active"><a href="">Главная</a></li>
+						<li><a href="wine.html">Вино</a></li>
+						<li><a href="sparkling-wine.html">Игристое вино</a></li>
+						<li><a href="strong-alcohol.html">Крепкий алкоголь</a></li>
+						<li><a href="liquor.html">Ликер</a></li>
+						<li><a href="sets.html">Наборы и подарки</a></li>
+						<li><a href="delicacies.html">Деликатесы</a></li>
+						<li><a href="sale.html">Акции</a></li>
+						<li><a href="about.html">О нас</a></li>
+						<li ><a href="contacts.html">Контакты</a></li>
+					</ul>
+				</div>
+			</nav>
+		</div>
+	</div>
+
+<!-- ************** БЛОК МОДАЛЬНЫЕ ОКНА ******************- -->
+	<div class="modal_wrapper">  </div>
+
+	<div class="modal more">
+	  <div class="frame_blue">
+	    <button class="modal_close" type="button">Закрыть</button>
+	    <h3 id="modal_txt">Заголовок</h3>
+	    <p><b>Оставьте Ваши контакты</b></p>
+	    <form method="post">    
+	      	<input type="text" class="user-input user-input--block-modal required" id="user_name_modal" name="user-name" placeholder="Имя" >
+	       	<input type="tel" class="user-input user-input--block-modal required" id="user_phone_modal" name="user-phone" placeholder="Телефон" >
+	        <input type="email" class="user-input user-input--block-modal" id="user_mail_modal" name="user-mail" placeholder="E-mail">
+	    	<button class="btn-yellow btn-yellow--form-modal" type="submit" id="btn_form_modal">Получить консультацию</button>    
+	      	<input type="text" class="form_text_hide" name="text">
+	    </form>
+	    <span>Менеджер перезвонит Вам<br> в течение 15 минут</span>
+	  </div>
+	</div>
+
+	<div style="display: none;">
+	    <div class="box-modal" id="exampleModal">
+	      <div class="frame_blue">        
+	        <div class="box-modal_close arcticmodal-close">x</div>
+	        <h3>Спасибо за заявку!</h3>
+	        <hr>
+	        <p>Мы свяжемся с Вами в ближайшее время.</p>
+	      </div>
+	    </div>
+	</div>
+<!-- ********************************- -->
+</div> <!-- end wrapper-x -->
+
+<script src="js/menu.js"> </script>	
+<!--<script src="js/main-modal.js"> </script>	
+<script src="js/modal.js"> </script>
+<script src="js/post.js"> </script>
+-->
+<script src="js/frame.js"> </script>
+
+
+</body>
+</html>
