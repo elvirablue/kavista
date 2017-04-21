@@ -2075,6 +2075,26 @@ a {
     right: -2rem;
     top: -13rem;
   }
+  .main-nav--opened .main-nav ul {
+    display: block;
+  }
+  .main-nav--opened .main-nav ul li {
+    display: block;
+    height: 2.5rem;
+    line-height: 2.5rem;
+  }
+  .main-nav--opened .main-nav ul li a {
+    height: 2.5rem;
+    line-height: 2.5rem;
+  }
+  .main-nav--opened .main-nav ul li:first-child {
+    height: 3.8rem;
+    line-height: 3.8rem;
+  }
+  .main-nav--opened .main-nav ul li:first-child a {
+    height: 3.8rem;
+    line-height: 3.8rem;
+  }
 }
 @media (max-width: 1170px) {
   .main-nav__toggle {

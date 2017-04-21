@@ -94,6 +94,7 @@
   .main-nav {
   	&__wrapper {
   		ul {
+
   			li:first-child:before, 
 			li:last-child:after {
 				content: "";
@@ -213,7 +214,28 @@
 		background-image: none;
 		z-index: 5001;
 		right: -2rem;
-		top: -13rem;		
+		top: -13rem;	
+
+		ul {
+			display: block;
+  			li {
+  				display: block;
+  				height: 2.5rem;
+  				line-height: 2.5rem;
+  				a {
+  					height: 2.5rem;
+  					line-height: 2.5rem;
+  				}
+  			}
+  			li:first-child {
+  				height: 3.8rem;
+  				line-height: 3.8rem;
+  				a {
+  					height: 3.8rem;
+  					line-height: 3.8rem;
+  				}
+  			}	
+  		}
 	}
 }
 
