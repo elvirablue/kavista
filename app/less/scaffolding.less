@@ -99,23 +99,54 @@ a {
   text-decoration: none;
 }
 
+.main-head {
+	.container-fluid();
+
+	&__title {
+
+	}
+}
+
 .hit {
 	background: url("../img/star.png") 0 0 no-repeat;
 	padding-left: 3rem;
+	line-height: 2.3rem;
 }
 .new {
 	background: url("../img/new.png") 0 0 no-repeat;
 	padding-left: 3rem;
+	line-height: 2.3rem;
 }
 .event {
 	background: url("../img/event.png") 0 0 no-repeat;
 	padding-left: 3rem;
+	line-height: 2.3rem;
 }
 
 .serv {
 	background: url("../img/serv.png") 0 0 no-repeat;
 	padding-left: 3rem;
+	line-height: 2.3rem;
 }
+
+.tasting {
+	background: url("../img/tasting.png") 0 0 no-repeat;
+	padding-left: 3rem;
+	line-height: 2.3rem;
+}
+
+.contact {
+	background: url("../img/contact.png") 0 -1px no-repeat;
+	padding-left: 3rem;
+	line-height: 2.3rem;
+}
+
+.vacanc {
+	background: url("../img/vacancy.png") 0 -1px no-repeat;
+	padding-left: 3rem;
+	line-height: 2.3rem;
+}
+
 
 .wine,
 .sparkling-wine,
@@ -123,9 +154,9 @@ a {
 .liquor,
 .bask,
 .order {
-	background: url("../img/ico-wine-sprite.png") 0 -1px no-repeat;
+	background: url("../img/ico-wine-sprite.png") 0 1px no-repeat;
 	padding-left: 2.5rem;
-	height: 1.8rem;
+	min-height: 1.8rem;
 }
 
 .sparkling-wine {
@@ -162,6 +193,20 @@ a {
 		vertical-align: top;
 		margin-right: 0.5rem;
 		content: "";
+		width: 2rem;
+		height: 2rem;
+		background: url("../img/ico-sprite.png") @x @y no-repeat;
+	}
+}
+
+.ico-absolute(@x, @y) {
+
+	&:before {
+		display: block;			
+		content: "";
+		position: absolute;
+		top: 0;
+		left: -2.5rem;
 		width: 2rem;
 		height: 2rem;
 		background: url("../img/ico-sprite.png") @x @y no-repeat;
@@ -272,6 +317,7 @@ a {
 	}
 	h3 {
 		font-size: 1.4rem;
+		text-align: left;
 	}
 	h4 {
 		font-size: 1.25rem;
