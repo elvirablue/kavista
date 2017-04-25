@@ -1614,6 +1614,66 @@ a {
     margin: 1rem auto;
   }
 }
+.slider_wrapper {
+  position: relative;
+  width: 100%;
+  max-height: 31.25rem;
+  height: 70vw;
+  min-height: 14rem;
+  margin: 2rem auto;
+  background-color: #fff;
+  overflow: hidden;
+}
+.frame-slider {
+  /**
+     * (optional) wrapper width, specifies width of the slider frame.
+     */
+  width: 1108px;
+  position: relative;
+  font-size: 0;
+  line-height: 0;
+  overflow: hidden;
+  white-space: nowrap;
+}
+.slides {
+  display: inline-block;
+  font-size: 0;
+  line-height: 0;
+}
+.slides li {
+  position: relative;
+  display: inline-block;
+  /**
+     * (optional) if the content inside the slide element has a defined size.
+     */
+  width: 100%;
+}
+.slider_controls {
+  position: absolute;
+  bottom: -3rem;
+  left: 50%;
+  width: 15rem;
+  height: auto;
+  margin-left: -7.5rem;
+  z-index: 200;
+  font-size: 0;
+  text-align: center;
+}
+.slider_controls li {
+  display: inline-block;
+  width: 1.25rem;
+  height: 1.25rem;
+  margin: 0.5rem;
+  vertical-align: top;
+  background-color: transparent;
+  border: 2px solid #d46000;
+  -webkit-border-radius: 50%;
+          border-radius: 50%;
+  cursor: pointer;
+}
+.slider_controls li.active {
+  background-color: #d46000;
+}
 /*@import "outlines.less";
  
 
@@ -2144,6 +2204,7 @@ a {
   max-width: 1170px;
   padding: 0 1.8rem;
   margin: 0 auto;
+  position: relative;
 }
 @media (max-width: 1170px) {
   .main-slider {
@@ -2157,82 +2218,6 @@ a {
     min-width: 320px;
     padding: 0 1.2rem;
   }
-}
-.slider_wrapper {
-  position: relative;
-  width: 100%;
-  max-height: 31.25rem;
-  height: 70vw;
-  min-height: 14rem;
-  margin: 2rem auto;
-  background-color: #fff;
-  background-image: url(../img/slider/slider1.jpg);
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-position: 50% 0;
-  -webkit-transition: background-image 1s linear, background-color 0.7s linear;
-  transition: background-image 1s linear, background-color 0.7s linear;
-}
-.slider_wrapper:hover {
-  -webkit-animation-play-state: paused;
-          animation-play-state: paused;
-}
-.slider {
-  position: absolute;
-  bottom: 0;
-  right: 0;
-  width: 100%;
-  height: 100%;
-  overflow: visible;
-}
-.slide {
-  display: none;
-  text-decoration: none;
-  width: 100%;
-  height: 100%;
-}
-.slider_controls {
-  position: absolute;
-  bottom: -3rem;
-  left: 50%;
-  width: 15rem;
-  height: auto;
-  margin-left: -7.5rem;
-  z-index: 200;
-  font-size: 0;
-  text-align: center;
-}
-.slider_controls label {
-  display: inline-block;
-  width: 1.25rem;
-  height: 1.25rem;
-  margin: 0.5rem;
-  vertical-align: top;
-  background-color: transparent;
-  border: 2px solid #d46000;
-  -webkit-border-radius: 50%;
-          border-radius: 50%;
-  cursor: pointer;
-}
-#btn-1:checked ~ .slider_wrapper #slide1,
-#btn-2:checked ~ .slider_wrapper #slide2,
-#btn-3:checked ~ .slider_wrapper #slide3 {
-  display: block;
-}
-#btn-1:checked ~ .slider_wrapper label[for="btn-1"],
-#btn-2:checked ~ .slider_wrapper label[for="btn-2"],
-#btn-3:checked ~ .slider_wrapper label[for="btn-3"] {
-  background-color: #d46000;
-}
-#btn-1:checked ~ .slider_wrapper {
-  background-image: url(../img/slider/slider1.jpg);
-}
-#btn-2:checked ~ .slider_wrapper {
-  background-image: url(../img/slider/slider2.jpg);
-}
-#btn-3:checked ~ .slider_wrapper {
-  background-image: url(../img/slider/slider3.jpg);
-  /*background-size: 100%;*/
 }
 .benefit {
   width: 100%;
@@ -2336,7 +2321,7 @@ a {
 .block-tovars__wrapper {
   display: block;
   position: relative;
-  width: 70.8rem;
+  width: 69.75rem;
   height: auto;
   max-height: 37rem;
   overflow: hidden;
@@ -2346,13 +2331,13 @@ a {
 .block-tovars__list {
   display: block;
   list-style: none;
-  width: 100rem;
+  width: 10000rem;
   text-align: left;
 }
 .block-tovars__item {
   display: inline-block;
   vertical-align: top;
-  margin-right: 0.2rem;
+  margin-right: 0.438rem;
 }
 .block-tovars__controls {
   display: block;
@@ -2362,10 +2347,10 @@ a {
 }
 @media (max-width: 1170px) {
   .block-tovars--white {
-    width: 55rem;
+    width: 55.5rem;
   }
   .block-tovars--white .block-tovars__wrapper {
-    width: 51rem;
+    width: 52.31rem;
   }
 }
 @media (max-width: 905px) {
@@ -2373,7 +2358,7 @@ a {
     width: 37rem;
   }
   .block-tovars--white .block-tovars__wrapper {
-    width: 34rem;
+    width: 34.875rem;
   }
   .block-tovars--white .block-tovars__arrow .arrow.prev {
     left: -2.2rem;
