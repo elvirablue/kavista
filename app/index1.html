@@ -13,13 +13,15 @@
 	<link rel="stylesheet" href="css/venders/animate.css">
 	<link rel="stylesheet" href="css/simple.css">
 
-	<script src="js/venders/lory.min.js"></script>
-	<script src="js/sliders.js"></script>
+	
 
 	<!-- jQuery -->
 	<script src="js/venders/jquery-1.12.4.js"></script>
 	<script src="js/venders/jquery.maskedinput.js"></script>
+
+	<script src="js/venders/lory.min.js"></script>
 	
+
 	<link rel="stylesheet" href="css/venders/jquery.arcticmodal-0.3.css">	
 	<script src="js/venders/jquery.arcticmodal-0.3.min.js"></script>
 	<!--[if lte IE 9]>
@@ -109,31 +111,30 @@
 	</div>
 <!-- *********************** БЛОК СЛАЙДЕР - 1 ЭКРАН ********************************- -->
 	<div class="main-slider">
-		<div class="slider_wrapper corner slider js_simple_dots simple js_slider">
+		<div class="slider slider_wrapper corner  js_simple_dots simple js_slider">
+			<div class="top-right"></div><div class="top-left"></div>
+		    <div class="bottom-right"></div><div class="bottom-left"></div>
+		   	
+		   	<div class="wrapper-border">  
+		   		<div class="js_prev arrow prev"></div>
+		    	<div class="js_next arrow next"></div>
 
-		   
+		    	<div class="frame-slider js_frame">		
 
-		    <div class="frame-slider wrapper-border js_frame">		
+		       		<ul class="slides js_slides">
+		       		    <li class="js_slide">
+		       		    	<img src="img/slider/slider1.jpg" alt="">
+		       		    </li>
+		       		    <li class="js_slide">
+		       		    	<img src="img/slider/slider2.jpg" alt="">
+		       		    </li>
+		       		    <li class="js_slide">
+		       		    	<img src="img/slider/slider3.jpg" alt="">
+		       		    </li>
 
-		    	
-		    	
-		        <ul class="slides js_slides">
-		            <li class="js_slide">
-		            	<img src="img/slider/slider1.jpg" alt="">
-		            </li>
-		            <li class="js_slide">
-		            	<img src="img/slider/slider2.jpg" alt="">
-		            </li>
-		            <li class="js_slide">
-		            	<img src="img/slider/slider3.jpg" alt="">
-		            </li>
-
-		        </ul>
-		        <div>
-		        	<div class="js_prev arrow prev"></div>
-		    		<div class="js_next arrow next"></div>
-		    	</div>
-		    </div>		    
+		       		</ul>
+		    	</div>	
+		   </div> 	    
 		    			 
 		</div>
 
@@ -250,9 +251,9 @@
 <!--<script src="js/main-modal.js"> </script>	
 <script src="js/modal.js"> </script>
 <script src="js/post.js"> </script>
--->
-<script src="js/frame.js"> </script>
 
+<script src="js/frame.js"> </script>-->
+<script src="js/sliders1.js"></script>
 
 </body>
 </html>

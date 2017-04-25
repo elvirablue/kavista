@@ -1,10 +1,4 @@
- 'use strict';
 
-        document.addEventListener('DOMContentLoaded', function () {
-            Array.prototype.slice.call(document.querySelectorAll('.js_slider')).forEach(function (element, index) {
-                lory(element, {});
-            });
-        });
 
 document.addEventListener('DOMContentLoaded', function () {
         var simple_dots       = document.querySelector('.js_simple_dots');
