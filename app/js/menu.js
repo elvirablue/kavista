@@ -1,4 +1,5 @@
 $(document).on('ready', function(){
+  var storage_clubCard = localStorage.getItem('clubCard');
 	var navMain = document.querySelectorAll('.main-nav-block');
 	var navToggle = document.querySelectorAll('.main-nav__toggle');
 	var start_pos = navMain[0].offsetTop + 100; 

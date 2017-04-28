@@ -3,16 +3,14 @@
 	position: relative;
 	width: 100%;
 	max-height: 31.25rem;
-	height: 70vw;
+	height: 150vw;
 	min-height: 14rem;
 	margin: 2rem auto;
 	background-color: #fff;	
 	overflow: hidden;
 }
-.frame-slider {
-    /**
-     * (optional) wrapper width, specifies width of the slider frame.
-     */
+
+.frame-slider {    
     width: 1108px;
     position: relative;
     font-size: 0;
@@ -20,7 +18,27 @@
     overflow: hidden;
     white-space: nowrap;
 
+    &__slide {
+    	position: relative;
+    	z-index: 8;
+    }
+	
+	&__title-prev {
+		position: absolute;
+		z-index: 9;
+		bottom: 0;
+		left: 0px;
+		right: 0px;
+		width: auto;
+		background-color: rgba(0, 0, 0, 0.7);
+		
+		text-align: left;
+		padding: 1rem 3rem;
+		border-bottom: 5px solid #85254c;
+	}
+
 }
+
 .slides {
     display: inline-block;
     font-size: 0;
@@ -28,10 +46,7 @@
 
 	li {
     	position: relative;
-    	display: inline-block;
-    /**
-     * (optional) if the content inside the slide element has a defined size.
-     */
+    	display: inline-block;   
     	width: 100%;
 	}
 
@@ -67,3 +82,79 @@
 	}
 }
 
+.frame-slider--sale {
+    	height: 31rem;
+    	width: 100%;
+
+    	.slides {
+    		height: 100%;
+    		li {
+    			height: 100%;
+    		}
+    	}
+
+    .frame-slider__title-prev {
+    	border-bottom: none;
+
+    	h5 {
+    		color: #ffffff;
+    		font-size: 1.5rem;
+    		font-weight: normal;
+    		margin-bottom: 1rem;
+    	}
+
+    	p {
+    		font-weight: normal;
+    		line-height: 1.7;
+    		.open-sans(0.875rem);
+    		color: #ffffff;
+    		font-weight: normal;
+    		height: auto;
+    		white-space: normal;
+    		padding-bottom: 0.5rem;
+    		text-align: justify;
+    	}
+    }
+}
+
+@media @mobil-widths {
+	.slider_wrapper {
+		height: 90vw;
+	}
+
+	.slider_wrapper--sale {
+		height: auto;
+	}
+
+	.frame-slider__title-prev {
+		padding: 1rem;
+	}
+
+
+
+	.frame-slider {
+		width: 100%;
+		max-height: 100vw;
+		height: 100vw;
+
+		img {
+			width: 200%;
+			max-width: 200%;
+		}
+	}
+
+	.frame-slider--sale {
+		width: 100%;
+		height: 25rem;
+		max-height: 130vw;
+
+		img {
+			width: 300%;
+			max-width: 300%;
+		}
+	}
+
+	.wrapper-border .arrow {
+		display: none;
+	}
+}

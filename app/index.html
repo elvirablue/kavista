@@ -53,8 +53,9 @@
     }
   }}
   d.documentElement.appendChild(js);
-}(document,"ok_group_widget","50582132228315",'{"width":280,"height":455}');
+}(document,"ok_group_widget","50582132228315",'{"width":245,"height":450}');
 </script>
+<script src="https://vk.com/js/api/openapi.js?144" type="text/javascript"></script>
 <div class="wrapper-x">
 <div class="wrapper-y">
 	<header class="page-header-desktop">
@@ -714,8 +715,8 @@
 				<div class="main-form__text-btn">
 					<p class="main-form__name">Антонина</p>
 					<p class="main-form__position">Консультант Маркет-бара "Кависта"</p>
-					<button class="btn btn--brown btn--mainform">Написать</button>
-					<button class="btn btn--mainform">Заказать звонок</button>
+					<button class="btn btn--brown btn--mainform" id="js-write">Написать</button>
+					<button class="btn btn--mainform" id="js-call">Заказать звонок</button>
 				</div>
 			</div>
 		</div>
@@ -730,11 +731,11 @@
 				<h2 class="main-social__title">ПРИСОЕДИНЯЙТЕСЬ</h2>
 				<div class="social-networks">
 					
-					<div class="social-networks__vk ">
-						<script type="text/javascript" src="//vk.com/js/api/openapi.js?139"></script>						
+					<div class="social-networks__vk ">	
+						<!-- VK Widget -->
 						<div id="vk_groups"></div>
 						<script type="text/javascript">
-							VK.Widgets.Group("vk_groups", {mode: 4, width: "280", height: "450"}, 20003922);
+						VK.Widgets.Group("vk_groups", {mode: 4, width: "245", height: "450"}, 133058267);
 						</script>
 					</div>
 
@@ -830,18 +831,21 @@
 	<div class="modal_wrapper">  </div>
 
 	<div class="modal more">
-	  <div class="frame_blue">
+	  <div class="frame_color">
 	    <button class="modal_close" type="button">Закрыть</button>
-	    <h3 id="modal_txt">Заголовок</h3>
+	    <h4 id="modal_txt">Заголовок</h4>
 	    <p><b>Оставьте Ваши контакты</b></p>
 	    <form method="post">    
 	      	<input type="text" class="user-input user-input--block-modal required" id="user_name_modal" name="user-name" placeholder="Имя" >
 	       	<input type="tel" class="user-input user-input--block-modal required" id="user_phone_modal" name="user-phone" placeholder="Телефон" >
-	        <input type="email" class="user-input user-input--block-modal" id="user_mail_modal" name="user-mail" placeholder="E-mail">
-	    	<button class="btn-yellow btn-yellow--form-modal" type="submit" id="btn_form_modal">Получить консультацию</button>    
+	        <input type="email" class="user-input user-input--block-modal required" id="user_mail_modal" name="user-mail" placeholder="E-mail">
+	        <textarea name="user-text" id="user_text_modal" cols="10" rows="5" class="user-input user-input--block-area" >
+	        	Ваш текст
+	        </textarea>
+	    	<button class="btn btn--form-modal" type="submit" id="btn_form_modal">Получить консультацию</button>    
 	      	<input type="text" class="form_text_hide" name="text">
 	    </form>
-	    <span>Менеджер перезвонит Вам<br> в течение 15 минут</span>
+	    <span id="modal_manager">Менеджер перезвонит Вам<br> в течение 15 минут</span>
 	  </div>
 	</div>
 
@@ -859,10 +863,10 @@
 </div> <!-- end wrapper-x -->
 
 <script src="js/menu.js"> </script>	
-<!--<script src="js/main-modal.js"> </script>	
+<!--<script src="js/main-modal.js"> </script>-->	
 <script src="js/modal.js"> </script>
 <script src="js/post.js"> </script>
--->
+
 <script src="js/frame.js"> </script>
 
 

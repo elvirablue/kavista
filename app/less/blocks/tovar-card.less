@@ -2,38 +2,62 @@
 	display: block;
 	padding: 2rem 1rem 0;
 
+	&__block-tabs {
+		input {
+			display: none;
+		}
+	}
+
 	&__toggle {
 		display: block;
 		width: 100%;
 		padding-top: 3.5rem;
 
-		ul {
-			list-style: none;
-			li {
-				display: inline-block;
-				width: 30%;
-				text-align: left;
-				.agora(1.125rem);
-				color: @color-lightgray;
-				font-weight: bold;
-				transition: color ease 0.3s;
-				cursor: pointer;
-			}
+		label {
+			display: inline-block;
+			width: 30%;
+			text-align: left;
+			.agora(1.125rem);
+			color: @color-lightgray;
+			font-weight: bold;
+			transition: color ease 0.3s;
+			cursor: pointer;
+		}
 
-			li:hover, li.active, li:active {
-				color: @color-darkwhine;
-				text-decoration: underline;
-			}
-
-			 li.active {
-			 	cursor: default;
-			 }
+		label:hover, label.active, label:active {
+			color: @color-darkwhine;
+			text-decoration: underline;
 		}
 	}
 
-	&__characteristics {
+	&__characteristics,
+	&__fabricator,
+	&__reviews {
 		width: 100%;
-		padding-top: 2rem;	
+		margin-top: 2rem;	
+		display: none;
+	}
+
+	#btn-1:checked ~ &__characteristics,
+	#btn-2:checked ~ &__fabricator,
+	#btn-3:checked ~ &__reviews {
+		display: block;
+	}
+
+	#btn-1:checked ~ &__toggle label[for="btn-1"],
+	#btn-2:checked ~ &__toggle label[for="btn-2"],
+	#btn-3:checked ~ &__toggle label[for="btn-3"] {
+		color: @color-darkwhine;
+		text-decoration: underline;
+		cursor: default;
+	}		 
+		
+	
+
+
+	&__fabricator,
+	&__reviews {
+		
 	}
 
 	&__table {

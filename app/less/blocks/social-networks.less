@@ -15,20 +15,26 @@
 	&__ok {		
 		padding: 10px;
 		display: inline-block;		
-		width: 320px;
+		width: 245px;
 		height: 475px;
-		margin: 0 10px 30px;
+		margin: 0 30px 30px;
 	}
 }
 
-@media @desktop-widths-only {
+@media @mobil-widths {
 	.social-networks {
-		justify-content: space-around;
-
+		/*justify-content: space-around;
+		flex-flow: column nowrap;*/
+		display: block;
+		text-align: center;
 		&__vk,
 		&__fb,
 		&__ok {
+			width: 100%;
+			display: inline-block;
 			margin: 0;
+			padding: 0;
+			padding-bottom: 10px;
 		}
 	} 
 }
