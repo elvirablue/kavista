@@ -16,7 +16,7 @@
 	<!-- jQuery -->
 	<script src="js/venders/jquery-1.12.4.js"></script>
 	<script src="js/venders/jquery.maskedinput.js"></script>
-	
+
 	<link rel="stylesheet" href="css/venders/jquery.arcticmodal-0.3.css">	
 	<script src="js/venders/jquery.arcticmodal-0.3.min.js"></script>
 	<!--[if lte IE 9]>
@@ -27,34 +27,6 @@
 	 <![endif]-->
 </head>
 <body>
-
-<div id="fb-root"></div>
-<script>(function(d, s, id) {
-  var js, fjs = d.getElementsByTagName(s)[0];
-  if (d.getElementById(id)) return;
-  js = d.createElement(s); js.id = id;
-  js.src = "//connect.facebook.net/ru_RU/sdk.js#xfbml=1&version=v2.8";
-  fjs.parentNode.insertBefore(js, fjs);
-}(document, 'script', 'facebook-jssdk'));
-</script>
-<script>
-!function (d, id, did, st) {
-  var js = d.createElement("script");
-  js.src = "https://connect.ok.ru/connect.js";
-  js.onload = js.onreadystatechange = function () {
-  if (!this.readyState || this.readyState == "loaded" || this.readyState == "complete") {
-    if (!this.executed) {
-      this.executed = true;
-      setTimeout(function () {
-        OK.CONNECT.insertGroupWidget(id,did,st);
-      }, 0);
-    }
-  }}
-  d.documentElement.appendChild(js);
-}(document,"ok_group_widget","50582132228315",'{"width":280,"height":455}');
-</script>
-
-
 <div class="wrapper-x">
 <div class="wrapper-y">
 	<header class="page-header-desktop">
@@ -73,9 +45,9 @@
 			<a href="#" class="header-user__club">Клубная карта</a>
 			<div class="header-user__basket frame frame--beige">
 				<div class="frame__content">
-					<a href="basket.html" class="header-user__basket-title">
+					<p class="header-user__basket-title">
 					Корзина <span>(0)</span>
-				</a>
+				</p>
 				<p class="header-user__basket-sum">0 <span>руб.</span></p>
 				</div>
 			</div>
@@ -94,9 +66,9 @@
 			<div class="main-nav__wrapper">
 				<ul>
 					<li><a href="index.html">Главная</a></li>
-					<li class="active"><a href="">Вино</a></li>
-					<li><a href="sparkling-wine.html">Игристое вино</a></li>
-					<li><a href="strong-alcohol.html">Крепкий алкоголь</a></li>
+					<li><a href="wine.html">Вино</a></li>
+					<li ><a href="sparkling-wine.html">Игристое вино</a></li>
+					<li class="active"><a href="">Крепкий алкоголь</a></li>
 					<li><a href="liquor.html">Ликер</a></li>
 					<li><a href="sets.html">Наборы и подарки</a></li>
 					<li><a href="delicacies.html">Деликатесы</a></li>
@@ -138,49 +110,20 @@
 	</div>
 	<div class="separator"></div>
 <!-- *********************** БЛОК ТОВАРОВ********************************- -->
-	<div class="catalog main-head">
-		<h3 class="main-head__title wine">
-			Вино
-		<button id="js-filter" class="catalog__toggle-filter" type="button">Открыть фильтр</button>	
-		</h3>
+	<div class="main-head">
+		<h3 class="main-head__title strong-alcohol">Крепкий алкоголь</h3>
 		<div class="breadcramps">
 			<ul>
 				<li><a href="index.html">Главная</a></li>
-				<li class="active"><a href="">Вино</a></li>
+				<li class="active"><a href="">Крепкий алкоголь</a></li>
 			</ul>			
 		</div>
 	</div>
 	<div class="catalog">
 		<div class="catalog__wrap">		
-			<div class="catalog__bg-wrapper">  </div>
+	
 			<aside class="catalog__filters">
-			<!--начало фильтра ЦВЕТ -->
-				<div class="catalog__filter frame frame--beige" id="filter-color">
-					<div class="frame__content">
-						<p class="catalog__filter-title">
-							Цвет
-						</p>
-						<div class="checkbox checkbox--filter">
-							<div class="ch_wrapper">
-								<input id="check01" type="checkbox" name="check[]" value="1" checked>
-								<label for="check01">Красное</label>
-							</div>
-						</div>
-						<div class="checkbox checkbox--filter">
-							<div class="ch_wrapper">
-								<input id="check02" type="checkbox" name="check[]" value="0">
-								<label for="check02">Белое</label>
-							</div>
-						</div>
-						<div class="checkbox checkbox--filter">
-							<div class="ch_wrapper">
-								<input id="check03" type="checkbox" name="check[]" value="0">
-								<label for="check03">Розовое</label>
-							</div>
-						</div>
-					</div>
-				</div>
-			<!--конец фильтра ЦВЕТ -->
+			
 
 			<!--начало фильтра Страна -->
 				<div class="catalog__filter frame frame--beige" id="filter-land">
@@ -228,39 +171,7 @@
 				</div>
 			<!--конец фильтра Страна -->
 
-			<!--начало фильтра СОДЕРЖАНИЕ САХАРА -->
-				<div class="catalog__filter frame frame--beige" id="filter-sugar">
-					<div class="frame__content">
-						<p class="catalog__filter-title">
-							Содержание сахара
-						</p>
-						<div class="checkbox checkbox--filter">
-							<div class="ch_wrapper">
-								<input id="check21" type="checkbox" name="check[]" value="1" checked>
-								<label for="check21">Сухое</label>
-							</div>
-						</div>
-						<div class="checkbox checkbox--filter">
-							<div class="ch_wrapper">
-								<input id="check22" type="checkbox" name="check[]" value="0">
-								<label for="check22">Полусухое</label>
-							</div>
-						</div>
-						<div class="checkbox checkbox--filter">
-							<div class="ch_wrapper">
-								<input id="check23" type="checkbox" name="check[]" value="0">
-								<label for="check23">Полусладкое</label>
-							</div>
-						</div>
-						<div class="checkbox checkbox--filter">
-							<div class="ch_wrapper">
-								<input id="check24" type="checkbox" name="check[]" value="0">
-								<label for="check24">Сладкое</label>
-							</div>
-						</div>
-					</div>
-				</div>
-			<!--конец фильтра СОДЕРЖАНИЕ САХАРА -->						
+								
 			
 			<!--начало фильтра ЦЕНА -->	
 				<div class="catalog__filter frame frame--beige" id="filter-price"><!---toddler-->
@@ -289,105 +200,7 @@
 						</div>
 					</div>
 				</div>
-			<!--конец фильтра ЦЕНА -->
-
-			<!--начало фильтра ГОД -->	
-				<div class="catalog__filter frame frame--beige" id="filter-year"><!---toddler-->
-					<div class="frame__content">
-						<p class="catalog__filter-title">
-							Год
-						</p>
-						<div class="selector">
-							<div class="selector__input-wrapper">
-								<label>От</label>
-								<input type="text" class="user-input user-input--beige user-input--selector">
-							</div>
-							<div class="selector__input-wrapper">
-								<label>До</label>
-								<input type="text" class="user-input user-input--beige user-input--selector">
-							</div>
-						</div>
-						<div class="selector">
-							<div class="selector__ui-filter" id="selector-year">
-								<div class="ui-slider ui-slider-horizontal ui-filter">
-									<div class="ui-slider-range ui-slider-range-min"></div>
-									<div class="ui-slider-range ui-slider-range-max"></div>
-									<span class="ui-slider-handler handler"></span>
-								</div>
-							</div>					
-						</div>
-					</div>
-				</div>
-			<!--конец фильтра ГОД -->
-
-			<!--начало фильтра СОДЕРЖАНИЕ ОБЪЕМ -->
-				<div class="catalog__filter frame frame--beige" id="filter-volume">
-					<div class="frame__content">
-						<p class="catalog__filter-title">
-							Объем
-						</p>
-						<div class="checkbox checkbox--filter">
-							<div class="ch_wrapper">
-								<input id="check31" type="checkbox" name="check[]" value="1" checked>
-								<label for="check31">0,375 л</label>
-							</div>
-						</div>
-						<div class="checkbox checkbox--filter">
-							<div class="ch_wrapper">
-								<input id="check32" type="checkbox" name="check[]" value="0">
-								<label for="check32">0,5 л</label>
-							</div>
-						</div>
-						<div class="checkbox checkbox--filter">
-							<div class="ch_wrapper">
-								<input id="check33" type="checkbox" name="check[]" value="0">
-								<label for="check33">0,75 л</label>
-							</div>
-						</div>
-						<div class="checkbox checkbox--filter">
-							<div class="ch_wrapper">
-								<input id="check34" type="checkbox" name="check[]" value="0">
-								<label for="check34">1,0 л</label>
-							</div>
-						</div>
-						<div class="checkbox checkbox--filter">
-							<div class="ch_wrapper">
-								<input id="check35" type="checkbox" name="check[]" value="0">
-								<label for="check35">1,5 л</label>
-							</div>
-						</div>
-					</div>
-				</div>
-			<!--конец фильтра СОДЕРЖАНИЕ ОБЪЕМ -->
-
-			<!--начало фильтра КРЕПОСТЬ -->	
-				<div class="catalog__filter frame frame--beige" id="filter-fortress"><!---toddler-->
-					<div class="frame__content">
-						<p class="catalog__filter-title">
-							Крепость
-						</p>
-						<div class="selector">
-							<div class="selector__input-wrapper">
-								<label>От</label>
-								<input type="text" class="user-input user-input--beige user-input--selector">
-							</div>
-							<div class="selector__input-wrapper">
-								<label>До</label>
-								<input type="text" class="user-input user-input--beige user-input--selector">
-							</div>
-						</div>
-						<div class="selector">
-							<div class="selector__ui-filter" id="selector-fortress">
-								<div class="ui-slider ui-slider-horizontal ui-filter">
-									<div class="ui-slider-range ui-slider-range-min"></div>
-									<div class="ui-slider-range ui-slider-range-max"></div>
-									<span class="ui-slider-handler handler"></span>
-								</div>
-							</div>					
-						</div>
-					</div>
-				</div>
-			<!--конец фильтра КРЕПОСТЬ -->
+			<!--конец фильтра ЦЕНА -->		
 
 			<!--начало фильтра НАЛИЧИЕ -->
 				<div class="catalog__filter frame frame--beige" id="filter-availability">
@@ -415,7 +228,8 @@
 				<button class="btn btn--filter">Применить фильтры</button>
 			</div>
 			</aside>
-			<div class="catalog__tovars">
+
+			<div class="catalog__tovars catalog__tovars--alcohol">
 				<div class="block-tovars__item">
 				<!-- begin BLOCK-TOVAR -->
 					<a href="#">
@@ -423,12 +237,12 @@
 						<h4>Chianti Castiglioni, <span>0.75 л., 2015 г.</span></h4>
 						<p class="block-tovar-prev__code">Артикул: 103328</p>
 						<div class="block-tovar-prev__img">
-							<img src="img/tovar/tovar1.png" alt="">
+							<img src="img/tovar/tovar2.png" alt="">
 						</div>
 						<div class="block-tovar-prev__description">
-							<span class="description-wine wine-color red"> 
+							<span class="description-wine wine-color rose"> 
 							<!--red/white/rose -->
-								Красное
+								Розовое
 							</span>
 							<span class="description-wine wine-sugar">							
 								Сухое
@@ -447,7 +261,7 @@
 									<label for="check">В наличии</label>
 								</div>
 							</div>
-							<a href="tovar.html" class="btn btn--in-basket">В корзину</a>
+							<a href="#" class="btn btn--in-basket">В корзину</a>
 						</div>
 					</div>
 					</a>
@@ -460,12 +274,12 @@
 						<h4>Chianti Castiglioni, <span>0.75 л., 2015 г.</span></h4>
 						<p class="block-tovar-prev__code">Артикул: 103328</p>
 						<div class="block-tovar-prev__img">
-							<img src="img/tovar/tovar1.png" alt="">
+							<img src="img/tovar/tovar3.png" alt="">
 						</div>
 						<div class="block-tovar-prev__description">
-							<span class="description-wine wine-color red"> 
+							<span class="description-wine wine-color white"> 
 							<!--red/white/rose -->
-								Красное
+								Белое
 							</span>
 							<span class="description-wine wine-sugar">							
 								Сухое
@@ -497,7 +311,7 @@
 						<h4>Chianti Castiglioni, <span>0.75 л., 2015 г.</span></h4>
 						<p class="block-tovar-prev__code">Артикул: 103328</p>
 						<div class="block-tovar-prev__img">
-							<img src="img/tovar/tovar1.png" alt="">
+							<img src="img/tovar/tovar8.png" alt="">
 						</div>
 						<div class="block-tovar-prev__description">
 							<span class="description-wine wine-color red"> 
@@ -534,7 +348,7 @@
 						<h4>Chianti Castiglioni, <span>0.75 л., 2015 г.</span></h4>
 						<p class="block-tovar-prev__code">Артикул: 103328</p>
 						<div class="block-tovar-prev__img">
-							<img src="img/tovar/tovar1.png" alt="">
+							<img src="img/tovar/tovar3.png" alt="">
 						</div>
 						<div class="block-tovar-prev__description">
 							<span class="description-wine wine-color red"> 
@@ -571,7 +385,7 @@
 						<h4>Chianti Castiglioni, <span>0.75 л., 2015 г.</span></h4>
 						<p class="block-tovar-prev__code">Артикул: 103328</p>
 						<div class="block-tovar-prev__img">
-							<img src="img/tovar/tovar1.png" alt="">
+							<img src="img/tovar/tovar2.png" alt="">
 						</div>
 						<div class="block-tovar-prev__description">
 							<span class="description-wine wine-color red"> 
@@ -608,7 +422,7 @@
 						<h4>Chianti Castiglioni, <span>0.75 л., 2015 г.</span></h4>
 						<p class="block-tovar-prev__code">Артикул: 103328</p>
 						<div class="block-tovar-prev__img">
-							<img src="img/tovar/tovar1.png" alt="">
+							<img src="img/tovar/tovar3.png" alt="">
 						</div>
 						<div class="block-tovar-prev__description">
 							<span class="description-wine wine-color red"> 
@@ -638,27 +452,14 @@
 					</a>
 				<!-- end BLOCK-TOVAR -->					
 				</div>
-<!-- ********************* БЛОК БАННЕР с АКЦИЕЙ ************************************-->
-				<div class="stock corner">
-					<div class="top-right"></div><div class="top-left"></div>
-					<div class="bottom-right"></div><div class="bottom-left"></div>	
-					<div class="wrapper-border">
-						<img  src="img/stock1.jpg" alt="">
-					</div>
-					<div class="stock__title">
-						Заголовок баннера с акцией или распродажей
-					</div>
-				</div>
-				
-
-				<div class="block-tovars__item">
+				<div href="#" class="block-tovars__item">
 				<!-- begin BLOCK-TOVAR -->
 					<a href="#">
 					<div class="block-tovar-prev">
 						<h4>Chianti Castiglioni, <span>0.75 л., 2015 г.</span></h4>
 						<p class="block-tovar-prev__code">Артикул: 103328</p>
 						<div class="block-tovar-prev__img">
-							<img src="img/tovar/tovar1.png" alt="">
+							<img src="img/tovar/tovar8.png" alt="">
 						</div>
 						<div class="block-tovar-prev__description">
 							<span class="description-wine wine-color red"> 
@@ -688,87 +489,16 @@
 					</a>
 				<!-- end BLOCK-TOVAR -->					
 				</div>
-
-
-				<div class="block-tovars__controls">
-					<div class="page-controls">
-						<p class="page-controls__link">Первая</p>
-						<div class="arrow prev arrow--wine"></div>
-						<p class="page-controls__controls">
-							<i class="active">1</i>
-							<i>2</i>
-							<i>3</i>
-							<i>4</i>
-							<i>5</i>
-						</p>
-						<div class="arrow next arrow--wine"></div>
-						<p class="page-controls__link">Последняя (15)</p>
-					</div>
-					
-					
-				</div>
-
 			</div>
 			
 		</div><!-- end wrap2 -->
 		
 	</div>
 
-<!-- **************************** БЛОК ФОРМЫ "ОСТАЛИСЬ ВОПРОСЫ?" ***********************************- -->
-	<div class="separator"></div>
-	<div class="main-form">
-		<div class="frame frame--beige">
-			<div class="frame__content">
-				<h2 class="main-form__title">ОСТАЛИСЬ ВОПРОСЫ?</h2>
-				<p class="main-form__subtitle">Задайте их консультанту Маркет­бара "Кависта"</p>
-				<div class="main-form__img">
-					<img src="img/manager.jpg" alt="">					
-				</div>
-				<div class="main-form__text-btn">
-					<p class="main-form__name">Антонина</p>
-					<p class="main-form__position">Консультант Маркет-бара "Кависта"</p>
-					<button class="btn btn--brown btn--mainform">Написать</button>
-					<button class="btn btn--mainform">Заказать звонок</button>
-				</div>
-			</div>
-		</div>
-	</div>
 
-<!-- **************************** БЛОК СОЦСЕТЕЙ ***********************************- -->
+
+	<div class="separator"></div>
 	
-	<div class="separator"></div>
-	<div class="main-social">
-		<div class="frame frame--beige">
-			<div class="frame__content">
-				<h2 class="main-social__title">ПРИСОЕДИНЯЙТЕСЬ</h2>
-				<div class="social-networks">
-					
-					<div class="social-networks__vk ">
-						<script type="text/javascript" src="//vk.com/js/api/openapi.js?139"></script>						
-						<div id="vk_groups"></div>
-						<script type="text/javascript">
-							VK.Widgets.Group("vk_groups", {mode: 4, width: "280", height: "450"}, 20003922);
-						</script>
-					</div>
-
-					<div class="social-networks__ok " id="ok_group_widget"></div>
-					
-
-					<div class="social-networks__fb ">
-						<div class="fb-page" data-href="https://www.facebook.com/facebook" data-tabs="timeline" data-width="280" data-height="450" 	data-small-header="false" data-adapt-container-width="true" data-hide-cover="false" data-show-facepile="true">
-							<blockquote cite="https://www.facebook.com/facebook" class="fb-xfbml-parse-ignore">
-								<a href="https://www.facebook.com/facebook">Facebook</a> 
-							</blockquote> 
-						</div>
-					</div>
-				</div>
-			</div>
-		</div>
-	</div>
-
-
-	<div class="separator"></div>	
-
 
 <!-- *************************** БЛОК ПОДВАЛ***************************************- -->	
 </div> <!-- end wrapper-y -->	
@@ -781,10 +511,10 @@
 			<div class="page-footer__block-middle">
 				<nav class="footer-nav">
 					<ul class="footer-nav__col">
-						<li class="ml"><a href="index.ht">Главная</a></li>					
+						<li class="index.html"><a href="">Главная</a></li>					
 						<li><a href="vacancy.html">Вакансии</a></li>
 						<li><a href="tasting.html">Дегустации</a></li>
-						<li><a href="articles.html">События и статьи</a></li>
+						<li><a href="news.html">События и статьи</a></li>
 						<li><a href="services.html">Услугии</a></li>					
 					</ul>
 					<ul class="footer-nav__col">
@@ -815,33 +545,9 @@
 			
 		</div>		
 	</footer>
-
-<!-- ************** БЛОК ФИЛЬТР ДЛЯ МОБИЛЬНОЙ ВЕРСИИ ******************- -->
-
-
-
 <!-- ************** БЛОК ПРИЛИПАЮЩАЯ НАВИГАЦИЯ ПРИ СКРОЛЛЕ ******************- -->
 	<div class="main-nav-scroll">
-		<div class="main-nav-block main-nav--closed">
-			<button class="main-nav__toggle" type="button">Открыть меню</button>
-		
-			<nav class="main-nav">			
-				<div class="main-nav__wrapper">
-					<ul>
-						<li><a href="index.html">Главная</a></li>
-						<li class="active"><a href="">Вино</a></li>
-						<li><a href="sparkling-wine.html">Игристое вино</a></li>
-						<li><a href="strong-alcohol.html">Крепкий алкоголь</a></li>
-						<li><a href="liquor.html">Ликер</a></li>
-						<li><a href="sets.html">Наборы и подарки</a></li>
-						<li><a href="delicacies.html">Деликатесы</a></li>
-						<li><a href="sale.html">Акции</a></li>
-						<li><a href="about.html">О нас</a></li>
-						<li ><a href="contacts.html">Контакты</a></li>
-					</ul>
-				</div>
-			</nav>
-		</div>
+
 	</div>
 
 <!-- ************** БЛОК МОДАЛЬНЫЕ ОКНА ******************- -->
@@ -876,11 +582,11 @@
 <!-- ********************************- -->
 </div> <!-- end wrapper-x -->
 
-<script src="js/menu.js"> </script>	
-<!--<script src="js/main-modal.js"> </script>	
+<!--<script src="js/menu.js"> </script>	
+<script src="js/main-modal.js"> </script>
 <script src="js/modal.js"> </script>
-<script src="js/post.js"> </script>
--->
+<script src="js/post.js"> </script>-->	
+
 <script src="js/frame.js"> </script>
 <script src="js/venders/jquery-ui.js"></script>
 <script>
@@ -888,14 +594,8 @@
 		range: true,
 		values: [ 17, 67 ]
 	});
-	$( "#selector-year" ).slider({
-		range: true,
-		values: [ 10, 50 ]
-	});
-	$( "#selector-fortress" ).slider({
-		range: true,
-		values: [ 20, 30 ]
-	});
+	
 </script>
+
 </body>
 </html>

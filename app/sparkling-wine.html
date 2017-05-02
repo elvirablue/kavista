@@ -9,7 +9,7 @@
 	<link rel="stylesheet" href="css/venders/normalize.css">
 	<link rel="stylesheet" href="css/stylename.css">
 	<link rel="stylesheet" href="css/style.css">
-	
+	<link rel="stylesheet" href="css/venders/jquery-ui.css">
 	<link rel="stylesheet" href="css/venders/animate.css">
 	<link rel="stylesheet" href="css/simple.css">
 
@@ -235,71 +235,30 @@
 				<div class="catalog__filter frame frame--beige" id="filter-price"><!---toddler-->
 					<div class="frame__content">
 						<p class="catalog__filter-title">
-							Цена
+							Цена <span>(руб.)</span>
 						</p>
-					</div>
-				</div>
-			<!--конец фильтра ЦЕНА -->
-
-			<!--начало фильтра ГОД -->	
-				<div class="catalog__filter frame frame--beige" id="filter-year"><!---toddler-->
-					<div class="frame__content">
-						<p class="catalog__filter-title">
-							Год
-						</p>
-					</div>
-				</div>
-			<!--конец фильтра ГОД -->
-
-			<!--начало фильтра СОДЕРЖАНИЕ ОБЪЕМ -->
-				<div class="catalog__filter frame frame--beige" id="filter-volume">
-					<div class="frame__content">
-						<p class="catalog__filter-title">
-							Объем
-						</p>
-						<div class="checkbox checkbox--filter">
-							<div class="ch_wrapper">
-								<input id="check31" type="checkbox" name="check[]" value="1" checked>
-								<label for="check31">0,375 л</label>
+						<div class="selector">
+							<div class="selector__input-wrapper">
+								<label>От</label>
+								<input type="text" class="user-input user-input--beige user-input--selector">
+							</div>
+							<div class="selector__input-wrapper">
+								<label>До</label>
+								<input type="text" class="user-input user-input--beige user-input--selector">
 							</div>
 						</div>
-						<div class="checkbox checkbox--filter">
-							<div class="ch_wrapper">
-								<input id="check32" type="checkbox" name="check[]" value="0">
-								<label for="check32">0,5 л</label>
-							</div>
-						</div>
-						<div class="checkbox checkbox--filter">
-							<div class="ch_wrapper">
-								<input id="check33" type="checkbox" name="check[]" value="0">
-								<label for="check33">0,75 л</label>
-							</div>
-						</div>
-						<div class="checkbox checkbox--filter">
-							<div class="ch_wrapper">
-								<input id="check34" type="checkbox" name="check[]" value="0">
-								<label for="check34">1,0 л</label>
-							</div>
-						</div>
-						<div class="checkbox checkbox--filter">
-							<div class="ch_wrapper">
-								<input id="check35" type="checkbox" name="check[]" value="0">
-								<label for="check35">1,5 л</label>
-							</div>
+						<div class="selector">
+							<div class="selector__ui-filter" id="selector-price">
+								<div class="ui-slider ui-slider-horizontal ui-filter">
+									<div class="ui-slider-range ui-slider-range-min"></div>
+									<div class="ui-slider-range ui-slider-range-max"></div>
+									<span class="ui-slider-handler handler"></span>
+								</div>
+							</div>					
 						</div>
 					</div>
 				</div>
-			<!--конец фильтра СОДЕРЖАНИЕ ОБЪЕМ -->
-
-			<!--начало фильтра КРЕПОСТЬ -->	
-				<div class="catalog__filter frame frame--beige" id="filter-fortress"><!---toddler-->
-					<div class="frame__content">
-						<p class="catalog__filter-title">
-							Крепость
-						</p>
-					</div>
-				</div>
-			<!--конец фильтра КРЕПОСТЬ -->
+			<!--конец фильтра ЦЕНА -->		
 
 			<!--начало фильтра НАЛИЧИЕ -->
 				<div class="catalog__filter frame frame--beige" id="filter-availability">
@@ -323,21 +282,25 @@
 				</div>
 			<!--конец фильтра НАЛИЧИЕ -->
 
-
+			<div class="catalog__filter">
+				<button class="btn btn--filter">Применить фильтры</button>
+			</div>
 			</aside>
+
 			<div class="catalog__tovars">
 				<div class="block-tovars__item">
 				<!-- begin BLOCK-TOVAR -->
+					<a href="#">
 					<div class="block-tovar-prev">
 						<h4>Chianti Castiglioni, <span>0.75 л., 2015 г.</span></h4>
 						<p class="block-tovar-prev__code">Артикул: 103328</p>
 						<div class="block-tovar-prev__img">
-							<img src="img/tovar/tovar1.png" alt="">
+							<img src="img/tovar/tovar5.png" alt="">
 						</div>
 						<div class="block-tovar-prev__description">
-							<span class="description-wine wine-color red"> 
+							<span class="description-wine wine-color rose"> 
 							<!--red/white/rose -->
-								Красное
+								Розовое
 							</span>
 							<span class="description-wine wine-sugar">							
 								Сухое
@@ -359,20 +322,22 @@
 							<a href="#" class="btn btn--in-basket">В корзину</a>
 						</div>
 					</div>
+					</a>
 				<!-- end BLOCK-TOVAR -->					
 				</div>
 				<div class="block-tovars__item">
 				<!-- begin BLOCK-TOVAR -->
+					<a href="#">
 					<div class="block-tovar-prev">
 						<h4>Chianti Castiglioni, <span>0.75 л., 2015 г.</span></h4>
 						<p class="block-tovar-prev__code">Артикул: 103328</p>
 						<div class="block-tovar-prev__img">
-							<img src="img/tovar/tovar1.png" alt="">
+							<img src="img/tovar/tovar4.png" alt="">
 						</div>
 						<div class="block-tovar-prev__description">
-							<span class="description-wine wine-color red"> 
+							<span class="description-wine wine-color white"> 
 							<!--red/white/rose -->
-								Красное
+								Белое
 							</span>
 							<span class="description-wine wine-sugar">							
 								Сухое
@@ -394,10 +359,12 @@
 							<a href="#" class="btn btn--in-basket">В корзину</a>
 						</div>
 					</div>
+					</a>
 				<!-- end BLOCK-TOVAR -->					
 				</div>
 				<div class="block-tovars__item">
 				<!-- begin BLOCK-TOVAR -->
+					<a href="#">
 					<div class="block-tovar-prev">
 						<h4>Chianti Castiglioni, <span>0.75 л., 2015 г.</span></h4>
 						<p class="block-tovar-prev__code">Артикул: 103328</p>
@@ -429,10 +396,12 @@
 							<a href="#" class="btn btn--in-basket">В корзину</a>
 						</div>
 					</div>
+					</a>
 				<!-- end BLOCK-TOVAR -->					
 				</div>
 				<div class="block-tovars__item">
 				<!-- begin BLOCK-TOVAR -->
+					<a href="#">
 					<div class="block-tovar-prev">
 						<h4>Chianti Castiglioni, <span>0.75 л., 2015 г.</span></h4>
 						<p class="block-tovar-prev__code">Артикул: 103328</p>
@@ -464,10 +433,12 @@
 							<a href="#" class="btn btn--in-basket">В корзину</a>
 						</div>
 					</div>
+					</a>
 				<!-- end BLOCK-TOVAR -->					
 				</div>
 				<div class="block-tovars__item">
 				<!-- begin BLOCK-TOVAR -->
+					<a href="#">
 					<div class="block-tovar-prev">
 						<h4>Chianti Castiglioni, <span>0.75 л., 2015 г.</span></h4>
 						<p class="block-tovar-prev__code">Артикул: 103328</p>
@@ -499,10 +470,12 @@
 							<a href="#" class="btn btn--in-basket">В корзину</a>
 						</div>
 					</div>
+					</a>
 				<!-- end BLOCK-TOVAR -->					
 				</div>
 				<div class="block-tovars__item">
 				<!-- begin BLOCK-TOVAR -->
+					<a href="#">
 					<div class="block-tovar-prev">
 						<h4>Chianti Castiglioni, <span>0.75 л., 2015 г.</span></h4>
 						<p class="block-tovar-prev__code">Артикул: 103328</p>
@@ -534,10 +507,12 @@
 							<a href="#" class="btn btn--in-basket">В корзину</a>
 						</div>
 					</div>
+					</a>
 				<!-- end BLOCK-TOVAR -->					
 				</div>
 				<div href="#" class="block-tovars__item">
 				<!-- begin BLOCK-TOVAR -->
+					<a href="#">
 					<div class="block-tovar-prev">
 						<h4>Chianti Castiglioni, <span>0.75 л., 2015 г.</span></h4>
 						<p class="block-tovar-prev__code">Артикул: 103328</p>
@@ -569,6 +544,7 @@
 							<a href="#" class="btn btn--in-basket">В корзину</a>
 						</div>
 					</div>
+					</a>
 				<!-- end BLOCK-TOVAR -->					
 				</div>
 			</div>
@@ -663,14 +639,21 @@
 	</div>
 <!-- ********************************- -->
 </div> <!-- end wrapper-x -->
-<!--
-<script src="js/menu.js"> </script>	
-<script src="js/main-modal.js"> </script>	
-<script src="js/modal.js"> </script>
-<script src="js/post.js"> </script>
--->
-<script src="js/frame.js"> </script>
 
+<!--<script src="js/menu.js"> </script>	
+<script src="js/main-modal.js"> </script>
+<script src="js/modal.js"> </script>
+<script src="js/post.js"> </script>-->	
+
+<script src="js/frame.js"> </script>
+<script src="js/venders/jquery-ui.js"></script>
+<script>
+	$( "#selector-price" ).slider({
+		range: true,
+		values: [ 17, 67 ]
+	});
+	
+</script>
 
 </body>
 </html>

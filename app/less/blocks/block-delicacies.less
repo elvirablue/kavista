@@ -1,0 +1,56 @@
+.block-delicacies {
+	
+	&__wrapper {
+		.clearfix();
+		padding: 1rem;
+
+	}
+
+	&__img {
+		width: 30%;
+		height: auto;
+
+		float: left;
+		margin-right: 2rem;
+		border: 2px solid @color-whine;
+
+		img {
+			width: 100%;
+		}
+	}
+
+	&__content {
+		width: 65%;
+		height: auto;
+		float: right;
+	}
+
+	.block-tovar-prev__basket {
+		display: block;
+		width: 100%;		
+	}
+
+	.block-tovar-prev__description {
+		padding-top: 2rem;
+
+		.description-wine {
+			margin-right: 0.7rem;
+		}
+	}
+
+	&__text-wrapper {
+		height: auto;
+		max-height: 9rem;
+		overflow: hidden;
+		padding-top: 1rem;
+
+		p {
+			padding-bottom: 0;
+		}
+	}
+}
+
+.block-delicacies-link:hover{
+		cursor: pointer;
+		.shadow();
+	}

@@ -19,6 +19,21 @@
 		display: block;	
 		float: left;
 		padding-left: 1rem;	
+		
+		.link {
+			display: block;
+			text-align: right;
+		}
+
+		.btn--in-basket {
+			width: 8rem;
+		}
+
+		.element-beige--horizontal .element-beige__text {
+			height: auto;
+			max-height: 9rem;
+		}
+
 	}
 
 	&__filter {
@@ -158,6 +173,23 @@
 	}
 }
 
+.catalog__tovars--alcohol {
+	.wine-color,
+	.wine-sugar {
+		display: none;
+	}	
+
+	.block-tovar-prev__description {
+		padding-top: 2rem;
+	}	
+}
+
+.catalog__tovars--delicacies {
+	width: 100%;
+	padding-left: 0;
+	margin-top: 1rem;
+}
+
 @media @tablet-widths {
 	.catalog {
 		
@@ -186,10 +218,11 @@
 			float: none;
 			margin: 0 auto;
 			position: absolute;
-			top: 5rem;
+			top: 0;
 			left: 0;
 			right: 0;
 			z-index: 6001;
+			text-align: left;
 		}
 
 		&__title {

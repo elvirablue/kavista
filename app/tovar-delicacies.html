@@ -1,0 +1,533 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>  
+	<meta charset="UTF-8">
+	<title>Кависта. Маркет-бар</title>
+	<meta name=viewport content="width=device-width, initial-scale=1">
+	<link rel="icon" href="img/favicon.ico" type="image/x-icon">
+	<link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon">
+	<link rel="stylesheet" href="css/venders/normalize.css">
+	<link rel="stylesheet" href="css/stylename.css">
+	<link rel="stylesheet" href="css/style.css">
+	
+	<link rel="stylesheet" href="css/venders/animate.css">
+	<link rel="stylesheet" href="css/simple.css">
+
+	<!-- jQuery -->
+	<script src="js/venders/jquery-1.12.4.js"></script>
+	<script src="js/venders/jquery.maskedinput.js"></script>
+
+	<link rel="stylesheet" href="css/venders/jquery.arcticmodal-0.3.css">	
+	<script src="js/venders/jquery.arcticmodal-0.3.min.js"></script>
+	<!--[if lte IE 9]>
+	    <script src="oldies/oldies.js" charset="utf-8"></script>
+	    <style>
+	       .wrapper-x {display: none;}	       
+	    </style>
+	 <![endif]-->
+</head>
+<body>
+
+<div id="fb-root"></div>
+<script>(function(d, s, id) {
+  var js, fjs = d.getElementsByTagName(s)[0];
+  if (d.getElementById(id)) return;
+  js = d.createElement(s); js.id = id;
+  js.src = "//connect.facebook.net/ru_RU/sdk.js#xfbml=1&version=v2.8";
+  fjs.parentNode.insertBefore(js, fjs);
+}(document, 'script', 'facebook-jssdk'));
+</script>
+<script>
+!function (d, id, did, st) {
+  var js = d.createElement("script");
+  js.src = "https://connect.ok.ru/connect.js";
+  js.onload = js.onreadystatechange = function () {
+  if (!this.readyState || this.readyState == "loaded" || this.readyState == "complete") {
+    if (!this.executed) {
+      this.executed = true;
+      setTimeout(function () {
+        OK.CONNECT.insertGroupWidget(id,did,st);
+      }, 0);
+    }
+  }}
+  d.documentElement.appendChild(js);
+}(document,"ok_group_widget","50582132228315",'{"width":280,"height":455}');
+</script>
+
+
+<div class="wrapper-x">
+<div class="wrapper-y">
+	<header class="page-header-desktop">
+		<div class="header-contact main-contact">
+			<p class="main-contact__phone">+7 (913) 000 00 00</p>
+			<div class="main-contact__address">
+				<p> г.Новосибирск, ул. Петухова 17, оф. 202<br>
+					<a href="#" class="main-contact__link">Посмотреть на карте</a>
+				</p>
+			</div>
+		</div>
+		<div class="header-logo">
+			<a href="#"><img src="img/logo.png" alt=""></a>
+		</div>
+		<div class="header-user">
+			<a href="#" class="header-user__club">Клубная карта</a>
+			<div class="header-user__basket frame frame--beige">
+				<div class="frame__content">
+					<a href="basket.html" class="header-user__basket-title">
+					Корзина <span>(0)</span>
+				</a>
+				<p class="header-user__basket-sum">0 <span>руб.</span></p>
+				</div>
+			</div>
+		</div>
+
+	</header>
+	<header class="page-header-mobil">
+		
+		
+	</header>
+
+	<div class="main-nav-block main-nav--closed">
+		<button class="main-nav__toggle" type="button">Открыть меню</button>
+	
+		<nav class="main-nav">			
+			<div class="main-nav__wrapper">
+				<ul>
+					<li><a href="index.html">Главная</a></li>
+					<li ><a href="">Вино</a></li>
+					<li><a href="sparkling-wine.html">Игристое вино</a></li>
+					<li><a href="strong-alcohol.html">Крепкий алкоголь</a></li>
+					<li><a href="liquor.html">Ликер</a></li>
+					<li><a href="sets.html">Наборы и подарки</a></li>
+					<li class="active"><a href="delicacies.html">Деликатесы</a></li>
+					<li><a href="sale.html">Акции</a></li>
+					<li><a href="about.html">О нас</a></li>
+					<li ><a href="contacts.html">Контакты</a></li>
+				</ul>
+			</div>
+		</nav>
+	</div>
+<!-- *********************** БЛОК Преимущества ********************************- -->
+	<div class="separator"></div>
+	<div class="benefit">
+		<div class="frame frame--beige">
+			<div class="frame__content">
+				<div class="benefit__item">
+					<p class="benefit__img"><img src="img/ico-benefit-1.png" alt=""></p>
+					<p class="benefit__title">
+						Профессиональный кавист поможет в выборе вина
+						<a href="#">Читать подробнее</a>
+					</p>					
+				</div>
+				<div class="benefit__item">
+					<p class="benefit__img"><img src="img/ico-benefit-2.png" alt=""></p>
+					<p class="benefit__title">
+						Регулярные дегустации ­попробуйте вино перед покупкой
+						<a href="#">Читать подробнее</a>
+					</p>					
+				</div>
+				<div class="benefit__item">
+					<p class="benefit__img"><img src="img/ico-benefit-3.png" alt=""></p>
+					<p class="benefit__title">
+						Винный бар с огромным ассортиментом
+						<a href="#">Читать подробнее</a>
+					</p>					
+				</div>
+			</div>
+		</div>				
+	</div>
+	<div class="separator"></div>
+<!-- *********************** БЛОК ТОВАРОВ********************************- -->
+	<div class="main-head">
+		<h3 class="main-head__title wine">
+			Деликатесы			
+		</h3>
+		<div class="breadcramps">
+			<ul>
+				<li><a href="index.html">Главная</a></li>
+				<li><a href="delicacies.html">Деликатесы</a></li>
+				<li class="active"><a href="">Шейка Коппа Simonini</a></li>
+			</ul>			
+		</div>
+	</div>
+ 	<div class="catalog">
+		<div class="catalog__wrap">	
+
+			<div class="catalog__tovar-card-wrapper">	
+				<div class="catalog__tovar-card frame frame--beige">
+					<div class="frame__content">
+						<div class="tovar-card">
+							<div class="tovar-card__block-main block-main">
+								<div class="block-main__img">
+									<img src="img/tovar/tovar1.png" alt="">
+								</div>
+								<div class="block-main__description">
+									<h4>Вино. Chianti Castiglioni, <span>0.75 л., 2015 г.</span></h4>
+									<p class="description-code">Артикул: 103328</p>
+									
+									<p class="description-type">
+										<span class="description-wine wine-color red"> 
+										<!--red/white/rose -->
+											Красное
+										</span>
+										<span class="description-wine wine-sugar">							
+											Сухое
+										</span>
+										<span class="description-wine wine-land italy">
+											Италия
+										</span>
+									</p>
+									<p class="description-social"> 
+										<span class="description-social__title">Поделться</span> 
+										<span class="social social--vk"></span>
+										<span class="social social--fb"></span>
+										<span class="social social--ok"></span>
+										<span class="social social--twitter"></span>
+									</p>
+								</div>
+
+							</div>
+							<div class="tovar-card__block-tabs">
+								<input type="radio" id="btn-1" name="toggle" checked>
+    							<input type="radio" id="btn-2" name="toggle">
+   								<input type="radio" id="btn-3" name="toggle">
+
+								<div class="tovar-card__toggle">
+									<label for="btn-1">Характеристики</label>
+									<label for="btn-2">О производителе</label>	
+									<label for="btn-3">Отзывы</label>														
+								</div>
+
+								<div class="tovar-card__characteristics">
+									<div class="tovar-card__table">
+										<table>
+											<tbody>
+											<tr>
+												<td>Регион: </td>
+												<td>Тоскана</td>
+											</tr>
+											<tr>
+												<td>Производель: </td>
+												<td>Marchesi de' Frescobaldi<td>
+											</tr>
+											<tr>
+												<td>Объем: </td>
+												<td>0.75 л.</td>
+											</tr>
+											<tr>
+												<td>Год: </td>
+												<td>2015</td>
+											</tr>
+											<tr>
+												<td>Крепость: </td>
+												<td>13%</td>
+											</tr>
+											<tr>
+												<td>Температура дачи от и до: </td>
+												<td>16 - 18°</td>
+											</tr>
+											<tr>
+												<td>Потенциал хранения: </td>
+												<td>3-5 лет.</td>
+											</tr>
+											<tr>
+												<td>Аппелласьон: </td>
+												<td>Chianti DOCG</td>
+											</tr>
+											<tr>
+												<td>Категория: </td>
+												<td>Denominazione di Origine Controllata e Garantita (DOCG)</td>
+											</tr>
+											<tr>
+												<td>Декантация: </td>
+												<td>аэрация</td>
+											</tr>
+											<tr>
+												<td>Выдержка в кости: </td>
+												<td>Нейтральная кость</td>
+											</tr>
+											<tr>
+												<td>Стилистика: </td>
+												<td>красное - фруктовое, среднетелое, не выдержанное в дубе</td>
+											</tr>
+											<tr>
+												<td>Кол-во в упаковке: </td>
+												<td>1</td>
+											</tr>
+											<tr>
+												<td>Рейтинг : </td>
+												<td>86</td>
+											</tr>
+										</table>
+									</div>
+								</div>
+								<div class="tovar-card__fabricator text-content-inner">
+									<p>
+										Tenuta di Castiglioni расположена в самом сердце Кьянти к юго-западу от Флоренции. В семейном архиве хранятся документы, в которых упоминается, что Castillione Vallis Pesae принадлежала маркизам Фрескобальди еще в 1092 году. Это поместье было одним из первых, где зародилась история семейного виноделия маркизов, насчитывающая уже более 700 лет.
+									</p>
+									<p>
+										Tenuta di Castiglioni расположена в самом сердце Кьянти к юго-западу от Флоренции. В семейном архиве хранятся документы, в которых упоминается, что Castillione Vallis Pesae принадлежала маркизам Фрескобальди еще в 1092 году. Это поместье было одним из первых, где зародилась история семейного виноделия маркизов, насчитывающая уже более 700 лет.
+									</p>
+								</div>
+								<div class="tovar-card__reviews text-content-inner">
+									<p>
+										Tenuta di Castiglioni расположена в самом сердце Кьянти к юго-западу от Флоренции. В семейном архиве хранятся документы, в которых упоминается, что Castillione Vallis Pesae принадлежала маркизам Фрескобальди еще в 1092 году. Это поместье было одним из первых, где зародилась история семейного виноделия маркизов, насчитывающая уже более 700 лет.
+									</p>
+								</div>
+							</div>
+							<div class="tovar-card__block-info">
+								<div class="tovar-card__table">
+									<table>
+										<tbody>
+											<tr>
+												<td>Виноградники: </td>
+												<td>Площадь хозяйства составляет 513 га, а виноградники занимают только одну пятую ее часть (130 га). Почвы смешанные,  глинисто-каменистые. Плотность посадки: от 2800 до 5500 лоз/га. Система возделывания: кордон.</td>
+											</tr>
+											<tr>
+												<td>Гастрономия:	</td>
+												<td>Прекрасно сочетается с жареным мясом, цыпленком, паппарделле с мясным соусом и сырами средней выдержки.</td>
+											</tr>
+											<tr>
+												<td>Дегустационные характеристики:</td>
+												<td>Красивый рубиновый цвет с фиолетовыми отблесками. Букет сложный и многогранный: насыщенные ягодные тона, среди которых особо выделяются нотки черешни и клубники, переплетаются с оттенками розы и фиалки. Вино мягкое и сбалансированное, с отчетливым продолжительным ягодным послевкусием.</td>
+											</tr>
+											<tr>
+												<td>Способ выдержки:</td>
+												<td>В стальных емкостях в течение 6 месяцев и 1 год в бутылках.</td>
+											</tr>
+										</tbody>
+									</table>
+								</div>
+							</div>
+							<div class="tovar-card__block-info">
+								<h4 class="tovar-card__block-info-title">Это интересно</h4>
+								<div class="text-content-inner">
+									<p>
+										Tenuta di Castiglioni расположена в самом сердце Кьянти к юго-западу от Флоренции. В семейном архиве хранятся документы, в которых упоминается, что Castillione Vallis Pesae принадлежала маркизам Фрескобальди еще в 1092 году. Это поместье было одним из первых, где зародилась история семейного виноделия маркизов, насчитывающая уже более 700 лет.
+									</p>
+								</div>
+							</div>
+						</div>
+						
+					</div>
+				</div>			
+			</div>
+			
+			<aside class="catalog__aside-tovar">
+			<!--начало КОРЗИНЫ -->
+				<div class="catalog__basket frame frame--beige" id="filter-color">
+					<div class="frame__content ">
+						<div class="basket">
+							<p>Цена: <b class="catalog__basket-price">3 000</b> <span>руб.</span></p>
+							<div class="catalog__basket-count">
+								<button class="count count--less">&mdash;</button>
+								<input type="text"  class="count count--current" placeholder="0">
+								<button class="count count--more">+</button>
+							</div>
+							<a href="#" class="btn btn--buy">Купить</a>
+							
+						</div>
+					</div>
+				</div>
+			<!--конец КОРЗИНЫ -->
+				<h4 class="catalog__subtitlle">Рекомендуем также:</h4>
+
+			<!--начало блока рекомендуемого товара -->
+				<div class="block-tovars__item">
+				<!-- begin BLOCK-TOVAR -->
+					<div class="block-tovar-prev">
+						<h4>Chianti Castiglioni, <span>0.75 л., 2015 г.</span></h4>
+						<p class="block-tovar-prev__code">Артикул: 103328</p>
+						<div class="block-tovar-prev__img">
+							<img src="img/tovar/tovar1.png" alt="">
+						</div>
+						<div class="block-tovar-prev__description">
+							<span class="description-wine wine-color red"> 
+							<!--red/white/rose -->
+								Красное
+							</span>
+							<span class="description-wine wine-sugar">							
+								Сухое
+							</span>
+							<span class="description-wine wine-land italy">
+								Италия
+							</span>
+							<span class="description-wine wine-price">
+								3 000 руб.
+							</span>							
+						</div>
+						<div class="block-tovar-prev__basket">
+							<div class="checkbox">
+								<div class="ch_wrapper">
+									<input id="check" type="checkbox" name="check[]" value="1" disabled checked>
+									<label for="check">В наличии</label>
+								</div>
+							</div>
+							<a href="#" class="btn btn--in-basket">В корзину</a>
+						</div>
+					</div>
+				<!-- end BLOCK-TOVAR -->					
+				</div>
+			<!--конец блока рекомендуемого товара -->
+
+			</aside>
+
+
+			
+		</div><!-- end wrap -->
+		
+	</div>
+
+<!-- **************************** БЛОК ФОРМЫ "ОСТАЛИСЬ ВОПРОСЫ?" ***********************************- -->
+	<div class="separator"></div>
+	<div class="main-form">
+		<div class="frame frame--beige">
+			<div class="frame__content">
+				<h2 class="main-form__title">ОСТАЛИСЬ ВОПРОСЫ?</h2>
+				<p class="main-form__subtitle">Задайте их консультанту Маркет­бара "Кависта"</p>
+				<div class="main-form__img">
+					<img src="img/manager.jpg" alt="">					
+				</div>
+				<div class="main-form__text-btn">
+					<p class="main-form__name">Антонина</p>
+					<p class="main-form__position">Консультант Маркет-бара "Кависта"</p>
+					<button class="btn btn--brown btn--mainform">Написать</button>
+					<button class="btn btn--mainform">Заказать звонок</button>
+				</div>
+			</div>
+		</div>
+	</div>
+
+<!-- **************************** БЛОК СОЦСЕТЕЙ ***********************************- -->
+	
+	<div class="separator"></div>
+	<div class="main-social">
+		<div class="frame frame--beige">
+			<div class="frame__content">
+				<h2 class="main-social__title">ПРИСОЕДИНЯЙТЕСЬ</h2>
+				<div class="social-networks">
+					
+					<div class="social-networks__vk ">
+						<script type="text/javascript" src="//vk.com/js/api/openapi.js?139"></script>						
+						<div id="vk_groups"></div>
+						<script type="text/javascript">
+							VK.Widgets.Group("vk_groups", {mode: 4, width: "280", height: "450"}, 20003922);
+						</script>
+					</div>
+
+					<div class="social-networks__ok " id="ok_group_widget"></div>
+					
+
+					<div class="social-networks__fb ">
+						<div class="fb-page" data-href="https://www.facebook.com/facebook" data-tabs="timeline" data-width="280" data-height="450" 	data-small-header="false" data-adapt-container-width="true" data-hide-cover="false" data-show-facepile="true">
+							<blockquote cite="https://www.facebook.com/facebook" class="fb-xfbml-parse-ignore">
+								<a href="https://www.facebook.com/facebook">Facebook</a> 
+							</blockquote> 
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+
+
+	<div class="separator"></div>	
+
+
+<!-- *************************** БЛОК ПОДВАЛ***************************************- -->	
+</div> <!-- end wrapper-y -->	
+
+	<footer  class="page-footer-bg">
+		<div class="page-footer">
+			<div class="page-footer__logo">
+				<img src="img/logo-white.png" alt="">
+			</div>
+			<div class="page-footer__block-middle">
+				<nav class="footer-nav">
+					<ul class="footer-nav__col">
+						<li class=""><a href="index.html">Главная</a></li>					
+						<li><a href="vacancy.html">Вакансии</a></li>
+						<li><a href="tasting.html">Дегустации</a></li>
+						<li><a href="articles.html">События и статьи</a></li>
+						<li><a href="services.html">Услугии</a></li>					
+					</ul>
+					<ul class="footer-nav__col">
+						<li><a href="about.html">О компании</a></li>
+						<li><a href="contacts.html">Контакты</a></li>												
+					</ul>					
+				</nav>
+				<a href="#" class="page-footer__club">Клубная карта</a>
+			</div>
+			<div class="page-footer__block-right main-contact">
+				<p class="main-contact__phone">+7 (913) 000 00 00</p>
+				<div class="main-contact__address">
+					<p> г.Новосибирск, ул. Петухова 17, оф. 202<br>
+						<a href="#" class="main-contact__link">Посмотреть на карте</a>
+					</p>
+				</div>
+				<form action="" class="footer-form frame frame--beige">
+					<div class="frame__content">
+						<p>
+							Получайте полезные статьи и новости от Маркет-бара "Кависта"
+						</p>
+						<input class="user-input user-input--footer-form" type="email" name="user-mail" placeholder="Ваш E-mail" required>
+						<button class="btn btn--footer-form" type="submit">Подписаться</button>
+					</div>					
+				</form>
+			</div>
+				
+			
+		</div>		
+	</footer>
+
+<!-- ************** БЛОК ФИЛЬТР ДЛЯ МОБИЛЬНОЙ ВЕРСИИ ******************- -->
+
+
+
+<!-- ************** БЛОК ПРИЛИПАЮЩАЯ НАВИГАЦИЯ ПРИ СКРОЛЛЕ ******************- -->
+	<div class="main-nav-scroll">
+
+	</div>
+
+<!-- ************** БЛОК МОДАЛЬНЫЕ ОКНА ******************- -->
+	<div class="modal_wrapper">  </div>
+
+	<div class="modal more">
+	  <div class="frame_blue">
+	    <button class="modal_close" type="button">Закрыть</button>
+	    <h3 id="modal_txt">Заголовок</h3>
+	    <p><b>Оставьте Ваши контакты</b></p>
+	    <form method="post">    
+	      	<input type="text" class="user-input user-input--block-modal required" id="user_name_modal" name="user-name" placeholder="Имя" >
+	       	<input type="tel" class="user-input user-input--block-modal required" id="user_phone_modal" name="user-phone" placeholder="Телефон" >
+	        <input type="email" class="user-input user-input--block-modal" id="user_mail_modal" name="user-mail" placeholder="E-mail">
+	    	<button class="btn-yellow btn-yellow--form-modal" type="submit" id="btn_form_modal">Получить консультацию</button>    
+	      	<input type="text" class="form_text_hide" name="text">
+	    </form>
+	    <span>Менеджер перезвонит Вам<br> в течение 15 минут</span>
+	  </div>
+	</div>
+
+	<div style="display: none;">
+	    <div class="box-modal" id="exampleModal">
+	      <div class="frame_blue">        
+	        <div class="box-modal_close arcticmodal-close">x</div>
+	        <h3>Спасибо за заявку!</h3>
+	        <hr>
+	        <p>Мы свяжемся с Вами в ближайшее время.</p>
+	      </div>
+	    </div>
+	</div>
+<!-- ********************************- -->
+</div> <!-- end wrapper-x -->
+<!--
+<script src="js/menu.js"> </script>	
+<script src="js/main-modal.js"> </script>	
+<script src="js/modal.js"> </script>
+<script src="js/post.js"> </script>
+-->
+<script src="js/frame.js"> </script>
+
+
+</body>
+</html>

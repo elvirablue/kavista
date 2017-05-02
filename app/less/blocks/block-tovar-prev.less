@@ -25,7 +25,8 @@
 		text-align: center;
 		margin: 1.3rem auto;
 		img {
-			height: 100%;
+			height: 19.5rem;
+			max-height: 19.5rem;
 			width: auto;
 		}
 	}
@@ -39,6 +40,12 @@
 		}
 
 	}
+
+	&__code {
+		color: @color-lightgray;
+		font-weight: normal;
+		.open-sans(1rem);
+	}
 }
 
 
@@ -46,3 +53,11 @@
 	background-image: url("../img/frame-beige-tovar-hover.svg");
 	cursor: pointer;
 }
+
+.block-tovar-prev__description.delicacies {
+		padding-top: 0rem;
+
+		.description-wine {
+			margin-right: 0.7rem;
+		}
+	}

@@ -267,6 +267,11 @@ a {
   h4 {
     font-size: 1.25rem;
   }
+  .main-head__title {
+    font-size: 1.2rem;
+    padding-top: 0.4rem;
+    height: 2rem;
+  }
 }
 .corner {
   position: relative;
@@ -429,7 +434,8 @@ a {
   margin: 1.3rem auto;
 }
 .block-tovar-prev__img img {
-  height: 100%;
+  height: 19.5rem;
+  max-height: 19.5rem;
   width: auto;
 }
 .block-tovar-prev__description {
@@ -439,9 +445,21 @@ a {
 .block-tovar-prev__description span {
   color: #6a6a6a;
 }
+.block-tovar-prev__code {
+  color: #6a6a6a;
+  font-weight: normal;
+  font-family: "OpenSans", sans-serif;
+  font-size: 1rem;
+}
 .block-tovar-prev:hover {
   background-image: url("../img/frame-beige-tovar-hover.svg");
   cursor: pointer;
+}
+.block-tovar-prev__description.delicacies {
+  padding-top: 0rem;
+}
+.block-tovar-prev__description.delicacies .description-wine {
+  margin-right: 0.7rem;
 }
 .description-wine {
   display: inline-block;
@@ -557,10 +575,10 @@ a {
 .wine-color.red:before {
   background-color: #671738;
 }
-.white {
+.wine-color.white:before {
   background-color: #f3e9da;
 }
-.rose {
+.wine-color.rose:before {
   background-color: #b8608b;
 }
 .wine-price {
@@ -732,6 +750,16 @@ a {
   font-size: 0.875rem;
   line-height: 2.8rem;
   height: 2.8rem;
+}
+.btn--filter {
+  display: block;
+  margin: 1rem auto;
+  padding: 0 2rem;
+  font-family: "Agora", serif;
+  font-size: 0.75rem;
+  line-height: 2.8rem;
+  height: 2.8rem;
+  width: 100%;
 }
 .btn--buy {
   display: block;
@@ -1070,6 +1098,17 @@ a {
   float: left;
   padding-left: 1rem;
 }
+.catalog__tovars .link {
+  display: block;
+  text-align: right;
+}
+.catalog__tovars .btn--in-basket {
+  width: 8rem;
+}
+.catalog__tovars .element-beige--horizontal .element-beige__text {
+  height: auto;
+  max-height: 9rem;
+}
 .catalog__filter {
   display: block;
   margin: 0.75rem 0 2rem;
@@ -1199,6 +1238,18 @@ a {
   content: "❤";
   font-size: 1.1rem;
 }
+.catalog__tovars--alcohol .wine-color,
+.catalog__tovars--alcohol .wine-sugar {
+  display: none;
+}
+.catalog__tovars--alcohol .block-tovar-prev__description {
+  padding-top: 2rem;
+}
+.catalog__tovars--delicacies {
+  width: 100%;
+  padding-left: 0;
+  margin-top: 1rem;
+}
 @media (max-width: 780px) {
   .catalog {
     position: relative;
@@ -1219,10 +1270,11 @@ a {
     float: none;
     margin: 0 auto;
     position: absolute;
-    top: 5rem;
+    top: 0;
     left: 0;
     right: 0;
     z-index: 6001;
+    text-align: left;
   }
   .catalog__title {
     position: relative;
@@ -2483,6 +2535,53 @@ a {
   .block-tovars--white .block-tovars__arrow .arrow.next {
     right: -1.8rem;
   }
+}
+.block-delicacies__wrapper {
+  padding: 1rem;
+}
+.block-delicacies__wrapper::after {
+  content: "";
+  display: table;
+  clear: both;
+}
+.block-delicacies__img {
+  width: 30%;
+  height: auto;
+  float: left;
+  margin-right: 2rem;
+  border: 2px solid #85254c;
+}
+.block-delicacies__img img {
+  width: 100%;
+}
+.block-delicacies__content {
+  width: 65%;
+  height: auto;
+  float: right;
+}
+.block-delicacies .block-tovar-prev__basket {
+  display: block;
+  width: 100%;
+}
+.block-delicacies .block-tovar-prev__description {
+  padding-top: 2rem;
+}
+.block-delicacies .block-tovar-prev__description .description-wine {
+  margin-right: 0.7rem;
+}
+.block-delicacies__text-wrapper {
+  height: auto;
+  max-height: 9rem;
+  overflow: hidden;
+  padding-top: 1rem;
+}
+.block-delicacies__text-wrapper p {
+  padding-bottom: 0;
+}
+.block-delicacies-link:hover {
+  cursor: pointer;
+  -webkit-filter: drop-shadow(0px 0px 10px rgba(133, 37, 76, 0.25));
+          filter: drop-shadow(0px 0px 10px rgba(133, 37, 76, 0.25));
 }
 .toggle-type-wine ul,
 .toggle-type-events ul {
