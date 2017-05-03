@@ -10,12 +10,12 @@
 		vertical-align: top;
 		height: auto;
 		max-height: 13rem;
-		width: 5rem;
-		max-width: 5rem;
+		width: 10rem;
+		max-width: 10rem;
 		text-align: center;
 		margin: 0 auto;
 		img {
-			height: 13rem;
+			max-height: 13rem;
 			width: auto;
 		}
 	}
@@ -23,8 +23,12 @@
 	&__description {
 		display: inline-block;
 		vertical-align: top;
-		width: ~"calc(100% - 5.5rem)";
+		width: ~"calc(100% - 10.5rem)";
 		padding-left: 1.5rem;
+
+		.description-code {
+			padding-bottom: 2rem;
+		}
 	}
 
 }

@@ -25,7 +25,7 @@
 			text-align: right;
 		}
 
-		.btn--in-basket {
+		.btn--in-basket.delicacies {
 			width: 8rem;
 		}
 
@@ -101,9 +101,12 @@
 	}
 
 	&__basket  {
-		margin: 0 0.5rem;
+		margin: 1rem 0rem;
+
 		p {
+			display: inline-block;
 			padding-top: 0.5rem;
+			
 		}
 		span {
 			color: @color-orange;
@@ -111,7 +114,10 @@
 		}
 	}
 
-
+	&__tovar-card-basket {
+		width: 100%;
+		display: inline-block;
+	}
 
 	&__basket-price {
 		.agora(1.5rem);
@@ -128,11 +134,11 @@
 	}
 
 	&__basket-sum {
-		display: block;
+		display: inline-block;
 		text-align: center;
 		.agora(1.5rem);
 		font-weight: bold;
-		padding: 1rem 0;
+		padding: 1rem;
 		color: @color-orange;
 
 	}
