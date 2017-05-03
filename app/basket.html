@@ -180,18 +180,18 @@
 									<td class="page-basket__table-item-count">
 										<span class="page-basket__table-title">Количество</span>
 										<div class="page-basket__count">
-											<button class="count count--less-min">&mdash;</button>
-											<input type="text"  class="count count--current-min" placeholder="0">
-											<button class="count count--more-min">+</button>
+											<button type="button" class="count count--less-min js-min">&mdash;</button>
+											<input type="text"  class="count count--current-min js-current" placeholder="0">
+											<button type="button" class="count count--more-min js-max">+</button>
 										</div>
 									</td>
 									<td class="page-basket__table-item">
 										<span class="page-basket__table-title">Цена</span>
-										<span class="page-basket__table-price">13 000 p.</span>
+										<span class="page-basket__table-price js-price">13 000</span> p.
 									</td>
 									<td class="page-basket__table-item">
 										<span class="page-basket__table-title">Сумма</span>
-										<span class="page-basket__table-sum">13 000 p.</span>
+										<span class="page-basket__table-sum js-sum">13 000</span> p.
 									</td>
 								</tr>
 						<!-- начало блока ТОВАРА В КОРЗИНЕ -->
@@ -222,9 +222,9 @@
 									<td class="page-basket__table-item-count">
 										<span class="page-basket__table-title">Количество</span>
 										<div class="page-basket__count">
-											<button class="count count--less-min">&mdash;</button>
-											<input type="text"  class="count count--current-min" placeholder="0">
-											<button class="count count--more-min">+</button>
+											<button type="button" class="count count--less-min js-min">&mdash;</button>
+											<input type="text"  class="count count--current-min js-current" placeholder="0">
+											<button type="button" class="count count--more-min js-max">+</button>
 										</div>
 									</td>
 									<td class="page-basket__table-item">
@@ -391,8 +391,9 @@
 	</div>
 <!-- ********************************- -->
 </div> <!-- end wrapper-x -->
-<!--
-<script src="js/menu.js"> </script>	
+<script src="js/script.js"> </script>
+<!--<script src="js/menu.js"> </script>	
+
 <script src="js/main-modal.js"> </script>	
 <script src="js/modal.js"> </script>
 <script src="js/post.js"> </script>

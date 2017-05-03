@@ -177,13 +177,7 @@
 											Италия
 										</span>
 									</p>
-									<p class="description-social"> 
-										<span class="description-social__title">Поделться</span> 
-										<span class="social social--vk"></span>
-										<span class="social social--fb"></span>
-										<span class="social social--ok"></span>
-										<span class="social social--twitter"></span>
-									</p>
+									
 								</div>
 
 							</div>
@@ -318,13 +312,15 @@
 				<div class="catalog__basket frame frame--beige" id="filter-color">
 					<div class="frame__content ">
 						<div class="basket">
-							<p>Цена: <b class="catalog__basket-price">3 000</b> <span>руб.</span></p>
+							<p>Цена:&nbsp;&nbsp;&nbsp; <b class="catalog__basket-price js-price">3 000</b> <span>руб.</span></p>
+							
 							<div class="catalog__basket-count">
-								<button class="count count--less">&mdash;</button>
-								<input type="text"  class="count count--current" placeholder="0">
-								<button class="count count--more">+</button>
+								<button class="count count--less js-min">&mdash;</button>
+								<input type="text"  class="count count--current js-current" placeholder="0">
+								<button class="count count--more js-max">+</button>
 							</div>
-							<a href="#" class="btn btn--buy">Купить</a>
+							<p>Сумма:&nbsp; <b class="catalog__basket-price js-sum">0</b> <span>руб.</span></p>
+							<a href="#" class="btn btn--buy">В корзину</a>
 							
 						</div>
 					</div>
@@ -526,6 +522,7 @@
 <script src="js/modal.js"> </script>
 <script src="js/post.js"> </script>
 -->
+<script src="js/script.js"> </script>
 <script src="js/frame.js"> </script>
 
 

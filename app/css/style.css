@@ -762,11 +762,11 @@ a {
   width: 100%;
 }
 .btn--buy {
-  display: inline-block;
+  display: block;
   margin: 0 auto;
   text-align: center;
   width: auto;
-  padding: 0 1rem;
+  padding: 0 2rem;
 }
 .btn--ordering {
   margin: 2rem 2rem 1rem;
@@ -1165,11 +1165,12 @@ a {
   margin-bottom: 1rem;
 }
 .catalog__basket {
-  margin: 1rem 0rem;
+  margin: 0rem 0rem;
 }
 .catalog__basket p {
   display: inline-block;
   padding-top: 0.5rem;
+  padding-bottom: 1rem;
 }
 .catalog__basket span {
   color: #d46000;
@@ -1200,7 +1201,7 @@ a {
   -webkit-justify-content: space-between;
       -ms-flex-pack: justify;
           justify-content: space-between;
-  padding: 2rem 0 1.5rem;
+  padding: 0.5rem 0 1.5rem;
 }
 .catalog__basket-sum {
   display: inline-block;

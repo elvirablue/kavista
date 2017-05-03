@@ -8,7 +8,6 @@ $(document).on('ready', function(){
 	
 
 
-
   $('#js-filter').click(function(event){
       event.preventDefault();
       $('.catalog__filters').css('display','block');          
