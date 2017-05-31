@@ -5,7 +5,7 @@ $(document).ready(function() {
 		var data = $form.serialize();
 		
 		if (validateForm($form)) {
-			if ($form[0].id === 'form-footer') {$.post("./assets/mail-subs.php", data, function(resp) {});}
+			if ($form[0].id === 'footer-form') {$.post("./assets/mail-subs.php", data, function(resp) {});}
 			else {$.post("./assets/mail.php", data, function(resp) {});}
 			
 			

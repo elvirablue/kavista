@@ -50,6 +50,7 @@ $(document).on('ready', function(){
       document.querySelector('#js-write').addEventListener('click', function(event){
         event.preventDefault();   
         phone.style.display='none';
+        phone.classList.remove('required');
         name.style.display='block';
         mail.style.display='block';
         text.style.display='block';
@@ -67,7 +68,9 @@ $(document).on('ready', function(){
         phone.style.display='block';
         name.style.display='block';
         mail.style.display='none';
+        mail.classList.remove('required');
         text.style.display='none';
+        text.classList.remove('required');
         text_manager.innerHTML = 'Менеджер перезвонит Вам<br> в течение 15 минут' ;         
         title.innerText = text_hide.value = 'Заказать звонок';
         btn_value.innerText = 'Отправить';
