@@ -423,6 +423,10 @@ a {
   background: url("../img/frame-beige-tovar.svg") 0 0 no-repeat;
   background-size: auto;
 }
+.block-tovar-prev__basket form,
+.block-tovar-prev__basket fieldset {
+  display: inline-block;
+}
 .block-tovar-prev h4 span {
   display: block;
 }
@@ -789,6 +793,9 @@ a {
   font-size: 0.875rem;
   height: 2.8rem;
   line-height: 2.8rem;
+}
+.btn--checkout {
+  padding: 0 2rem;
 }
 .btn--in-basket {
   width: 6.6rem;
@@ -3874,4 +3881,18 @@ a {
           box-sizing: border-box;
   padding: 0 0 24rem;
   min-height: 100vh;
+}
+.shk_count_button {
+  line-height: 26px;
+  color: #ffffff;
+}
+button.shk-but {
+  background-color: transparent;
+  width: 80%;
+  text-transform: none;
+  font-family: "Roboto", sans-serif;
+  font-size: 0.75rem;
+  color: #ffffff;
+  font-weight: normal;
+  margin-bottom: 1rem;
 }
