@@ -423,6 +423,10 @@ a {
   background: url("../img/frame-beige-tovar.svg") 0 0 no-repeat;
   background-size: auto;
 }
+.block-tovar-prev__basket form,
+.block-tovar-prev__basket fieldset {
+  display: inline-block;
+}
 .block-tovar-prev h4 span {
   display: block;
 }
@@ -591,9 +595,16 @@ a {
   background: url("../img/sugar.png") 0 0 no-repeat;
   background-size: cover;
 }
+.wine-land:before {
+  border: 1px solid #dddddd;
+}
 .wine-land.italy:before {
   background: url("../img/f-italia.png") 0 0 no-repeat;
-  background-size: cover;
+  background-size: 100% 100%;
+}
+.wine-land.rus:before {
+  background: url("../img/f-rus.png") 0 0 no-repeat;
+  background-size: 100% 100%;
 }
 @media (max-width: 780px) {
   .description-type .description-wine {
@@ -3897,4 +3908,18 @@ a {
           box-sizing: border-box;
   padding: 0 0 24rem;
   min-height: 100vh;
+}
+.shk_count_button {
+  line-height: 26px;
+  color: #ffffff;
+}
+button.shk-but {
+  background-color: transparent;
+  width: 80%;
+  text-transform: none;
+  font-family: "Roboto", sans-serif;
+  font-size: 0.75rem;
+  color: #ffffff;
+  font-weight: normal;
+  margin-bottom: 1rem;
 }

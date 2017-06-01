@@ -10,11 +10,6 @@
 	background: url("../img/frame-beige-tovar.svg") 0 0 no-repeat;
 	background-size: auto;
 	
-	&__basket {
-		form, fieldset {
-			display: inline-block;
-		}
-	}
 
 	h4 {
 		span {
