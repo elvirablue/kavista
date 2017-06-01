@@ -481,12 +481,10 @@ a {
 .description-btn {
   display: block;
   width: 100%;
-  text-align: left;
   padding-top: 1rem;
 }
 .description-btn__link {
   display: inline-block;
-  margin-right: 1.5rem;
   font-family: "Agora", serif;
   font-size: 1rem;
   text-transform: uppercase;
@@ -497,6 +495,7 @@ a {
   transition: color ease 0.3s;
   outline: none;
   cursor: pointer;
+  text-align: center;
 }
 .description-btn__link:hover {
   color: #671738;
@@ -610,7 +609,6 @@ a {
   }
   .description-btn__link {
     font-size: 0.75rem;
-    margin-right: 1.5rem;
   }
 }
 .ch_wrapper,
@@ -748,6 +746,7 @@ a {
 .btn--main-event,
 .btn--main-service,
 .btn--buy,
+.btn--checkout,
 .btn--ordering {
   padding: 0 2rem;
   font-family: "Agora", serif;
@@ -764,6 +763,13 @@ a {
   line-height: 2.8rem;
   height: 2.8rem;
   width: 100%;
+}
+.btn--checkout {
+  display: inline-block;
+  margin: 0 auto;
+  text-align: center;
+  width: auto;
+  padding: 0 2rem;
 }
 .btn--buy {
   display: block;
@@ -3433,9 +3439,19 @@ a {
   width: 50%;
   vertical-align: top;
 }
+.page-basket__table-title {
+  display: block;
+}
 .page-basket__table-item {
   width: 16%;
   vertical-align: top;
+  position: relative;
+}
+.page-basket__table-item span:nth-child(2):after {
+  content: "p.";
+  display: inline-block;
+  position: relative;
+  padding-left: 0.5rem;
 }
 .page-basket__table-item-count {
   width: 20%;
@@ -3443,7 +3459,7 @@ a {
 }
 .page-basket__table-price,
 .page-basket__table-sum {
-  display: block;
+  display: inline-block;
   color: #d46000;
   font-weight: bold;
   font-family: "Agora", serif;
@@ -3457,12 +3473,12 @@ a {
   text-align: left;
   padding: 1.5rem 0 0;
 }
-@media (max-width: 1170px) {
+@media (max-width: 960px) {
   .page-basket {
     padding: 2rem 0;
   }
   .page-basket__table-tovar {
-    width: 68%;
+    width: 80%;
     display: inline-block;
     vertical-align: top;
   }
@@ -3470,12 +3486,12 @@ a {
     width: 30%;
     display: inline-block;
     vertical-align: top;
-    margin-top: 3.5rem;
+    margin-top: 0rem;
   }
   .page-basket__table-item {
     display: inline-block;
     vertical-align: top;
-    width: 45%;
+    width: 30%;
     text-align: center;
   }
   .page-basket__table-price,
@@ -3491,11 +3507,18 @@ a {
 @media (max-width: 780px) {
   .page-basket {
     padding: 2rem 0;
+    text-align: center;
+  }
+  .page-basket__tovar-number {
+    display: inline-block;
+  }
+  .page-basket__table-number {
+    display: inline-block;
+    padding: 0;
   }
   .page-basket__table-tovar,
   .page-basket__table-item-count {
-    width: 100%;
-    display: block;
+    width: 90%;
   }
   .page-basket__table-item {
     display: inline-block;

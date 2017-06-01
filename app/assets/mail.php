@@ -11,7 +11,7 @@ if(!empty($_POST["user-phone"])) {
 	
 	$to = "olga_tretyakova@mail.ru"; //
 
-	$titleMail = 'Заявка с сайта НСК';
+	$titleMail = 'Заявка с сайта Кависта';
 	$message = '
 		<table style="font-family: arial ;">
 		<tr style="border: 1px solid black;">
@@ -42,7 +42,7 @@ if(!empty($_POST["user-phone"])) {
 		</table>
 	';
 
-	mail($to, $titleMail, $message, "MIME-Version: 1.0\nContent-type: text/html; charset=utf-8\nFrom: nsk-sk.ru - заполнена форма!");
+	mail($to, $titleMail, $message, "MIME-Version: 1.0\nContent-type: text/html; charset=utf-8\nFrom: kavista.ru - заполнена форма!");
 
 } else return false;
 
