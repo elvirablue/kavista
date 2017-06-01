@@ -89,14 +89,6 @@
 	height: 2.8rem;
 	line-height: 2.8rem;
 }
-
-<<<<<<< HEAD
-.btn--checkout {
-	padding: 0 2rem;
-}
-
-=======
->>>>>>> f14b652171c71d45a3ccea91aba04954d1eead79
 .btn--in-basket {
 	width: 6.6rem;
 	margin-left: 0.5rem;

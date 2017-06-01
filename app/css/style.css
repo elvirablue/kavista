@@ -595,9 +595,16 @@ a {
   background: url("../img/sugar.png") 0 0 no-repeat;
   background-size: cover;
 }
+.wine-land:before {
+  border: 1px solid #dddddd;
+}
 .wine-land.italy:before {
   background: url("../img/f-italia.png") 0 0 no-repeat;
-  background-size: cover;
+  background-size: 100% 100%;
+}
+.wine-land.rus:before {
+  background: url("../img/f-rus.png") 0 0 no-repeat;
+  background-size: 100% 100%;
 }
 @media (max-width: 780px) {
   .description-type .description-wine {

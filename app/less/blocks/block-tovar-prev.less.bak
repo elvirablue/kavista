@@ -1,0 +1,63 @@
+.block-tovar-prev {
+	display: flex;
+	flex-flow: column nowrap;
+	justify-content: space-between;
+
+	margin: 0 auto;
+	width: 17rem;
+	height: 37rem;
+	padding: 1.5rem;
+	background: url("../img/frame-beige-tovar.svg") 0 0 no-repeat;
+	background-size: auto;
+	
+
+	h4 {
+		span {
+			display: block;
+		}
+	}
+	
+
+	&__img {
+		display: block;
+		height: auto;
+		max-height: 19.5rem;
+		text-align: center;
+		margin: 1.3rem auto;
+		img {
+			height: 19.5rem;
+			max-height: 19.5rem;
+			width: auto;
+		}
+	}
+
+	&__description {
+		display: block;
+		height: auto;
+
+		span {
+			color: @color-lightgray;
+		}
+
+	}
+
+	&__code {
+		color: @color-lightgray;
+		font-weight: normal;
+		.open-sans(1rem);
+	}
+}
+
+
+.block-tovar-prev:hover {
+	background-image: url("../img/frame-beige-tovar-hover.svg");
+	cursor: pointer;
+}
+
+.block-tovar-prev__description.delicacies {
+		padding-top: 0rem;
+
+		.description-wine {
+			margin-right: 0.7rem;
+		}
+	}
