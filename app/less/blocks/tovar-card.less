@@ -92,6 +92,7 @@
 }
 
 .tovar-card-delicacies {
+	.clearfix();
 	display: block;
 	padding: 2rem 1rem 0;
 
@@ -101,15 +102,19 @@
 	}
 
 	&__img {
-		display: block;
-		width: 100%;
-		margin: 0 auto;
+		display: inline-block;
+		float: left;
+		max-width: 100%;
+		width: auto;
+		margin: 0 2rem 1rem 0;
 		overflow: hidden;
 		border: 1px solid @color-beige;
 		border-radius: 5px;
 
 		img {
-			width: 100%;
+			max-width: 100%;
+			width: auto;
+			height: auto;
 		}
 	}
 
@@ -119,6 +124,10 @@
 }
 
 @media @mobil-widths {
+	.tovar-card-delicacies__img  {
+		display: block;
+		margin: 0 auto 1rem;
+	}
 	.tovar-card {
 		&__toggle {
 			ul {
