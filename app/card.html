@@ -27,7 +27,7 @@
 	 <![endif]-->
 </head>
 <body>
-
+ 
 <div id="fb-root"></div>
 <script>(function(d, s, id) {
   var js, fjs = d.getElementsByTagName(s)[0];
@@ -102,10 +102,16 @@
 					<li><a href="delicacies.html">Деликатесы</a></li>
 					<li><a href="sale.html">Акции</a></li>
 					<li><a href="about.html">О нас</a></li>
-					<li ><a href="contacts.html">Контакты</a></li>
+					<li><a href="contacts.html">Контакты</a></li>
 				</ul>
 			</div>
 		</nav>
+	</div>
+
+<!-- *********************** БЛОК Заголовок с картинкой ********************************- -->
+	<div class="page-card-bg">
+		<h3 class="main-head__title card">ПРОГРАММА ЛОЯЛЬНОСТИ<br>"КАВИСТА-БОНУС"</h3>
+		<p class="main-head__subtitle">Получите дисконтную карту с начилением бонусов<br>до 10% с каждой покупки</p>
 	</div>
 <!-- *********************** БЛОК Преимущества ********************************- -->
 	<div class="separator"></div>
@@ -113,66 +119,94 @@
 		<div class="frame frame--beige">
 			<div class="frame__content">
 				<div class="benefit__item">
-					<p class="benefit__img"><img src="img/ico-benefit-1.png" alt=""></p>
+					<p class="benefit__img"><img src="img/ico-card-1.png" alt=""></p>
 					<p class="benefit__title">
-						Профессиональный кавист поможет в выборе вина
-						<a href="#">Читать подробнее</a>
+						Заполните анкету
 					</p>					
 				</div>
 				<div class="benefit__item">
-					<p class="benefit__img"><img src="img/ico-benefit-2.png" alt=""></p>
+					<p class="benefit__img"><img src="img/ico-card-2.png" alt=""></p>
 					<p class="benefit__title">
-						Регулярные дегустации ­попробуйте вино перед покупкой
-						<a href="#">Читать подробнее</a>
+						Заберите Вашу клубную карту в магазине
 					</p>					
 				</div>
 				<div class="benefit__item">
-					<p class="benefit__img"><img src="img/ico-benefit-3.png" alt=""></p>
+					<p class="benefit__img"><img src="img/ico-card-3.png" alt=""></p>
 					<p class="benefit__title">
-						Винный бар с огромным ассортиментом
-						<a href="#">Читать подробнее</a>
+						Накапливайте и рассчитывайтесь бонусами
 					</p>					
 				</div>
 			</div>
 		</div>				
 	</div>
 	<div class="separator"></div>
+<!-- *********************** БЛОК ФОРМЫ ДЛЯ КЛУБНОЙ КАРТЫ ********************************- -->	
 	
-<!-- *********************** БЛОК ТОВАРОВ********************************- -->
-	<div class="main-head">
-		<h3 class="main-head__title event">Заголовок новости, которую читает посетитель</h3>
-		<div class="breadcramps">
-			<ul>
-				<li><a href="index.html">Главная</a></li>				
-				<li><a href="articles.html">Статьи и события</a></li>
-				<li class="active"><a href="">Заголовок новости, которую читает посетитель</a></li>
-			</ul>			
-		</div>
-	</div>
-	<div class="main-events">
-		<div class="separator"></div>
-		<div class="text-content-inner">
-			<img  class="img-event" src="img/events/ev1.jpg" alt="">
-			<p>This is Photoshop's version  of Lorem Ipsum. Proin gravida nibh vel velit auctor aliquet. Aenean sollicitudin, lorem quis bibendum auctor, nisi elit consequat ipsum, nec sagittis sem nibh id elit. Duis sed odio sit amet nibh vulputate cursus a sit amet mauris. Morbi accumsan ipsum velit. Nam nec tellus a odio tincidunt auctor a ornare odio. Sed non  mauris vitae erat consequat auctor eu in elit. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Mauris in erat justo. Nullam ac urna eu felis dapibus condimentum sit amet a augue. Sed non neque elit. Sed ut imperdiet nisi. Proin condimentum fermentum nunc. Etiam pharetra, erat sed fermentum feugiat, velit mauris egestas quam, ut aliquam massa nisl quis neque. Suspendisse in orci enim.</p>
-			<p>This is Photoshop's version  of Lorem Ipsum. Proin gravida nibh vel velit auctor aliquet. Aenean sollicitudin, lorem quis bibendum auctor, nisi elit consequat ipsum, nec sagittis sem nibh id elit. Duis sed odio sit amet nibh vulputate cursus a sit amet mauris. Morbi accumsan ipsum velit. Nam nec tellus a odio tincidunt auctor a ornare odio. Sed non  mauris vitae erat consequat auctor eu in elit. </p>
-			<p>Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Mauris in erat justo. Nullam ac urna eu felis dapibus condimentum sit amet a augue. Sed non neque elit. Sed ut imperdiet nisi. Proin condimentum fermentum nunc. Etiam pharetra, erat sed fermentum feugiat, velit mauris egestas quam, ut aliquam massa nisl quis neque. Suspendisse in orci enim.</p>			
-		</div>
+	<div class="page-card">
+		<form class="card-form frame frame--beige" id="card-form">
+			<div class="frame__content">
+				<h3>Заполните контактную информацию для получения клубной карты и участия в программе лояльности "Кависта-Бонус"</h3>
+				<div class="card-form__input-wr">
+					<div class="card-form__input">
+						<label for="user_name_card" class="user-label">Укажите ФИО:</label>
+						<input type="text" class="user-input user-input--card-form required" id="user_name_card" name="user-name" placeholder="Фамилия Имя Отчество" >
+					</div>
+					
+				   	<div class="card-form__input">
+						<label for="user_birthday_card" class="user-label">Дата рождения:</label>
+				    	<input type="date" class="user-input user-input--card-form required" id="user_birthday_card" name="user-birthday" placeholder="Число/месяц/год рождения">
+				    </div>
 
-		<div class="turn-pages-wrapper">
-			<a href="#" class="turn-pages turn-pages--prev">
-				<p class="arrow prev arrow--wine"></p>
-				<p>Предыдущая новость</p>
-				<h4>Заголовок предыдущей новости</h4>
-			</a>
-			<a href="#" class="turn-pages turn-pages--next">
-				<p>Следующая новость</p>
-				<h4>Заголовок следущей новости</h4>				
-				<p class="arrow next arrow--wine"></p>
-			</a>
-		</div>
+				    <div class="card-form__input">
+						<label for="user_phone_card" class="user-label">Ваш номер телефона:</label>
+				   		<input type="tel" class="user-input user-input--card-form required" id="user_phone_card" name="user-phone" placeholder="Мобильный телефон" >
+				   	</div>
+
+				   	<div class="card-form__input">
+						<label for="user_mail_card" class="user-label">Ваша электронная почта:</label>
+				   		<input type="email" class="user-input user-input--card-form required" id="user_mail_card" name="user-mail" placeholder="Email" >
+				   	</div>
+				    
+					<button class="btn btn--card-form" type="submit" id="btn_card_form">Получить клубную карту</button>    
+				  	<input type="text" class="form_text_hide" name="text">
+
+				  	 <div class="checkbox checkbox--card-form card-form__input">
+						<div class="ch_wrapper">
+							<p>Информация не будет передана третьим лицам</p>
+							<input id="check-card" type="checkbox" name="check-card" value="1" no-checked onchange="btnShow();">
+							<label for="check-card" id="label-card">Я согласен с правилами и условиями программы лояльности</label>
+							<script type="text/javascript">
+								function btnShow() {
+								    ch = document.getElementById('check-card');
+								    btn = document.getElementById('btn_card_form');
+								    l = document.getElementById('label-card');
+								    if (ch.checked) {
+								    	btn.style.display = "block"; 								    	
+								    	btn.classList.add('zoomIn');
+
+								    }
+								    else { 				    	
+								    	btn.classList.remove('zoomIn');								    	
+								    	btn.style.display = "none";
+								    }
+								  }
+							</script>							
+						</div>
+					</div>
+				</div>
+			</div>
+		</form>
+	</div>
+
+	<div class="page-card pdf">
+		<a href="#" target="_blank" >
+			<h5>Правила и условия программы лояльности</h5>
+			<p class="link">Открыть</p>
+		</a>
+	</div>
 		
-	</div>
-
+	
+<!-- **************************** БЛОК ФОРМЫ ЗАХВАТА КОНТАКТОВ ***********************************- -->
 
 
 <!-- **************************** БЛОК СОЦСЕТЕЙ ***********************************- -->
@@ -225,11 +259,11 @@
 						<li class=""><a href="index.html">Главная</a></li>					
 						<li><a href="vacancy.html">Вакансии</a></li>
 						<li><a href="tasting.html">Дегустации</a></li>
-						<li class="active"><a href="">События и статьи</a></li>
-						<li><a href="services.html">Услугии</a></li>					
+						<li><a href="news.html">События и статьи</a></li>
+						<li ><a href="services.html">Услугии</a></li>					
 					</ul>
 					<ul class="footer-nav__col">
-						<li><a href="about.html">О компании</a></li>
+						<li class="active"><a href="">О компании</a></li>
 						<li><a href="contacts.html">Контакты</a></li>												
 					</ul>					
 				</nav>
@@ -257,28 +291,13 @@
 		</div>		
 	</footer>
 
+<!-- ************** БЛОК ФИЛЬТР ДЛЯ МОБИЛЬНОЙ ВЕРСИИ ******************- -->
+
+
+
 <!-- ************** БЛОК ПРИЛИПАЮЩАЯ НАВИГАЦИЯ ПРИ СКРОЛЛЕ ******************- -->
 	<div class="main-nav-scroll">
-		<div class="main-nav-block main-nav--closed">
-			<button class="main-nav__toggle" type="button">Открыть меню</button>
-		
-			<nav class="main-nav">			
-				<div class="main-nav__wrapper">
-					<ul>
-						<li class="active"><a href="">Главная</a></li>
-						<li><a href="wine.html">Вино</a></li>
-						<li><a href="sparkling-wine.html">Игристое вино</a></li>
-						<li><a href="strong-alcohol.html">Крепкий алкоголь</a></li>
-						<li><a href="liquor.html">Ликер</a></li>
-						<li><a href="sets.html">Наборы и подарки</a></li>
-						<li><a href="delicacies.html">Деликатесы</a></li>
-						<li><a href="sale.html">Акции</a></li>
-						<li><a href="about.html">О нас</a></li>
-						<li ><a href="contacts.html">Контакты</a></li>
-					</ul>
-				</div>
-			</nav>
-		</div>
+
 	</div>
 
 <!-- ************** БЛОК МОДАЛЬНЫЕ ОКНА ******************- -->
@@ -312,9 +331,9 @@
 	</div>
 <!-- ********************************- -->
 </div> <!-- end wrapper-x -->
-
+<!--
 <script src="js/menu.js"> </script>	
-<!--<script src="js/main-modal.js"> </script>	
+<script src="js/main-modal.js"> </script>	
 <script src="js/modal.js"> </script>
 <script src="js/post.js"> </script>
 -->

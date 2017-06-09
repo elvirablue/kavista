@@ -14,6 +14,7 @@
 .checkbox {
   display: inline-block;
   height: auto;
+
 }
 
 .checkbox .ch_wrapper input[type=checkbox],
@@ -70,7 +71,7 @@
   
   position: absolute;
   left: 0;
-  bottom: 4px;
+  top: 4px;
   background-color: #ffffff;
 }
 
@@ -84,7 +85,8 @@
    background-color: @color-orange;
    box-shadow: 0 0 0 2px @color-orange;
 }
-.checkbox .ch_wrapper input[type=checkbox]:checked + label:after {
+.checkbox .ch_wrapper input[type=checkbox]:checked + label:after,
+.checkbox--card-form .ch_wrapper + label#label-card.check:after {
   content: "\2713";
   border: 2px solid @color-orange;
   font-size: 1.1rem;
@@ -93,6 +95,7 @@
   line-height: 0.2rem;
   font-weight: bold;
 }
+
 
 
 .checkbox--filter {

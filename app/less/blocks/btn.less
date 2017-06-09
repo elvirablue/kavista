@@ -13,6 +13,8 @@
 	outline: none;	
 }
 
+
+
 .btn--brown {
 	background-image: linear-gradient(to top, rgb(83,41,33) 20%, rgb(150,106,93) 60%);
 }
@@ -25,6 +27,7 @@
 	background-image: linear-gradient(to top, rgb(58,25,19) 20%, rgb(143,99,86) 60%);
 }
 .btn--footer-form,
+.btn--card-form,
 .btn--mainform,
 .btn--main-event,
 .btn--main-service,
@@ -36,6 +39,13 @@ button.shk-but,
 	.agora(0.875rem);
 	line-height: 2.8rem;
 	height: 2.8rem;
+}
+
+.btn--card-form {
+	display: none;
+	width: 40%;
+	margin: 2rem auto;
+	padding: 0;
 }
 
 .btn--filter {
@@ -110,6 +120,10 @@ button.shk-but {
 	.btn--mainform {
 		margin-top: 1rem;
 		margin-right: 0;
+	}
+
+	.btn--card-form {
+		width: 90%;
 	}
 }
 

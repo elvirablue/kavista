@@ -1,0 +1,56 @@
+.page-card-bg {
+	.container-fluid();
+	background: url("../img/cards.png") 95% 50% no-repeat;
+	background-size: 33%;
+	padding: 7rem 1.8rem;
+}
+
+.page-card {
+	.container-fluid();
+
+	h5 {
+		font-size: 1rem;
+		line-height: 3;
+	}
+
+	p.link {
+		font-size: 1rem;
+		margin: 0;
+	}
+}
+
+.page-card.pdf {
+	background: url("../img/ico-pdf.png") 2rem 0 no-repeat;
+	padding-left: 8rem;
+	margin-top: 2rem;
+	height: 78px;
+	
+}
+
+
+@media @mobil-widths {
+	.page-card-bg {
+		background-position: 50% 0;
+		background-size: 50vw;
+		padding-top: 40vw;
+
+		.main-head__title {
+			line-height: 1.3;
+			height: auto;
+		}
+
+		.main-head__subtitle {
+			text-align: left;
+		}
+	}
+
+	.page-card.pdf {
+		background-image: none;
+		padding-left: 0;
+		height: auto;
+
+		h5 {
+			line-height: 1.3;
+		}
+	}
+}

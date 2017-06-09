@@ -123,6 +123,10 @@ a {
     padding: 0 1.2rem;
   }
 }
+.main-head__subtitle {
+  padding-left: 3rem;
+  padding-top: 1rem;
+}
 .hit {
   background: url("../img/star.png") 0 0 no-repeat;
   padding-left: 3rem;
@@ -158,6 +162,16 @@ a {
   padding-left: 3rem;
   line-height: 2.3rem;
 }
+.sale {
+  background: url("../img/sale.png") 0 -1px no-repeat;
+  padding-left: 3rem;
+  line-height: 2.3rem;
+}
+.card {
+  background: url("../img/card.png") 0 -1px no-repeat;
+  padding-left: 3rem;
+  line-height: 2.3rem;
+}
 .wine,
 .sparkling-wine,
 .strong-alcohol,
@@ -166,7 +180,7 @@ a {
 .prezent,
 .bask,
 .order {
-  background: url("../img/ico-wine-sprite.png") 0 1px no-repeat;
+  background: url("../img/ico-wine-sprite.png") 0 2px no-repeat;
   padding-left: 2.5rem;
   min-height: 1.8rem;
 }
@@ -440,15 +454,21 @@ a {
 }
 .block-tovar-prev__img {
   display: block;
-  height: auto;
-  max-height: 19.5rem;
+  height: 19.5rem;
+  /* max-height: 19.5rem; */
   text-align: center;
   margin: 1.3rem auto;
+  overflow: hidden;
+  width: 100%;
 }
 .block-tovar-prev__img img {
-  height: 19.5rem;
+  display: inline-block;
+  vertical-align: top;
+  min-height: 10rem;
+  height: 100%;
   max-height: 19.5rem;
   width: auto;
+  max-width: none;
 }
 .block-tovar-prev__description {
   display: block;
@@ -686,7 +706,7 @@ a {
   padding: 0;
   position: absolute;
   left: 0;
-  bottom: 4px;
+  top: 4px;
   background-color: #ffffff;
 }
 .radiobox .radio-wrapper input[type=radio]:checked + label {
@@ -699,7 +719,8 @@ a {
   -webkit-box-shadow: 0 0 0 2px #d46000;
           box-shadow: 0 0 0 2px #d46000;
 }
-.checkbox .ch_wrapper input[type=checkbox]:checked + label:after {
+.checkbox .ch_wrapper input[type=checkbox]:checked + label:after,
+.checkbox--card-form .ch_wrapper + label#label-card.check:after {
   content: "\2713";
   border: 2px solid #d46000;
   font-size: 1.1rem;
@@ -749,6 +770,7 @@ a {
   background-image: linear-gradient(to top, #3a1913 20%, #8f6356 60%);
 }
 .btn--footer-form,
+.btn--card-form,
 .btn--mainform,
 .btn--main-event,
 .btn--main-service,
@@ -761,6 +783,12 @@ button.shk-but,
   font-size: 0.875rem;
   line-height: 2.8rem;
   height: 2.8rem;
+}
+.btn--card-form {
+  display: none;
+  width: 40%;
+  margin: 2rem auto;
+  padding: 0;
 }
 .btn--filter {
   display: block;
@@ -829,6 +857,9 @@ button.shk-but {
     margin-top: 1rem;
     margin-right: 0;
   }
+  .btn--card-form {
+    width: 90%;
+  }
 }
 .user-input {
   display: inline-block;
@@ -842,6 +873,18 @@ button.shk-but {
   outline: none;
   padding: 0 1rem;
 }
+.user-label {
+  display: inline-block;
+  vertical-align: middle;
+  text-align: right;
+  color: #85254c;
+  font-family: "Agora", serif;
+  font-size: 1rem;
+  line-height: 2.8rem;
+  font-weight: bold;
+  padding: 0 2rem;
+  width: 17rem;
+}
 .user-input--beige {
   -webkit-border-radius: 3px;
           border-radius: 3px;
@@ -849,6 +892,9 @@ button.shk-but {
 }
 .user-input--ordering {
   width: 100%;
+}
+.user-input--card-form {
+  width: 40%;
 }
 .user-input--area {
   height: auto;
@@ -1011,20 +1057,24 @@ button.shk-but {
   -webkit-transition: color ease 0.3s;
   transition: color ease 0.3s;
 }
-.page-controls__link:hover {
+.page-controls__link a {
+  color: #6a6a6a;
+}
+.page-controls__link:hover,
+.page-controls__link:hover a {
   color: #671738;
   text-decoration: underline;
 }
 .page-controls__controls {
   display: inline-block;
   vertical-align: middle;
-  padding: 0 2rem;
+  padding: 0 1rem;
 }
 .page-controls__controls i {
   display: inline-block;
   vertical-align: middle;
   font-style: normal;
-  width: 2rem;
+  width: auto;
   height: 2rem;
   margin: 0 0.3rem;
   line-height: 2rem;
@@ -1047,6 +1097,12 @@ button.shk-but {
   position: relative;
   display: inline-block;
   vertical-align: middle;
+}
+@media (max-width: 780px) {
+  .page-controls__link {
+    display: block;
+    margin: 1rem auto;
+  }
 }
 .breadcramps {
   margin: 1rem 0;
@@ -1191,6 +1247,7 @@ button.shk-but {
   display: inline-block;
   padding-top: 0.5rem;
   padding-bottom: 1rem;
+  white-space: nowrap;
 }
 .catalog__basket span {
   color: #d46000;
@@ -1202,7 +1259,7 @@ button.shk-but {
 }
 .catalog__basket-price {
   font-family: "Agora", serif;
-  font-size: 1.5rem;
+  font-size: 1.4rem;
   font-weight: bold;
   padding-left: 0.5rem;
   color: #d46000;
@@ -1374,6 +1431,7 @@ button.shk-but {
 .block-main__img img {
   height: 100%;
   width: auto;
+  max-height: 24rem;
 }
 .block-main__description {
   display: inline-block;
@@ -2482,6 +2540,7 @@ button.shk-but {
 }
 .benefit__img img {
   width: 100%;
+  max-width: 3.5rem;
 }
 .benefit__title {
   display: inline-block;
@@ -2531,7 +2590,7 @@ button.shk-but {
   }
 }
 .block-tovars__title {
-  line-height: 1.5;
+  line-height: 2.3rem;
 }
 .block-tovars__arrow {
   display: block;
@@ -2728,6 +2787,39 @@ button.shk-but {
 .main-events__event-prev-anchored .text-content-inner p {
   padding: 0;
 }
+.main-events .text-content-inner img {
+  width: auto !important;
+  max-width: 100% !important;
+  height: auto !important;
+  max-height: 100% !important;
+  min-width: 0 !important;
+  border: none !important;
+  margin: 0 !important;
+  padding: 0 !important;
+  float: none !important;
+  -webkit-border-radius: 0 !important;
+          border-radius: 0 !important;
+}
+.main-events .text-content-inner a {
+  color: #6a6a6a;
+}
+.main-events .text-content-inner a:hover {
+  color: #6a6a6a;
+  text-decoration: underline;
+  font-weight: bold;
+}
+.main-events .text-content-inner img.img-event {
+  border: 1px solid #f3e9da  !important;
+  -webkit-border-radius: 5px  !important;
+          border-radius: 5px  !important;
+  margin-right: 2rem  !important;
+  margin-bottom: 2rem  !important;
+  display: inline-block !important;
+  float: left  !important;
+  width: auto  !important;
+  min-width: 8rem  !important;
+  max-width: 45% !important;
+}
 .main-events__wrapper {
   width: 100%;
   height: 16.5rem;
@@ -2758,6 +2850,9 @@ button.shk-but {
   transition: -webkit-filter ease 0.3s;
   transition: filter ease 0.3s;
   transition: filter ease 0.3s, -webkit-filter ease 0.3s;
+}
+.main-events__event-link .element-beige__prev-item {
+  height: 29rem;
 }
 .main-events__event-link:hover {
   -webkit-filter: drop-shadow(0px 0px 10px rgba(133, 37, 76, 0.25));
@@ -2808,6 +2903,9 @@ button.shk-but {
     min-width: 10rem;
     margin: 0 0 2rem;
     padding-left: 0;
+  }
+  .main-events__event-link .element-beige__prev-item {
+    height: auto;
   }
   .main-events__event-link:nth-child(3n+1) {
     margin-left: 0;
@@ -4014,6 +4112,117 @@ button.shk-but {
 .wine-land.rossiya:before {
   background: url("../img/flag/f-rus.png") 0 0 no-repeat;
   background-size: 100% 100%;
+}
+.page-card-bg {
+  width: 100%;
+  max-width: 1170px;
+  padding: 0 1.8rem;
+  margin: 0 auto;
+  background: url("../img/cards.png") 95% 50% no-repeat;
+  background-size: 33%;
+  padding: 7rem 1.8rem;
+}
+@media (max-width: 1170px) {
+  .page-card-bg {
+    width: 100%;
+  }
+}
+@media (max-width: 780px) {
+  .page-card-bg {
+    width: auto;
+    text-align: center;
+    min-width: 320px;
+    padding: 0 1.2rem;
+  }
+}
+.page-card {
+  width: 100%;
+  max-width: 1170px;
+  padding: 0 1.8rem;
+  margin: 0 auto;
+}
+@media (max-width: 1170px) {
+  .page-card {
+    width: 100%;
+  }
+}
+@media (max-width: 780px) {
+  .page-card {
+    width: auto;
+    text-align: center;
+    min-width: 320px;
+    padding: 0 1.2rem;
+  }
+}
+.page-card h5 {
+  font-size: 1rem;
+  line-height: 3;
+}
+.page-card p.link {
+  font-size: 1rem;
+  margin: 0;
+}
+.page-card.pdf {
+  background: url("../img/ico-pdf.png") 2rem 0 no-repeat;
+  padding-left: 8rem;
+  margin-top: 2rem;
+  height: 78px;
+}
+@media (max-width: 780px) {
+  .page-card-bg {
+    background-position: 50% 0;
+    background-size: 50vw;
+    padding-top: 40vw;
+  }
+  .page-card-bg .main-head__title {
+    line-height: 1.3;
+    height: auto;
+  }
+  .page-card-bg .main-head__subtitle {
+    text-align: left;
+  }
+  .page-card.pdf {
+    background-image: none;
+    padding-left: 0;
+    height: auto;
+  }
+  .page-card.pdf h5 {
+    line-height: 1.3;
+  }
+}
+.card-form h3 {
+  padding: 4rem 2rem;
+  line-height: 1.5;
+  text-align: center;
+}
+.card-form p {
+  padding-bottom: 0.5rem;
+}
+.card-form__input-wr {
+  display: block;
+  text-align: center;
+}
+.card-form__input {
+  display: block;
+  text-align: center;
+  padding: 1rem;
+}
+@media (max-width: 780px) {
+  .card-form h3 {
+    padding: 2rem 0rem;
+  }
+  .card-form__input {
+    padding: 1rem 0;
+    width: 100%;
+  }
+  .card-form .user-label {
+    text-align: center;
+    padding: 0;
+    width: auto;
+  }
+  .card-form .user-input--card-form {
+    width: 90%;
+  }
 }
 .hidden {
   display: none;
