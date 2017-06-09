@@ -1424,7 +1424,7 @@ button.shk-but {
   display: inline-block;
   vertical-align: top;
   width: 12rem;
-  height: auto;
+  height: 20rem;
   max-height: 24rem;
   text-align: center;
 }
