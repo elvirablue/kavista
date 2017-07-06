@@ -63,6 +63,7 @@
 
 .frame.frame--beige {
 	.frame-color(11px, #f7e5d6);
+	outline: none;
 }
 
 .frame-color(@size, @color) {
@@ -77,6 +78,7 @@
 		margin: 0 @size;
 		height: @size;		
 		background-color: #ffffff;
+		outline: none;
 
 		&:after, &:before {
 			content: "";
@@ -86,11 +88,12 @@
 			background-size: contain;
 			height: @size;
 			width: @size;
+			outline: none;
 		}
 	}
 
 	.frame__top {
-		border-top: 2px solid @color;
+		border-top: 2px solid @color-beige;
 
 		&:after {
 			top: 2px;
@@ -99,14 +102,14 @@
 		}
 
 		&:before {
-			top:2px;
-			right: 2px;
+			top:0px;
+			right: 0px;
 			transform: rotate(180deg);
 		}
 	}
 
 	.frame__bottom {
-		border-bottom: 2px solid @color;
+		border-bottom: 2px solid @color-beige;
 
 		&:after {
 			bottom: 2px;
@@ -114,20 +117,21 @@
 		}
 
 		&:before {
-			bottom: 2px;
-			right: 2px;
+			bottom: 0px;
+			right: 0px;
 			transform: rotate(-90deg);
 		}
 	}
 
 	
 	.frame__content {
-		border-left: 2px solid @color;
-		border-right: 2px solid @color;
+		border-left: 2px solid @color-beige;
+		border-right: 2px solid @color-beige;
 		background-color: #ffffff;
 		min-height: 3.5rem;
 		width: 100%;
 		padding: 0 1rem;
+		outline: none;
 	}
 	
 }

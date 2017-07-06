@@ -9,7 +9,8 @@
 	<link rel="stylesheet" href="css/venders/normalize.css">
 	<link rel="stylesheet" href="css/stylename.css">
 	<link rel="stylesheet" href="css/style.css">
-	
+	<link href="https://fonts.googleapis.com/css?family=Lora:700" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Noto+Serif:400,700" rel="stylesheet">
 	<link rel="stylesheet" href="css/venders/animate.css">
 	<link rel="stylesheet" href="css/simple.css">
 
@@ -22,7 +23,7 @@
 	
 	<link rel="stylesheet" href="css/venders/jquery.arcticmodal-0.3.css">	
 	<script src="js/venders/jquery.arcticmodal-0.3.min.js"></script>
-	<!--[if lte IE 9]>
+	<!--[if lte IE 10]>
 	    <script src="oldies/oldies.js" charset="utf-8"></script>
 	    <style>
 	       .wrapper-x {display: none;}	       
@@ -121,15 +122,9 @@
 		    	<div class="frame-slider js_frame">		
 
 		       		<ul class="slides js_slides">
-		       		    <li class="js_slide">
-		       		    	<img src="img/slider/slider1.jpg" alt="">
-		       		    </li>
-		       		    <li class="js_slide">
-		       		    	<img src="img/slider/slider2.jpg" alt="">
-		       		    </li>
-		       		    <li class="js_slide">
-		       		    	<img src="img/slider/slider3.jpg" alt="">
-		       		    </li>
+		       		    <li class="js_slide" style="background-image: url(img/slider/slider1.jpg);"></li>
+		       		    <li class="js_slide" style="background-image: url(img/slider/slider2.jpg);"></li>
+		       		    <li class="js_slide" style="background-image: url(img/slider/slider3.jpg);"></li>
 
 		       		</ul>
 		    	</div>	
@@ -857,9 +852,7 @@
 	      	<input type="text" class="user-input user-input--block-modal required" id="user_name_modal" name="user-name" placeholder="Имя" >
 	       	<input type="tel" class="user-input user-input--block-modal required" id="user_phone_modal" name="user-phone" placeholder="Телефон" >
 	        <input type="email" class="user-input user-input--block-modal required" id="user_mail_modal" name="user-mail" placeholder="E-mail">
-	        <textarea name="user-text" id="user_text_modal" cols="10" rows="5" class="user-input user-input--block-area" >
-	        	Ваш текст
-	        </textarea>
+	        <textarea name="user-text" id="user_text_modal" cols="10" rows="5" class="user-input user-input--block-area" placeholder="Ваше сообщение" maxlength="1000" ></textarea>
 	    	<button class="btn btn--form-modal" type="submit" id="btn_form_modal">Получить консультацию</button>    
 	      	<input type="text" class="form_text_hide" name="text">
 	    </form>

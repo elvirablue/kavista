@@ -8,6 +8,11 @@
 	margin: 2rem auto;
 	background-color: #fff;	
 	overflow: hidden;
+	@media @tablet-widths {
+			width: 90vw;
+			height: ~'calc(90vw/2.2)';
+			min-height: 11rem;
+    	}
 }
 
 .frame-slider {    
@@ -47,7 +52,17 @@
 	li {
     	position: relative;
     	display: inline-block;   
-    	width: 100%;
+    	width: 1111px;
+    	height: 500px;
+    	background-repeat: no-repeat;
+    	background-size: cover;
+    	background-position: center;
+
+    	@media @tablet-widths {
+			width: 90vw;
+			height: ~'calc(90vw/2.2)';
+			min-height: 11rem;
+    	}
 	}
 
 }
@@ -118,9 +133,7 @@
 }
 
 @media @mobil-widths {
-	.slider_wrapper {
-		height: 90vw;
-	}
+	
 
 	.slider_wrapper--sale {
 		height: auto;

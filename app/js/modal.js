@@ -6,7 +6,8 @@ $(document).on('ready', function(){
      
    // $("#user_phone_modal").mask("+7 (999) 999-9999");
     $("input[name^='user-phone']").mask("+7 (999) 999-9999");
-
+    $("#user_birthday_card").mask("99.99.9999");
+   
     var popup_wrapper = document.querySelector('.modal_wrapper');
     var popup = document.querySelector('.modal');
     var close = popup.querySelector('.modal_close');

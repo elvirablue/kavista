@@ -210,7 +210,26 @@
 .modal .user-input--block-area {
         line-height: 20px;
         text-align: left;
+        /*height: 102px;
+        width: 336px;*/
+        resize: none;
+
 }
+
+.user-input::-webkit-input-placeholder {color:#9a9a9a;}
+.user-input::-moz-placeholder          {color:#9a9a9a;}/* Firefox 19+ */
+.user-input:-moz-placeholder           {color:#9a9a9a;}/* Firefox 18- */
+.user-input:-ms-input-placeholder      {color:#9a9a9a;}
+
+/* плавное изменение прозрачности  placeholder-а при фокусе */
+.user-input::-webkit-input-placeholder       {opacity: 1; transition: opacity 0.3s ease;}
+.user-input::-moz-placeholder                {opacity: 1; transition: opacity 0.3s ease;}
+.user-input:-moz-placeholder                 {opacity: 1; transition: opacity 0.3s ease;}
+.user-input:-ms-input-placeholder            {opacity: 1; transition: opacity 0.3s ease;}
+.user-input:focus::-webkit-input-placeholder {opacity: 0; transition: opacity 0.3s ease;}
+.user-input:focus::-moz-placeholder          {opacity: 0; transition: opacity 0.3s ease;}
+.user-input:focus:-moz-placeholder           {opacity: 0; transition: opacity 0.3s ease;}
+.user-input:focus:-ms-input-placeholder      {opacity: 0; transition: opacity 0.3s ease;}
 
 @media (max-width: 780px) {
      .box-modal {
