@@ -873,6 +873,27 @@ button.shk-but {
   outline: none;
   padding: 0 1rem;
 }
+.radiobox {
+  margin-top: 0.5rem;
+}
+.radiobox select {
+  width: 100%;
+  outline: none;
+  -webkit-border-radius: 3px;
+          border-radius: 3px;
+  border: 1px solid #f3e9da;
+  color: #9a9a9a;
+  font-family: "OpenSans", sans-serif;
+  font-size: 0.875rem;
+  line-height: 2.8rem;
+  height: 2.8rem;
+  padding: 0 1rem;
+}
+.radiobox select option {
+  color: #9a9a9a;
+  font-family: "OpenSans", sans-serif;
+  font-size: 0.875rem;
+}
 .user-label {
   display: inline-block;
   vertical-align: middle;
@@ -3712,11 +3733,13 @@ button.shk-but {
 .element-beige--horizontal {
   display: block;
   width: 100%;
+  height: auto;
   margin: 0 0 2rem;
   padding: 0;
 }
 .element-beige--horizontal .element-beige__prev-item {
   padding-bottom: 0;
+  height: auto;
 }
 .element-beige--horizontal .element-beige__img-wrapper {
   display: inline-block;
