@@ -3,6 +3,7 @@
 .main-nav {
 	width: 100%;
 	position: relative;
+	z-index: 5005;
 	min-height: 3.8rem;
 
 	&__wrapper {
@@ -38,7 +39,7 @@
 					display: inline-block;
 					width: 100%;
 					height: 3.8rem;
-					padding: 0px 1rem;
+					padding: 0px 0.92rem;
 					.agora(0.8rem);
 					line-height: 3.8rem;
 					color: #ffffff;
@@ -46,7 +47,43 @@
 					text-transform: uppercase;
 					white-space: nowrap;
 				}
+
+				ul {
+					position: absolute;
+					bottom: -3.7rem;
+					left: 0;
+					list-style: none;
+					display: none;
+					
+					
+					li {
+						display: block;
+						height: 2rem;
+						
+
+
+						a {
+							height: 2rem;
+							line-height: 2rem;
+							font-size: 0.8rem;
+							text-transform: none;
+							text-align: left;
+							
+						}
+					}
+
+					li:hover {
+						
+						a {color: #fff;}
+					}
+
+					li:first-child:before, 
+					li:last-child:after {
+						display: none;
+					}
+				}
 			}
+
 
 			li:first-child:before, 
 			li:last-child:after {
@@ -71,6 +108,11 @@
 
 			li:hover, li.active, li:active {				
 				background-color: @color-darkwhine;
+				
+			}
+
+			li:hover ul {
+				display: block;
 			}
 
 			li:last-child:hover:after, 
@@ -127,11 +169,31 @@
 	  		li{
 	  			flex-basis: 100%;
 	  			max-width: none;
+	  			height: 2.2rem;
+	  			
+	  			text-align: left;
+	  		
+	  			a {
+	  				display: block;
+  					width: 100%;
+  					padding-left: 30px;
+	  			}
+	  			
+	  			> ul {
+	  				position: static;
+	  				height: auto;	
+	  				display: none;  
+
+	  				li {
+	  					padding-left: 20px;
+	  				}				
+	  			}
 	  		}
-	  		a {
-	  			display: block;
-  				width: 100%;
-	  		}
+
+  			li:nth-child(9) > a {
+				//display: none;
+  			}
+	  		
 	  	}
 	}
 
@@ -218,18 +280,31 @@
 		border-bottom-right-radius: 3px;
 		background-image: none;
 		z-index: 5001;
-		right: -2rem;
+		right: -8px;
 		top: -13rem;	
 
 		ul {
 			display: block;
   			li {
   				display: block;
-  				height: 2.5rem;
-  				line-height: 2.5rem;
+  				height: auto;
+  				line-height: 2.2rem;
   				a {
-  					height: 2.5rem;
-  					line-height: 2.5rem;
+  					height: 2.2rem;
+  					line-height: 2.2rem;
+  				}
+
+  				ul {
+  					display: none;
+  					li:first-child {
+	  					height: 2rem;
+	  					line-height: 2rem;
+	  					a {
+	  						height: 2rem;
+	  						line-height: 2rem;
+	  						
+	  					}
+	  				}
   				}
   			}
   			li:first-child {
@@ -239,7 +314,14 @@
   					height: 3.8rem;
   					line-height: 3.8rem;
   				}
-  			}	
+  			}
+
+  			li:hover, li:focus, li.active, li:active {				
+				
+				> ul {
+					display: block;
+				}
+			}	
   		}
 	}
 }
@@ -252,8 +334,16 @@
 	}
 
 	.main-nav-scroll .main-nav--opened .main-nav {
-		right: -2rem;
+		right: -8px;
 		top: 0rem;
+
+		ul {
+			li:first-child:before {
+				background-image: url("../img/main-nav-bg-frame-hover.svg");
+			}
+		}
+
+		
 	}
 
 	.main-nav-scroll .main-nav__toggle,
@@ -266,36 +356,46 @@
 @media @mobil-widths {
 	.main-nav--opened .main-nav {
 		width: 120vw;
-		height: 38rem;
-		right: -2rem;
-		top: -32rem;
+		height: 100vh;
+		right: 0;
+		top: -31rem;
+		left: -20px;
+		position: absolute;
 
 		&__wrapper {
 			ul {
 				min-width: 70vw;
+				height: 100vh;
+
+				ul {height: auto;}
 			}
 		}
 	}
 
 	.main-nav-scroll .main-nav--opened .main-nav {
-		right: -2rem;
-		top: 0rem;
+		right: 0;
+		top: 0;
+		left: -20px;
 	}
 
 	.main-nav-scroll .main-nav__toggle,
 	.main-nav-scroll .main-nav--opened .main-nav__toggle {
+		position: absolute;
 		right: 0.5rem;
 		top: 0.5rem;
 	}
 
-	.main-nav__toggle {	  
+	.main-nav__toggle {	 
+	 
 	  top: -31rem;
 	  right: 1rem;
+
 	 }
 
-	.main-nav--opened .main-nav__toggle {	  
-	  top: -31.25rem;
-	  right: 0rem;
+	.main-nav--opened .main-nav__toggle {	
+
+	  top: -30.5rem;
+	  right: 0.2rem;
 	 }
 }
 

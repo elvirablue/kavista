@@ -7,9 +7,10 @@ $(document).on('ready', function(){
    // $("#user_phone_modal").mask("+7 (999) 999-9999");
     $("input[name^='user-phone']").mask("+7 (999) 999-9999");
     $("#user_birthday_card").mask("99.99.9999");
-   
-    var popup_wrapper = document.querySelector('.modal_wrapper');
-    var popup = document.querySelector('.modal');
+    
+    var popup_adult = document.querySelector('.modal.adult');
+    var popup_wrapper = document.querySelector('.modal_wrapper.standart');
+    var popup = document.querySelector('.modal.standart');
     var close = popup.querySelector('.modal_close');
     var form = popup.querySelector('form');
     var name = popup.querySelector('[name=user-name]');  
@@ -21,6 +22,9 @@ $(document).on('ready', function(){
 
     var title = popup.querySelector('#modal_txt');
     var btn_value = popup.querySelector('#btn_form_modal');
+
+
+    
 
     var storage_name = localStorage.getItem('name');
     var storage_phone = localStorage.getItem('phone');
@@ -54,6 +58,7 @@ $(document).on('ready', function(){
         phone.classList.remove('required');
         name.style.display='block';
         mail.style.display='block';
+        mail.classList.add('required');
         text.style.display='block';
         text_manager.innerHTML = 'Менеджер ответит Вам<br> в течение рабочего дня';      
         title.innerText = text_hide.value = 'Напишите нам';
@@ -67,6 +72,7 @@ $(document).on('ready', function(){
       document.querySelector('#js-call').addEventListener('click', function(event){
         event.preventDefault();   
         phone.style.display='block';
+        phone.classList.add('required');
         name.style.display='block';
         mail.style.display='none';
         mail.classList.remove('required');
@@ -83,7 +89,8 @@ $(document).on('ready', function(){
 
    
 
-    function closePopup() {
+    function closePopup() {          
+
           if (popup.classList.contains('show')) {
                 popup.classList.add('zoomOut');
                 popup_wrapper.classList.add('fadeOut');
@@ -98,19 +105,30 @@ $(document).on('ready', function(){
           };
     }
 
+    
+
     window.addEventListener('keydown', function(event) {
           if (event.keyCode === 27) {
-                closePopup();
+              if (popup_adult.classList.contains('show')) {
+                  return;
+              };
+              closePopup();
           };
     });
 
     popup_wrapper.addEventListener('click', function(event) {
+          if (popup_adult.classList.contains('show')) {
+              return;
+          };
           closePopup();
           
     });
  
     close.addEventListener('click', function(event) {
           event.preventDefault();
+          if (popup_adult.classList.contains('show')) {
+              return;
+          };
           closePopup();
     });
 

@@ -7,7 +7,7 @@
     overflow: auto;
     width: 100%;
     height: 100%;
-    z-index: 999;
+    z-index: 9999;
 }
 
 .box-modal {    
@@ -231,6 +231,57 @@
 .user-input:focus:-moz-placeholder           {opacity: 0; transition: opacity 0.3s ease;}
 .user-input:focus:-ms-input-placeholder      {opacity: 0; transition: opacity 0.3s ease;}
 
+
+
+.modal.adult .frame_color {
+	padding: 30px 20px 30px 50px;
+	position: relative;
+}
+
+.modal.adult .text_rotated {
+	position: absolute;
+	bottom: 100px;
+	left: -20px;
+
+	color: #85254c;
+	font-weight: bold;
+	font-size: 20px;
+	text-align: left;
+	transform: rotate(-90deg);
+}
+
+.modal.adult h1 {
+	color: #85254c;
+	font-weight: bold;
+	font-size: 50px;
+	text-align: left;
+}
+
+.modal.adult .title {
+	font-family: "Roboto", sans-serif;
+  	font-size: 16px;
+  	text-align: left;
+}
+
+.modal.adult .subtitle {
+	display: block;
+	margin-top: 30px;
+	margin-bottom: 30px;
+	font-family: "Roboto", sans-serif;
+  	font-size: 12px;
+  	text-align: left;
+}
+
+.modal.adult .btn--adult {
+	display: block;
+	font-size: 20px;
+	line-height: 50px;
+	width: 100%;
+	height: 50px;
+	margin: 0 auto;
+}
+
+
 @media (max-width: 780px) {
      .box-modal {
         width: 270px;
@@ -246,8 +297,8 @@
    
     .modal {
         width: 320px;
-   		margin-left: -50%;
-        top: 0;
+   		margin-left: -160px;
+        top: 10px;
     }
     
     .modal p b {
@@ -261,5 +312,8 @@
     .modal .user-input--block-area {
         height: 150px;
     }
-}
 
+    .modal.adult .btn--adult {
+    	font-size: 16px;
+    }
+}
