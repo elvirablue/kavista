@@ -102,6 +102,58 @@
   max-width: 45%;
   
 }
+
+.text-content-nostyle {
+    width: 100%;
+    max-width: 1170px;
+    margin: 0 auto;
+    
+    font-family: "OpenSans", sans-serif;
+    font-size: 1rem;
+    color: #6a6a6a;
+    line-height: 1.4;
+    font-weight: normal;
+    text-align: justify;
+    text-indent: 2em;
+    padding: 0 1.2rem 1.2rem;
+
+    img {
+      max-width: none;
+      width: none;
+      height: none;
+    }
+
+    table {
+      border-collapse:  separate;
+    }
+}
+
+@media (max-width: 1170px) {
+.text-content-nostyle {
+    width: 100%;
+}
+}
+
+@media (max-width: 780px){
+
+.text-content-nostyle {
+    width: auto;
+    text-align: center;
+    min-width: 320px;
+    padding: 0 1.2rem;
+}
+
+.text-content-nostyle table {
+    border-collapse: separate;
+}
+
+.text-content-nostyle table td {
+    display: block;
+    
+}
+}
+
+
 @media @mobil-widths {
   .text-content,
   .text-content-inner {

@@ -1,6 +1,6 @@
 .stock {
-	width: 97%;
-	margin: 5% 1.5%;
+	width: 96%;
+	margin: 5% 1.8%;
 	position: relative;
 
 	&__title {
@@ -21,6 +21,23 @@
 
 @media @mobil-widths {
 	.stock {
+		&__title {
+			font-size: 1rem;
+		}
+	}
+}
+
+@media @desktop-widths-only-item3 {
+	.stock {
+		width: 536px;
+		margin: 5% auto;
+	}
+}
+
+@media @desktop-widths-only-item2 {
+	.stock {
+		width: 254px;
+		margin: 5% auto;
 		&__title {
 			font-size: 1rem;
 		}

@@ -59,11 +59,30 @@
 <script src="https://vk.com/js/api/openapi.js?144" type="text/javascript"></script>
 <div class="wrapper-x">
 <div class="wrapper-y">
+
+<!-- BEGIN Модальное окно до 18лет -->
+
+	<div class="modal_wrapper adult" >  </div>
+
+	<div class="modal adult">
+	  <div class="frame_color">
+	    <button class="modal_close" type="button">Закрыть</button>
+	    <h1>18+</h1>
+	    <p class="title">Добро пожаловать на сайт винного магазина Маркет-бар Кависта. Для доступа необходимо подтвердить совершеннолетний возраст.</p>
+	       
+	    <p class="subtitle">Сайт содержит информацию для лиц совершеннолетнего возраста. Сведения, размещенные на сайте, не являются рекламой, носят исключительно информационный характер, и предназначены только для личного использования.</p>
+	    <button class="btn btn--adult" type="submit" id="btn_adult">Мне исполнилось 18 лет</button>
+	    <div class="text_rotated">Внимание</div>
+	  </div>
+	</div>
+
+	<script src="js/adult.js"> </script>
+<!-- END Модальное окно до 18лет -->
 	<header class="page-header-desktop">
 		<div class="header-contact main-contact">
 			<a href="tel:+73494939977" class="main-contact__phone">+7 (3494) 93-99-77</a>
 			<div class="main-contact__address">
-				<p> г.Новосибирск, ул. Петухова 17, оф. 202<br>
+				<p> Ямало-Ненецкий АО, г. Новый Уренгой, мкр. Мирный, дом 7, корпус 2<br>
 					<a href="#" class="main-contact__link">Посмотреть на карте</a>
 				</p>
 			</div>
@@ -95,15 +114,40 @@
 		<nav class="main-nav">			
 			<div class="main-nav__wrapper">
 				<ul>
-					<li class="active"><a href="">Главная</a></li>
-					<li><a href="wine.html">Вино</a></li>
+					<li><a href="">Главная</a></li>
+					<li><a href="#">Вино</a>
+						<ul>
+							<li><a href="about.html">О маркет-баре</a></li>
+							<li><a href="articles.html">События</a></li>
+							<li><a href="services.html">Услуги</a></li>
+							<li><a href="vacancy.html">Вакансии</a></li>
+							<li><a href="about.html">О маркет-баре</a></li>
+							<li><a href="articles.html">События</a></li>
+							<li><a href="services.html">Услуги</a></li>
+							<li><a href="vacancy.html">Вакансии</a></li>
+							<li><a href="about.html">О маркет-баре</a></li>
+							<li><a href="articles.html">События</a></li>
+							<li><a href="services.html">Услуги</a></li>
+							<li><a href="vacancy.html">Вакансии</a></li>	
+							<li><a href="vacancy.html">Вакансии</a></li>	
+						</ul>
+
+					</li>
 					<li><a href="sparkling-wine.html">Игристое вино</a></li>
 					<li><a href="strong-alcohol.html">Крепкий алкоголь</a></li>
 					<li><a href="liquor.html">Ликер</a></li>
 					<li><a href="sets.html">Наборы и подарки</a></li>
 					<li><a href="delicacies.html">Деликатесы</a></li>
 					<li><a href="sale.html">Акции</a></li>
-					<li><a href="about.html">О нас</a></li>
+					<li>
+						<a href="#">О нас</a>
+						<ul>
+							<li><a href="about.html">О маркет-баре</a></li>
+							<li><a href="articles.html">События</a></li>
+							<li><a href="services.html">Услуги</a></li>
+							<li><a href="vacancy.html">Вакансии</a></li>		
+						</ul>
+					</li>
 					<li ><a href="contacts.html">Контакты</a></li>
 				</ul>
 			</div>
@@ -841,9 +885,9 @@
 	</div>
 
 <!-- ************** БЛОК МОДАЛЬНЫЕ ОКНА ******************- -->
-	<div class="modal_wrapper">  </div>
+	<div class="modal_wrapper standart">  </div>
 
-	<div class="modal more">
+	<div class="modal more standart">
 	  <div class="frame_color">
 	    <button class="modal_close" type="button">Закрыть</button>
 	    <h4 id="modal_txt">Заголовок</h4>
