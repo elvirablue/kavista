@@ -2629,9 +2629,10 @@ button.shk-but {
     line-height: 3.8rem;
   }
   .main-nav--opened .main-nav ul li:hover > ul,
-  .main-nav--opened .main-nav ul li:focus > ul,
-  .main-nav--opened .main-nav ul li.active > ul,
   .main-nav--opened .main-nav ul li:active > ul {
+    display: none;
+  }
+  .main-nav--opened .main-nav ul li.active > ul {
     display: block;
   }
 }

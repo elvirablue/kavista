@@ -14,6 +14,12 @@ $(document).on('ready', function(){
       $('.catalog__bg-wrapper').css('display','block');
   });
 
+  $('.main-nav__wrapper > ul > li').click(function(event){
+    if ($(document).width() > 1170) return;    
+      if ($(this).find("ul").css('display') == 'block') $(this).find("ul").css('display','none')
+        else $(this).find("ul").css('display','block');
+  });
+
    window.addEventListener('keydown', function(event) {
           if (event.keyCode === 27 && $('.catalog__filters').css('display') === 'block') {
             $('.catalog__filters').css('display','none');          
