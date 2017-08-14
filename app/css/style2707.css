@@ -48,14 +48,12 @@ h5 {
 }
 h1 {
   font-family: "Noto Serif", serif;
-  /*font-family: 'Slabo 27px', serif;*/
   font-size: 2.2rem;
   font-weight: bold;
   text-transform: uppercase;
 }
 h2 {
   font-family: "Noto Serif", serif;
-  /*font-family: 'Slabo 27px', serif;*/
   font-size: 2rem;
   color: #582c23;
   font-weight: bold;
@@ -70,7 +68,6 @@ h2 {
 }
 h3 {
   font-family: "Noto Serif", serif;
-  /*font-family: 'Slabo 27px', serif;*/
   font-size: 1.8rem;
   font-weight: bold;
   text-transform: uppercase;
@@ -78,7 +75,6 @@ h3 {
 h4,
 h5 {
   font-family: 'Noto Serif', serif;
-  /*font-family: 'Slabo 27px', serif;*/
   font-size: 1.2rem;
   color: #582c23;
   font-weight: bold;
@@ -298,9 +294,6 @@ a {
     padding-top: 0.4rem;
     height: 2rem;
   }
-  .arrow--wine {
-    display: none !important;
-  }
 }
 .corner {
   position: relative;
@@ -313,7 +306,6 @@ a {
   width: 100.01%;
   height: 100%;
   border: 5px solid #85254c;
-  background-color: #85254c;
   overflow: hidden;
   position: relative;
   z-index: 9;
@@ -337,15 +329,15 @@ a {
   height: 18px;
 }
 .top-right {
-  top: -3px;
-  right: -3px;
+  top: -5px;
+  right: -5px;
   -webkit-transform: rotate(180deg);
       -ms-transform: rotate(180deg);
           transform: rotate(180deg);
 }
 .top-left {
-  top: -3px;
-  left: -3px;
+  top: -5px;
+  left: -5px;
   -webkit-transform: rotate(90deg);
       -ms-transform: rotate(90deg);
           transform: rotate(90deg);
@@ -407,8 +399,8 @@ a {
           transform: rotate(90deg);
 }
 .frame.frame--beige .frame__top:before {
-  top: 1px;
-  right: 1px;
+  top: 0px;
+  right: 0px;
   -webkit-transform: rotate(180deg);
       -ms-transform: rotate(180deg);
           transform: rotate(180deg);
@@ -421,8 +413,8 @@ a {
   left: 2px;
 }
 .frame.frame--beige .frame__bottom:before {
-  bottom: 2px;
-  right: 1px;
+  bottom: 0px;
+  right: 0px;
   -webkit-transform: rotate(-90deg);
       -ms-transform: rotate(-90deg);
           transform: rotate(-90deg);
@@ -454,7 +446,6 @@ a {
   width: 17rem;
   height: 37rem;
   padding: 1.5rem;
-  text-align: left;
   background: url("../img/frame-beige-tovar.svg") 0 0 no-repeat;
   background-size: auto;
 }
@@ -489,7 +480,6 @@ a {
 }
 .block-tovar-prev__description span {
   color: #6a6a6a;
-  white-space: nowrap;
 }
 .block-tovar-prev__code {
   color: #6a6a6a;
@@ -528,7 +518,6 @@ a {
 .description-btn__link {
   display: inline-block;
   font-family: 'Noto Serif', serif;
-  /*font-family: 'Slabo 27px', serif;*/
   font-size: 1rem;
   text-transform: uppercase;
   text-decoration: underline;
@@ -571,7 +560,6 @@ a {
 .description-social {
   color: #671738;
   font-family: 'Noto Serif', serif;
-  /*font-family: 'Slabo 27px', serif;*/
   font-size: 1rem;
   font-weight: bold;
   line-height: 2rem;
@@ -630,12 +618,10 @@ a {
 }
 .wine-price {
   font-family: 'Noto Serif', serif;
-  /*font-family: 'Slabo 27px', serif;*/
   font-size: 1rem;
   color: #d46000;
   font-weight: bold;
   padding-left: 0;
-  text-align: right;
 }
 .wine-sugar:before {
   background: url("../img/sugar.png") 0 0 no-repeat;
@@ -757,7 +743,6 @@ a {
   line-height: 2.5rem;
   color: #ffffff;
   font-family: 'Noto Serif', serif;
-  /*font-family: 'Slabo 27px', serif;*/
   font-size: 0.7rem;
   text-transform: uppercase;
   border: 2px solid #eddde3;
@@ -799,7 +784,6 @@ button.shk-but,
 .btn--ordering {
   padding: 0 2rem;
   font-family: 'Noto Serif', serif;
-  /*font-family: 'Slabo 27px', serif;*/
   font-size: 0.875rem;
   line-height: 2.8rem;
   height: 2.8rem;
@@ -815,7 +799,6 @@ button.shk-but,
   margin: 1rem auto;
   padding: 0 2rem;
   font-family: 'Noto Serif', serif;
-  /*font-family: 'Slabo 27px', serif;*/
   font-size: 0.75rem;
   line-height: 2.8rem;
   height: 2.8rem;
@@ -921,12 +904,11 @@ button.shk-but {
   text-align: right;
   color: #85254c;
   font-family: 'Noto Serif', serif;
-  /*font-family: 'Slabo 27px', serif;*/
   font-size: 1rem;
   line-height: 2.8rem;
   font-weight: bold;
   padding: 0 2rem;
-  width: 18rem;
+  width: 17rem;
 }
 .user-input--beige {
   -webkit-border-radius: 3px;
@@ -943,7 +925,6 @@ button.shk-but {
   height: auto;
   margin-top: 1rem;
   width: 100%;
-  resize: none;
 }
 .user-input--selector {
   width: 5.5rem;
@@ -1130,10 +1111,6 @@ button.shk-but {
   -webkit-transition: border-color ease 0.3s;
   transition: border-color ease 0.3s;
 }
-.page-controls__controls i a {
-  font: inherit;
-  color: inherit;
-}
 .page-controls__controls i:hover,
 .page-controls__controls i:active,
 .page-controls__controls i.active {
@@ -1150,11 +1127,6 @@ button.shk-but {
   .page-controls__link {
     display: block;
     margin: 1rem auto;
-  }
-  .page-controls__controls i {
-    padding: 0 0.4rem;
-    margin-bottom: 6px;
-    margin-top: 6px;
   }
 }
 .breadcramps {
@@ -1226,7 +1198,6 @@ button.shk-but {
   display: block;
   float: left;
   padding-left: 1rem;
-  text-align: center;
 }
 .catalog__tovars .link {
   display: block;
@@ -1246,7 +1217,6 @@ button.shk-but {
 .catalog__filter-title {
   display: block;
   font-family: 'Noto Serif', serif;
-  /*font-family: 'Slabo 27px', serif;*/
   font-size: 1.25rem;
   color: #582c23;
   font-weight: bold;
@@ -1314,7 +1284,6 @@ button.shk-but {
 }
 .catalog__basket-price {
   font-family: 'Noto Serif', serif;
-  /*font-family: 'Slabo 27px', serif;*/
   font-size: 1.4rem;
   font-weight: bold;
   padding-left: 0.5rem;
@@ -1340,7 +1309,6 @@ button.shk-but {
   display: inline-block;
   text-align: center;
   font-family: 'Noto Serif', serif;
-  /*font-family: 'Slabo 27px', serif;*/
   font-size: 1.5rem;
   font-weight: bold;
   padding: 1rem;
@@ -1484,14 +1452,11 @@ button.shk-but {
   height: 20rem;
   max-height: 24rem;
   text-align: center;
-  overflow: hidden;
 }
 .block-main__img img {
-  min-height: 10rem;
   height: 100%;
-  max-height: 24rem;
   width: auto;
-  max-width: none;
+  max-height: 24rem;
 }
 .block-main__description {
   display: inline-block;
@@ -1502,13 +1467,11 @@ button.shk-but {
 }
 .block-main__description h4 {
   font-family: 'Noto Serif', serif;
-  /*font-family: 'Slabo 27px', serif;*/
   font-size: 1.75rem;
 }
 .block-main__description h4 span {
   display: block;
   font-family: 'Noto Serif', serif;
-  /*font-family: 'Slabo 27px', serif;*/
   font-size: 1.75rem;
 }
 @media (max-width: 780px) {
@@ -1542,7 +1505,6 @@ button.shk-but {
   width: 30%;
   text-align: left;
   font-family: 'Noto Serif', serif;
-  /*font-family: 'Slabo 27px', serif;*/
   font-size: 1.125rem;
   color: #6a6a6a;
   font-weight: bold;
@@ -1611,7 +1573,6 @@ button.shk-but {
 }
 .tovar-card-delicacies__title {
   font-family: 'Noto Serif', serif;
-  /*font-family: 'Slabo 27px', serif;*/
   font-size: 1.75rem;
   margin-bottom: 2rem;
 }
@@ -1739,7 +1700,6 @@ button.shk-but {
 .block-ordering__table td.to-pay {
   color: #d46000;
   font-family: 'Noto Serif', serif;
-  /*font-family: 'Slabo 27px', serif;*/
   font-size: 1.4rem;
 }
 .block-ordering__table:last-child {
@@ -1804,7 +1764,6 @@ button.shk-but {
 .text-content h1,
 .text-content-inner h1 {
   font-family: "Noto Serif", serif;
-  /*font-family: 'Slabo 27px', serif;*/
   font-size: 2.2rem;
   color: #582c23;
   font-weight: bold;
@@ -1815,7 +1774,6 @@ button.shk-but {
 .text-content h2,
 .text-content-inner h2 {
   font-family: "Noto Serif", serif;
-  /*font-family: 'Slabo 27px', serif;*/
   font-size: 2rem;
   color: #582c23;
   font-weight: bold;
@@ -1830,7 +1788,6 @@ button.shk-but {
 .text-content h5,
 .text-content-inner h5 {
   font-family: 'Noto Serif', serif;
-  /*font-family: 'Slabo 27px', serif;*/
   font-size: 1.2rem;
   color: #582c23;
   font-weight: bold;
@@ -1885,46 +1842,6 @@ button.shk-but {
   min-width: 8rem;
   max-width: 45%;
 }
-.text-content-nostyle {
-  width: 100%;
-  max-width: 1170px;
-  margin: 0 auto;
-  font-family: "OpenSans", sans-serif;
-  font-size: 1rem;
-  color: #6a6a6a;
-  line-height: 1.4;
-  font-weight: normal;
-  text-align: justify;
-  text-indent: 2em;
-  padding: 0 1.2rem 1.2rem;
-}
-.text-content-nostyle img {
-  max-width: none;
-  width: none;
-  height: none;
-}
-.text-content-nostyle table {
-  border-collapse: separate;
-}
-@media (max-width: 1170px) {
-  .text-content-nostyle {
-    width: 100%;
-  }
-}
-@media (max-width: 780px) {
-  .text-content-nostyle {
-    width: auto;
-    text-align: center;
-    min-width: 320px;
-    padding: 0 1.2rem;
-  }
-  .text-content-nostyle table {
-    border-collapse: separate;
-  }
-  .text-content-nostyle table td {
-    display: block;
-  }
-}
 @media (max-width: 780px) {
   .text-content,
   .text-content-inner {
@@ -1950,9 +1867,9 @@ button.shk-but {
 }
 @media (max-width: 1170px) {
   .slider_wrapper {
-    width: 94vw;
-    height: -webkit-calc(94vw/2.2);
-    height: calc(94vw/2.2);
+    width: 90vw;
+    height: -webkit-calc(90vw/2.2);
+    height: calc(90vw/2.2);
     min-height: 11rem;
   }
 }
@@ -1996,9 +1913,9 @@ button.shk-but {
 }
 @media (max-width: 1170px) {
   .slides li {
-    width: 94vw;
-    height: -webkit-calc(94vw/2.2);
-    height: calc(94vw/2.2);
+    width: 90vw;
+    height: -webkit-calc(90vw/2.2);
+    height: calc(90vw/2.2);
     min-height: 11rem;
   }
 }
@@ -2130,7 +2047,6 @@ button.shk-but {
 }
 .main-contact__phone {
   font-family: 'Noto Serif', serif;
-  /*font-family: 'Slabo 27px', serif;*/
   font-size: 1.375rem;
   font-weight: bold;
   line-height: 2rem;
@@ -2242,7 +2158,6 @@ button.shk-but {
 }
 .header-user__basket-sum {
   font-family: 'Noto Serif', serif;
-  /*font-family: 'Slabo 27px', serif;*/
   font-size: 1.25rem;
   display: block;
   width: 100%;
@@ -2269,9 +2184,6 @@ button.shk-but {
     width: 100%;
     margin-bottom: 2rem;
   }
-  .header-contact {
-    min-height: 115px;
-  }
   .header-user {
     text-align: center;
   }
@@ -2283,7 +2195,6 @@ button.shk-but {
   }
   .main-contact__phone {
     font-family: 'Noto Serif', serif;
-    /*font-family: 'Slabo 27px', serif;*/
     font-size: 1.125rem;
   }
   .main-contact__address p {
@@ -2318,7 +2229,6 @@ button.shk-but {
 .main-nav {
   width: 100%;
   position: relative;
-  z-index: 5005;
   min-height: 3.8rem;
 }
 .main-nav__wrapper {
@@ -2382,40 +2292,14 @@ button.shk-but {
   display: inline-block;
   width: 100%;
   height: 3.8rem;
-  padding: 0px 0.92rem;
+  padding: 0px 1rem;
   font-family: 'Noto Serif', serif;
-  /*font-family: 'Slabo 27px', serif;*/
   font-size: 0.8rem;
   line-height: 3.8rem;
   color: #ffffff;
   text-decoration: none;
   text-transform: uppercase;
   white-space: nowrap;
-}
-.main-nav__wrapper ul li ul {
-  position: absolute;
-  bottom: -3.7rem;
-  left: 0;
-  list-style: none;
-  display: none;
-}
-.main-nav__wrapper ul li ul li {
-  display: block;
-  height: 2rem;
-}
-.main-nav__wrapper ul li ul li a {
-  height: 2rem;
-  line-height: 2rem;
-  font-size: 0.8rem;
-  text-transform: none;
-  text-align: left;
-}
-.main-nav__wrapper ul li ul li:hover a {
-  color: #fff;
-}
-.main-nav__wrapper ul li ul li:first-child:before,
-.main-nav__wrapper ul li ul li:last-child:after {
-  display: none;
 }
 .main-nav__wrapper ul li:first-child:before,
 .main-nav__wrapper ul li:last-child:after {
@@ -2442,9 +2326,6 @@ button.shk-but {
 .main-nav__wrapper ul li.active,
 .main-nav__wrapper ul li:active {
   background-color: #671738;
-}
-.main-nav__wrapper ul li:hover ul {
-  display: block;
 }
 .main-nav__wrapper ul li:last-child:hover:after,
 .main-nav__wrapper ul li:first-child:hover:before,
@@ -2491,21 +2372,10 @@ button.shk-but {
         -ms-flex-preferred-size: 100%;
             flex-basis: 100%;
     max-width: none;
-    height: 2.2rem;
-    text-align: left;
   }
-  .main-nav__wrapper ul li a {
+  .main-nav__wrapper ul a {
     display: block;
     width: 100%;
-    padding-left: 30px;
-  }
-  .main-nav__wrapper ul li > ul {
-    position: static;
-    height: auto;
-    display: none;
-  }
-  .main-nav__wrapper ul li > ul li {
-    padding-left: 20px;
   }
   .main-nav--closed .main-nav {
     display: none;
@@ -2594,7 +2464,7 @@ button.shk-but {
             border-bottom-right-radius: 3px;
     background-image: none;
     z-index: 5001;
-    right: -8px;
+    right: -2rem;
     top: -13rem;
   }
   .main-nav--opened .main-nav ul {
@@ -2602,23 +2472,12 @@ button.shk-but {
   }
   .main-nav--opened .main-nav ul li {
     display: block;
-    height: auto;
-    line-height: 2.2rem;
+    height: 2.5rem;
+    line-height: 2.5rem;
   }
   .main-nav--opened .main-nav ul li a {
-    height: 2.2rem;
-    line-height: 2.2rem;
-  }
-  .main-nav--opened .main-nav ul li ul {
-    display: none;
-  }
-  .main-nav--opened .main-nav ul li ul li:first-child {
-    height: 2rem;
-    line-height: 2rem;
-  }
-  .main-nav--opened .main-nav ul li ul li:first-child a {
-    height: 2rem;
-    line-height: 2rem;
+    height: 2.5rem;
+    line-height: 2.5rem;
   }
   .main-nav--opened .main-nav ul li:first-child {
     height: 3.8rem;
@@ -2628,6 +2487,7 @@ button.shk-but {
     height: 3.8rem;
     line-height: 3.8rem;
   }
+<<<<<<< HEAD:app/css/style.css
   .main-nav--opened .main-nav ul li:hover > ul,
   .main-nav--opened .main-nav ul li:active > ul {
     display: none;
@@ -2635,6 +2495,8 @@ button.shk-but {
   .main-nav--opened .main-nav ul li.active > ul {
     display: block;
   }
+=======
+>>>>>>> 925e34aea1a74181a8158901abdb3ae0d7153cee:app/css/style2707.css
 }
 @media (max-width: 1170px) {
   .main-nav__toggle {
@@ -2642,11 +2504,8 @@ button.shk-but {
     right: 2rem;
   }
   .main-nav-scroll .main-nav--opened .main-nav {
-    right: -8px;
+    right: -2rem;
     top: 0rem;
-  }
-  .main-nav-scroll .main-nav--opened .main-nav ul li:first-child:before {
-    background-image: url("../img/main-nav-bg-frame-hover.svg");
   }
   .main-nav-scroll .main-nav__toggle,
   .main-nav-scroll .main-nav--opened .main-nav__toggle {
@@ -2657,27 +2516,19 @@ button.shk-but {
 @media (max-width: 780px) {
   .main-nav--opened .main-nav {
     width: 120vw;
-    height: 100vh;
-    right: 0;
-    top: -31rem;
-    left: -20px;
-    position: absolute;
+    height: 38rem;
+    right: -2rem;
+    top: -32rem;
   }
   .main-nav--opened .main-nav__wrapper ul {
     min-width: 70vw;
-    height: 100vh;
-  }
-  .main-nav--opened .main-nav__wrapper ul ul {
-    height: auto;
   }
   .main-nav-scroll .main-nav--opened .main-nav {
-    right: 0;
-    top: 0;
-    left: -20px;
+    right: -2rem;
+    top: 0rem;
   }
   .main-nav-scroll .main-nav__toggle,
   .main-nav-scroll .main-nav--opened .main-nav__toggle {
-    position: absolute;
     right: 0.5rem;
     top: 0.5rem;
   }
@@ -2686,8 +2537,8 @@ button.shk-but {
     right: 1rem;
   }
   .main-nav--opened .main-nav__toggle {
-    top: -30.5rem;
-    right: 0.2rem;
+    top: -31.25rem;
+    right: 0rem;
   }
 }
 .main-slider {
@@ -2750,7 +2601,6 @@ button.shk-but {
   vertical-align: middle;
   width: 80%;
   font-family: 'Noto Serif', serif;
-  /*font-family: 'Slabo 27px', serif;*/
   font-size: 0.875rem;
   color: #582c23;
   font-weight: bold;
@@ -3202,9 +3052,8 @@ button.shk-but {
   width: 2rem;
   color: #353535;
   font-weight: bold;
-  font-size: 1.2rem;
-  line-height: 1.2rem;
-  margin-top: -4px;
+  font-size: 1.5rem;
+  line-height: 1rem;
   vertical-align: middle;
   text-decoration: none;
 }
@@ -3245,7 +3094,6 @@ button.shk-but {
   background-color: rgba(0, 0, 0, 0.5);
   color: #ffffff;
   font-family: 'Noto Serif', serif;
-  /*font-family: 'Slabo 27px', serif;*/
   font-size: 1.2rem;
   text-align: left;
   padding: 1rem;
@@ -3254,7 +3102,6 @@ button.shk-but {
 .block-corner__title-prev h5 {
   color: #ffffff;
   font-family: 'Noto Serif', serif;
-  /*font-family: 'Slabo 27px', serif;*/
   font-size: 1.2rem;
   text-align: left;
   font-weight: normal;
@@ -3297,7 +3144,6 @@ button.shk-but {
 @media (max-width: 1170px) {
   .block-corner h5 {
     font-family: 'Noto Serif', serif;
-    /*font-family: 'Slabo 27px', serif;*/
     font-size: 1rem;
     padding-top: 0;
   }
@@ -3421,7 +3267,6 @@ button.shk-but {
 .main-form__name {
   color: #582c23;
   font-family: 'Noto Serif', serif;
-  /*font-family: 'Slabo 27px', serif;*/
   font-size: 1.35rem;
   line-height: 1.5;
   font-weight: bold;
@@ -3723,8 +3568,8 @@ button.shk-but {
   }
 }
 .stock {
-  width: 96%;
-  margin: 5% 1.8%;
+  width: 97%;
+  margin: 5% 1.5%;
   position: relative;
 }
 .stock__title {
@@ -3737,28 +3582,12 @@ button.shk-but {
   margin: 0 5px;
   padding: 1rem;
   font-family: "Noto Serif", serif;
-  /*font-family: 'Slabo 27px', serif;*/
   font-size: 1.75rem;
   color: #ffffff;
   background-color: rgba(0, 0, 0, 0.55);
   text-align: center;
 }
 @media (max-width: 780px) {
-  .stock__title {
-    font-size: 1rem;
-  }
-}
-@media (max-width: 1170px) {
-  .stock {
-    width: 536px;
-    margin: 5% auto;
-  }
-}
-@media (max-width: 905px) {
-  .stock {
-    width: 254px;
-    margin: 5% auto;
-  }
   .stock__title {
     font-size: 1rem;
   }
@@ -3782,7 +3611,6 @@ button.shk-but {
 }
 .page-basket__table-number {
   font-family: 'Noto Serif', serif;
-  /*font-family: 'Slabo 27px', serif;*/
   font-size: 1.125rem;
   color: #582c23;
   font-weight: bold;
@@ -3819,7 +3647,6 @@ button.shk-but {
   color: #d46000;
   font-weight: bold;
   font-family: 'Noto Serif', serif;
-  /*font-family: 'Slabo 27px', serif;*/
   font-size: 1rem;
   padding: 2rem 0.5rem 1rem 0;
 }
@@ -3960,7 +3787,6 @@ button.shk-but {
   height: auto;
   margin: 0 0 2rem;
   padding: 0;
-  text-align: left;
 }
 .element-beige--horizontal .element-beige__prev-item {
   padding-bottom: 0;
@@ -4086,7 +3912,6 @@ button.shk-but {
 .contacts__item b {
   display: block;
   font-family: 'Noto Serif', serif;
-  /*font-family: 'Slabo 27px', serif;*/
   font-size: 1rem;
   color: #582c23;
 }
@@ -4204,6 +4029,7 @@ button.shk-but {
   display: block;
   width: 100%;
   padding: 1rem 0.5rem;
+  margin-bottom: 2rem;
 }
 .vacancy__content .vacancy__date {
   position: absolute;
@@ -4212,17 +4038,14 @@ button.shk-but {
 }
 .vacancy__text {
   padding-top: 1rem;
-  margin-bottom: 2rem;
   height: auto;
   max-height: 10rem;
   overflow: hidden;
   color: #6a6a6a;
 }
-.vacancy__text * {
+.vacancy__text p {
   text-indent: 1.5rem;
-  color: #6a6a6a;
-  font-family: "OpenSans", sans-serif;
-  font-size: 1rem;
+  text-align: justify;
 }
 .vacancy__date {
   display: block;
@@ -4258,10 +4081,6 @@ button.shk-but {
 }
 .wine-land.abkhaziya :before {
   background: url("../img/flag/f-abch.png") 0 0 no-repeat;
-  background-size: 100% 100%;
-}
-.wine-land.puerto-riko:before {
-  background: url("../img/flag/f-pr.png") 0 0 no-repeat;
   background-size: 100% 100%;
 }
 .wine-land.avstraliya:before {
@@ -4332,10 +4151,6 @@ button.shk-but {
   background: url("../img/flag/f-port.png") 0 0 no-repeat;
   background-size: 100% 100%;
 }
-.wine-land.puerto-riko:before {
-  background: url("../img/flag/f-pr.png") 0 0 no-repeat;
-  background-size: 100% 100%;
-}
 .wine-land.ssha:before {
   background: url("../img/flag/f-usa.png") 0 0 no-repeat;
   background-size: 100% 100%;
@@ -4370,18 +4185,6 @@ button.shk-but {
 }
 .wine-land.rossiya:before {
   background: url("../img/flag/f-rus.png") 0 0 no-repeat;
-  background-size: 100% 100%;
-}
-.wine-land.argentina:before {
-  background: url("../img/flag/f-arg.jpg") 0 0 no-repeat;
-  background-size: 100% 100%;
-}
-.wine-land.vengria:before {
-  background: url("../img/flag/f-veng.jpg") 0 0 no-repeat;
-  background-size: 100% 100%;
-}
-.wine-land.nzelandia:before {
-  background: url("../img/flag/f-nzel.jpg") 0 0 no-repeat;
   background-size: 100% 100%;
 }
 .page-card-bg {
