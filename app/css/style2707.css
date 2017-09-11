@@ -2487,6 +2487,16 @@ button.shk-but {
     height: 3.8rem;
     line-height: 3.8rem;
   }
+<<<<<<< HEAD:app/css/style.css
+  .main-nav--opened .main-nav ul li:hover > ul,
+  .main-nav--opened .main-nav ul li:active > ul {
+    display: none;
+  }
+  .main-nav--opened .main-nav ul li.active > ul {
+    display: block;
+  }
+=======
+>>>>>>> 925e34aea1a74181a8158901abdb3ae0d7153cee:app/css/style2707.css
 }
 @media (max-width: 1170px) {
   .main-nav__toggle {

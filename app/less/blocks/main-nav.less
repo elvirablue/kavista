@@ -319,12 +319,13 @@
   				}
   			}
 
-  			li:hover, li:focus, li.active, li:active {				
-				
-				> ul {
-					display: block;
-				}
+  			li:hover, li:active {		
+				> ul {display: none;}
 			}	
+
+			li.active {		
+				> ul {display: block;}
+			}
   		}
 	}
 }
