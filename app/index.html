@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+<!DOCTYPE html> 
 <html lang="ru">
 <head>   
 	<meta charset="UTF-8">
@@ -196,6 +196,16 @@
 		</div>
 
 		<ul class="slider_controls js_dots"></ul> 
+	</div>
+	<!-- *********************** БЛОК Поиска ********************************- -->
+	<div class="separator"></div>
+	<div class="search">
+		
+		<form id="form-search" action="" method="GET" >
+				<input type="text" name="query" id="search" placeholder="Найти">
+				<input type="submit" class="btn btn--search" value="Найти">
+		</form>
+			
 	</div>
 <!-- *********************** БЛОК Преимущества ********************************- -->
 	<div class="separator"></div>
@@ -804,27 +814,12 @@
 	<div class="main-social">
 		<div class="frame frame--beige">
 			<div class="frame__content">
-				<h2 class="main-social__title">ПРИСОЕДИНЯЙТЕСЬ</h2>
-				<div class="social-networks">
-					
-					<div class="social-networks__vk ">	
-						<!-- VK Widget -->
-						<div id="vk_groups"></div>
-						<script type="text/javascript">
-						VK.Widgets.Group("vk_groups", {mode: 4, width: "245", height: "450"}, 133058267);
-						</script>
-					</div>
-
-					<div class="social-networks__ok " id="ok_group_widget"></div>
-					
-
-					<div class="social-networks__fb ">
-						<div class="fb-page" data-href="https://www.facebook.com/facebook" data-tabs="timeline" data-width="280" data-height="450" 	data-small-header="false" data-adapt-container-width="true" data-hide-cover="false" data-show-facepile="true">
-							<blockquote cite="https://www.facebook.com/facebook" class="fb-xfbml-parse-ignore">
-								<a href="https://www.facebook.com/facebook">Facebook</a> 
-							</blockquote> 
-						</div>
-					</div>
+				<h2 class="main-social__title">ПРИСОЕДИНЯЙТЕСЬ К&nbsp;НАМ</h2>
+				<div class="social-href">					
+					<a href="https://vk.com/kavista" target="_blank" class="social-href__ico vk"></a>
+					<a href="https://www.facebook.com/MarketBarKavista" target="_blank" class="social-href__ico fb"></a>
+					<a href="https://ok.ru/kavista" target="_blank" class="social-href__ico ok"></a>
+					<a href="https://www.instagram.com/marketbarkavista" target="_blank" class="social-href__ico inst"></a>
 				</div>
 			</div>
 		</div>

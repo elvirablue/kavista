@@ -867,6 +867,19 @@ button.shk-but {
   background: url("../img/ico-sprite.png") -5px -205px no-repeat, -webkit-linear-gradient(bottom, #85254c 20%, #b8608b 60%);
   background: url("../img/ico-sprite.png") -5px -205px no-repeat, linear-gradient(to top, #85254c 20%, #b8608b 60%);
 }
+.btn--search {
+  width: 100px;
+  padding-left: 1.7rem;
+  background: url("../img/loop.png") 7px center no-repeat, -webkit-gradient(linear, left bottom, left top, color-stop(20%, #85254c), color-stop(60%, #b8608b));
+  background: url("../img/loop.png") 7px center no-repeat, -webkit-linear-gradient(bottom, #85254c 20%, #b8608b 60%);
+  background: url("../img/loop.png") 7px center no-repeat, linear-gradient(to top, #85254c 20%, #b8608b 60%);
+}
+.btn--search:hover,
+.btn--search:active {
+  background-image: url("../img/loop.png"), -webkit-gradient(linear, left bottom, left top, color-stop(20%, #3b071a), color-stop(60%, #912a64));
+  background-image: url("../img/loop.png"), -webkit-linear-gradient(bottom, #3b071a 20%, #912a64 60%);
+  background-image: url("../img/loop.png"), linear-gradient(to top, #3b071a 20%, #912a64 60%);
+}
 .btn--in-basket:hover,
 .btn--in-basket:active {
   background-image: url("../img/ico-sprite.png"), -webkit-gradient(linear, left bottom, left top, color-stop(20%, #3b071a), color-stop(60%, #912a64));
@@ -2470,7 +2483,7 @@ button.shk-but {
 }
 @media (max-width: 1170px) {
   .main-nav-scroll {
-    display: none !important;
+    /*display: none !important;*/
   }
   .main-nav-block {
     display: block;
@@ -2632,9 +2645,10 @@ button.shk-but {
     line-height: 3.8rem;
   }
   .main-nav--opened .main-nav ul li:hover > ul,
-  .main-nav--opened .main-nav ul li:focus > ul,
-  .main-nav--opened .main-nav ul li.active > ul,
   .main-nav--opened .main-nav ul li:active > ul {
+    display: none;
+  }
+  .main-nav--opened .main-nav ul li.active > ul {
     display: block;
   }
 }
@@ -2775,6 +2789,51 @@ button.shk-but {
     padding: 1rem 0;
     margin: 0 auto;
   }
+}
+.search {
+  max-width: 1170px;
+  padding: 0 1.8rem;
+  margin: 0 auto;
+  text-align: center;
+  width: 100%;
+  outline: none;
+}
+@media (max-width: 1170px) {
+  .search {
+    width: 100%;
+  }
+}
+@media (max-width: 780px) {
+  .search {
+    width: auto;
+    text-align: center;
+    min-width: 320px;
+    padding: 0 1.2rem;
+  }
+}
+.search form {
+  border: 2px solid #f3e9da;
+  background-color: #ffffff;
+  height: 2.8rem;
+}
+.search form::after {
+  content: "";
+  display: table;
+  clear: both;
+}
+.search form input[type=text] {
+  float: left;
+  padding: 12px;
+  height: 2.5rem;
+  background-color: transparent;
+  outline: none;
+  border: none;
+  text-align: left;
+  width: -webkit-calc(100% - 100px);
+  width: calc(100% - 100px);
+}
+.search form input[type=submit] {
+  float: right;
 }
 .block-tovars {
   width: 100%;
@@ -3463,11 +3522,16 @@ button.shk-but {
 }
 .main-social__title {
   text-align: center;
-  padding-top: 2rem;
+  padding: 2rem 0;
+  display: inline-block;
+  vertical-align: middle;
+  width: 550px;
 }
 @media (max-width: 780px) {
   .main-social__title {
     font-size: 1.2rem;
+    width: 100%;
+    padding-bottom: 0;
   }
 }
 .social-networks-wrapper {
@@ -3519,6 +3583,34 @@ button.shk-but {
   height: 475px;
   margin: 0 30px 30px;
 }
+.social-href {
+  display: inline-block;
+  vertical-align: middle;
+  width: 400px;
+  padding: 2rem 0;
+}
+.social-href__ico {
+  display: inline-block;
+  vertical-align: middle;
+  width: 85px;
+  height: 65px;
+  background-image: url("../img/social-sprite.png");
+  background-repeat: no-repeat;
+  background-size: auto;
+  margin: 0 ;
+}
+.social-href__ico.vk {
+  background-position: 0 0;
+}
+.social-href__ico.fb {
+  background-position: -95px 0;
+}
+.social-href__ico.ok {
+  background-position: -190px 0;
+}
+.social-href__ico.inst {
+  background-position: -285px 0;
+}
 @media (max-width: 780px) {
   .social-networks {
     /*justify-content: space-around;
@@ -3534,6 +3626,26 @@ button.shk-but {
     margin: 0;
     padding: 0;
     padding-bottom: 10px;
+  }
+  .social-href {
+    width: 100%;
+  }
+  .social-href__ico {
+    width: 50px;
+    height: 42px;
+    background-size: 234px 40px;
+  }
+  .social-href__ico.vk {
+    background-position: -5px 0;
+  }
+  .social-href__ico.fb {
+    background-position: -60px 0;
+  }
+  .social-href__ico.ok {
+    background-position: -120px 0;
+  }
+  .social-href__ico.inst {
+    background-position: -180px 0;
   }
 }
 .page-footer-bg {
@@ -4260,22 +4372,6 @@ button.shk-but {
 }
 .wine-land.abkhaziya :before {
   background: url("../img/flag/f-abch.png") 0 0 no-repeat;
-  background-size: 100% 100%;
-}
-.wine-land.puerto-riko :before {
-  background: url("../img/flag/f-pr.png") 0 0 no-repeat;
-  background-size: 100% 100%;
-}
-.wine-land.argentina:before {
-  background: url("../img/flag/f-arg.jpg") 0 0 no-repeat;
-  background-size: 100% 100%;
-}
-.wine-land.vengria:before {
-  background: url("../img/flag/f-veng.jpg") 0 0 no-repeat;
-  background-size: 100% 100%;
-}
-.wine-land.nzelandia:before {
-  background: url("../img/flag/f-zel.jpg") 0 0 no-repeat;
   background-size: 100% 100%;
 }
 .wine-land.puerto-riko:before {
